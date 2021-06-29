@@ -1,11 +1,13 @@
 $theme-colors: (
 	"primary": #6c5dd3,
-	"secondary": #ffbc8f,
+	"secondary": #3f8cff,
 	"gray-border": #e6eaea,
 	"txt-body": #202121,
 	"neutral-white": #ffffff,
 	"neutral-black": #232323,
 	"neutral-background": #242731,
+	"disable": #808191,
+	"success": #7fba7a,
 );
 
 $theme-fonts: (
@@ -17,4 +19,7 @@ $theme-transition: (
 	"all": all 0.3s linear,
 );
 
-$heght-nav: 72px;
+$height-nav: 72px;
+$width-aside: 256px;
+$height-sidebar-top: 140px;
+$height-sidebar-bottom: 120px;

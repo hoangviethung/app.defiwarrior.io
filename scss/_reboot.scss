@@ -6,6 +6,11 @@
 	box-sizing: border-box;
 }
 
+main {
+	padding-top: $height-nav;
+	padding-left: $width-aside;
+}
+
 body {
 	margin: 0;
 	font-family: map-get($map: $theme-fonts, $key: font-body);

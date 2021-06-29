@@ -16,28 +16,73 @@
   </head>
   <body>
     <!-- *** NAV *** //-->
-    <nav class="defi-nav"></nav>
+    <nav class="defi-nav">
+      <div class="container h-100">
+        <div class="defi-nav-row">
+          <div class="box-right"><a class="bt-pushable" href="#"><span class="front">Connect Wallet</span></a></div>
+        </div>
+      </div>
+    </nav>
     <!-- *** ASIDE *** //-->
     <aside class="sidebar">
       <div class="sidebar__top"><a class="sidebar__logo" href="#"><img src="./images/logo.png" alt="defi-logo"/></a></div>
       <div class="sidebar__wrapper">
-        <div class="sidebar__group">
-          <div class="sidebar__menu"><a class="sidebar__item active" href="#">
-              <div class="sidebar__icon"><i class="fas fa-warehouse-alt"></i></div>
-              <div class="sidebar__text">Farming</div></a><a class="sidebar__item" href="#">
-              <div class="sidebar__icon"><i class="fas fa-sword"></i></div>
-              <div class="sidebar__text">My Warrior</div></a><a class="sidebar__item" href="#">
-              <div class="sidebar__icon"><i class="fas fa-warehouse-alt"></i></div>
-              <div class="sidebar__text">Comunities</div></a><a class="sidebar__item" href="#">
-              <div class="sidebar__icon"><i class="fas fa-warehouse-alt"></i></div>
-              <div class="sidebar__text">News</div></a><a class="sidebar__item" href="#">
-              <div class="sidebar__icon"><i class="fas fa-warehouse-alt"></i></div>
-              <div class="sidebar__text">Help</div></a></div>
+        <div class="sidebar__list">
+          <div class="sidebar__group">
+            <div class="sidebar__caption"><span>Dashboard</span></div>
+            <div class="sidebar__menu"><a class="sidebar__item active" href="#">
+                <div class="sidebar__icon"><i class="far fa-warehouse-alt"></i></div>
+                <div class="sidebar__text">Farming</div></a><a class="sidebar__item" href="#">
+                <div class="sidebar__icon"><i class="fas fa-sword"></i></div>
+                <div class="sidebar__text">My Warrior</div></a><a class="sidebar__item" href="#">
+                <div class="sidebar__icon"><i class="fas fa-users-crown"></i></div>
+                <div class="sidebar__text">Comunities</div></a><a class="sidebar__item" href="#">
+                <div class="sidebar__icon"><i class="far fa-sparkles"></i></div>
+                <div class="sidebar__text">News</div></a><a class="sidebar__item" href="#">
+                <div class="sidebar__icon"><i class="far fa-question-circle"></i></div>
+                <div class="sidebar__text">Help</div></a></div>
+          </div>
+          <div class="sidebar__group">
+            <div class="sidebar__caption"><span>Trade</span></div>
+            <div class="sidebar__menu"><a class="sidebar__item" href="#">
+                <div class="sidebar__icon"><i class="fad fa-wallet"></i></div>
+                <div class="sidebar__text">Wallet & Asset</div></a><a class="sidebar__item" href="#">
+                <div class="sidebar__icon"><i class="fad fa-sync"></i></div>
+                <div class="sidebar__text">Exchange</div></a><a class="sidebar__item" href="#">
+                <div class="sidebar__icon"><i class="fad fa-dollar-sign"></i></div>
+                <div class="sidebar__text">Liquidity Pool</div></a><a class="sidebar__item" href="#">
+                <div class="sidebar__icon"><i class="fad fa-retweet"></i></div>
+                <div class="sidebar__text">Swap</div></a><a class="sidebar__item" href="#">
+                <div class="sidebar__icon"><i class="far fa-question-circle"></i></div>
+                <div class="sidebar__text">Help</div></a></div>
+          </div>
         </div>
+      </div>
+      <div class="sidebar__bottom">
+        <div class="sidebar__profile"><a class="sidebar__user" href="#">
+            <div class="sidebar__avatar"><img src="./images/dao_ngoc_thanh.png" alt="DAO-NGOC-THANH"/></div>
+            <div class="sidebar__desc">
+              <div class="sidebar__name">Đào Ngọc Thành</div>
+              <div class="sidebar__status" status="onl"><i class="fad fa-circle"></i><span>Online</span></div>
+            </div></a></div>
       </div>
     </aside>
     <!-- *** MAIN *** //-->
     <main>
+      <!-- *** SECTION FARMING *** //-->
+      <section class="farming">
+        <div class="container">
+          <div class="banner">
+            <div class="banner__container">
+              <div class="banner_preview"><img src="./images/character.png" alt="CHARACTER-DEFI"/></div>
+              <div class="banner__wrap">
+                <h1 class="banner__title">Farms</h1>
+                <p class="banner__text">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- *** PAGE NAME *** //-->
       <div id="page-verify" data-class="index-page"></div>
     </main>

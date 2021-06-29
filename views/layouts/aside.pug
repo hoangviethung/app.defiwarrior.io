@@ -3,25 +3,62 @@ aside.sidebar
 		a(href="#").sidebar__logo
 			img(src="./images/logo.png", alt="defi-logo")
 	.sidebar__wrapper
-		.sidebar__group
-			.sidebar__menu
-				a(href="#").sidebar__item.active
-					.sidebar__icon
-						i.fas.fa-warehouse-alt
-					.sidebar__text Farming
-				a(href="#").sidebar__item
-					.sidebar__icon
-						i.fas.fa-sword
-					.sidebar__text My Warrior
-				a(href="#").sidebar__item
-					.sidebar__icon
-						i.fas.fa-warehouse-alt
-					.sidebar__text Comunities
-				a(href="#").sidebar__item
-					.sidebar__icon
-						i.fas.fa-warehouse-alt
-					.sidebar__text News
-				a(href="#").sidebar__item
-					.sidebar__icon
-						i.fas.fa-warehouse-alt
-					.sidebar__text Help
+		.sidebar__list
+			.sidebar__group
+				.sidebar__caption
+					span Dashboard
+				.sidebar__menu
+					a(href="#").sidebar__item.active
+						.sidebar__icon
+							i.far.fa-warehouse-alt
+						.sidebar__text Farming
+					a(href="#").sidebar__item
+						.sidebar__icon
+							i.fas.fa-sword
+						.sidebar__text My Warrior
+					a(href="#").sidebar__item
+						.sidebar__icon
+							i.fas.fa-users-crown
+						.sidebar__text Comunities
+					a(href="#").sidebar__item
+						.sidebar__icon
+							i.far.fa-sparkles
+						.sidebar__text News
+					a(href="#").sidebar__item
+						.sidebar__icon
+							i.far.fa-question-circle
+						.sidebar__text Help
+			.sidebar__group
+				.sidebar__caption
+					span Trade
+				.sidebar__menu
+					a(href="#").sidebar__item
+						.sidebar__icon
+							i.fad.fa-wallet
+						.sidebar__text Wallet & Asset
+					a(href="#").sidebar__item
+						.sidebar__icon
+							i.fad.fa-sync
+						.sidebar__text Exchange
+					a(href="#").sidebar__item
+						.sidebar__icon
+							i.fad.fa-dollar-sign
+						.sidebar__text Liquidity Pool
+					a(href="#").sidebar__item
+						.sidebar__icon
+							i.fad.fa-retweet
+						.sidebar__text Swap
+					a(href="#").sidebar__item
+						.sidebar__icon
+							i.far.fa-question-circle
+						.sidebar__text Help
+	.sidebar__bottom
+		.sidebar__profile
+			a(href="#").sidebar__user
+				.sidebar__avatar
+					img(src="./images/dao_ngoc_thanh.png", alt="DAO-NGOC-THANH")
+				.sidebar__desc
+					.sidebar__name Đào Ngọc Thành
+					.sidebar__status(status="onl")
+						i.fad.fa-circle
+						span Online

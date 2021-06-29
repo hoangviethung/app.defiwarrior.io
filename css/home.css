@@ -1,2 +1,35 @@
-h1 {
-  color: red; }
+.banner__container {
+  position: relative;
+  padding: 64px 64px 76px;
+  border-radius: 24px;
+  background: #6c5dd3;
+  overflow: hidden; }
+
+.banner__wrap {
+  max-width: 50%; }
+
+.banner__title {
+  color: #ffffff;
+  font-size: 2.4rem;
+  margin-bottom: 4px; }
+
+.banner__text {
+  color: #ffffff; }
+
+@keyframes slidein {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0%); } }
+
+.banner_preview {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  font-size: 0;
+  height: calc(100% - 16px);
+  animation: slidein 3s infinite;
+  animation-direction: alternate; }
+  .banner_preview img {
+    height: 100%;
+    width: auto; }

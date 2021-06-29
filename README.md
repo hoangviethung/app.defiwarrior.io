@@ -13,3 +13,8 @@
 ## What is this Project ?
 
 -   Sử dụng PUG, SCSS, JQ, JS
+
+-   stash, cherry-pick
+-   git stash save "text"
+-   git push origin design --force
+-   get reset <commit> -hard

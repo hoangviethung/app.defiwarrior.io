@@ -31,6 +31,9 @@
 .pull-right {
   float: right; }
 
+.h-100 {
+  height: 100%; }
+
 .fw-300 {
   font-weight: 300; }
 
@@ -129,10 +132,11 @@
 
 .container {
   position: relative;
-  max-width: 100%;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding-left: 66px;
-  padding-right: 66px; }
+  padding-left: 64px;
+  padding-right: 64px; }
 
 .row {
   display: flex;
@@ -865,10 +869,52 @@
     .bt.cl-primary:hover {
       color: #9085de; }
 
+.bt-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; }
+  .bt-circle > i {
+    font-size: 1.3rem; }
+  .bt-circle:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
+
+.bt-pushable {
+  display: inline-flex;
+  background-color: #0057d8;
+  border-radius: 8px;
+  border: none;
+  padding: 0;
+  cursor: pointer; }
+  .bt-pushable .front {
+    display: block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #3f8cff;
+    color: #ffffff;
+    will-change: transform;
+    transition: transform 250ms;
+    transform: translateY(-4px); }
+  .bt-pushable:hover .front {
+    transform: translateY(-6px); }
+  .bt-pushable:active .front {
+    transform: translateY(-2px); }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box; }
+
+main {
+  padding-top: 72px;
+  padding-left: 256px; }
 
 body {
   margin: 0;
@@ -13152,24 +13198,20 @@ progress {
 .defi-nav {
   position: fixed;
   top: 0px;
-  left: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 16px;
-  width: 100%;
+  left: 256px;
+  right: 0;
   height: 72px;
-  z-index: 20; }
+  z-index: 20;
+  background-color: #242731; }
 
-.box-left {
+.defi-nav-row {
   display: flex;
+  height: 100%;
+  justify-content: space-between;
   align-items: center; }
-  .box-left .defi-logo {
-    margin-left: 16px;
-    height: 44px; }
-    .box-left .defi-logo img {
-      height: 100%;
-      width: auto; }
+
+.box-right {
+  margin-left: auto; }
 
 .sidebar {
   position: fixed;
@@ -13178,7 +13220,7 @@ progress {
   flex-shrink: 0;
   width: 256px;
   height: 100vh;
-  padding: 140px 0 72px;
+  padding: 140px 0 120px;
   border-right: 1px solid rgba(228, 228, 228, 0.1);
   background-color: #242731; }
 
@@ -13194,10 +13236,47 @@ progress {
   align-items: center;
   height: 140px; }
 
+.sidebar__bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 120px;
+  padding: 0 20px;
+  border-top: 1px solid rgba(228, 228, 228, 0.1); }
+
 .sidebar__wrapper {
   max-height: 100%;
   padding: 0 20px 30px;
   overflow-y: auto; }
+  .sidebar__wrapper::-webkit-scrollbar {
+    display: none; }
+
+.sidebar__list {
+  margin-bottom: 20px; }
+
+.sidebar__group:not(:last-child) {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 30px; }
+  .sidebar__group:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    height: 1px;
+    background: rgba(228, 228, 228, 0.1); }
+
+.sidebar__caption {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33333;
+  margin-bottom: 16px;
+  padding-left: 20px;
+  color: #808191; }
 
 .sidebar__item {
   display: flex;
@@ -13212,6 +13291,8 @@ progress {
   .sidebar__item.active {
     color: #ffffff;
     background-color: #6c5dd3; }
+  .sidebar__item:hover {
+    color: #ffffff; }
 
 .sidebar__icon {
   font-size: 18px;
@@ -13222,3 +13303,52 @@ progress {
   width: 24px;
   height: 24px;
   margin-right: 16px; }
+
+.sidebar__profile {
+  width: 100%; }
+
+.sidebar__user {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  height: 62px;
+  border-radius: 12px;
+  color: #11142d;
+  cursor: pointer;
+  transition: background 0.25s; }
+
+.sidebar__avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 0; }
+  .sidebar__avatar img {
+    width: 100%;
+    min-height: 100%;
+    border-radius: 50%; }
+
+.sidebar__desc {
+  flex: 0 0 calc(100% - 64px);
+  width: calc(100% - 64px);
+  padding: 0 5px 0 16px; }
+
+.sidebar__name {
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.42857;
+  font-weight: 600; }
+
+.sidebar__status {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.77rem;
+  margin-top: 8px; }
+  .sidebar__status > i {
+    font-size: 0.55rem; }
+  .sidebar__status[status="onl"] {
+    color: #7fba7a; }
+  .sidebar__status span {
+    margin-left: 4px; }
