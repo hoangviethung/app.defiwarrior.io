@@ -1,0 +1,27 @@
+{
+	"name": "defi-warrior",
+	"version": "1.0.0",
+	"description": "defi-warrior",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"pug": "pug -w ./views/screens -o ./ -P",
+		"sass": "node-sass --watch ./scss -o ./css",
+		"dev": "concurrently --kill-others \"npm run pug\" \"npm run sass\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hoangviethung/source-pug-sass-basic.git"
+	},
+	"keywords": [
+		"defi-warrior"
+	],
+	"author": "hoangviethung",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^6.0.1"
+	},
+	"devDependencies": {
+		"concurrently": "^6.2.0"
+	}
+}

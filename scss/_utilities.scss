@@ -1,0 +1,16 @@
+.bt {
+	display: inline-flex;
+	position: relative;
+	text-align: center;
+	font-weight: 500;
+	transition: map-get($map: $theme-transition, $key: all);
+	&.cl-primary {
+		color: map-get($map: $theme-colors, $key: primary);
+		&:hover {
+			color: lighten(
+				$color: map-get($map: $theme-colors, $key: primary),
+				$amount: 10%
+			);
+		}
+	}
+}

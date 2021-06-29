@@ -1,0 +1,57 @@
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	flex-shrink: 0;
+	width: 256px;
+	height: 100vh;
+	padding: 140px 0 72px;
+	border-right: 1px solid rgba(228, 228, 228, 0.1);
+	background-color: map-get($map: $theme-colors, $key: neutral-background);
+}
+
+.sidebar__top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 140px;
+}
+
+.sidebar__wrapper {
+	max-height: 100%;
+	padding: 0 20px 30px;
+	overflow-y: auto;
+}
+
+.sidebar__item {
+	display: flex;
+	align-items: center;
+	height: 56px;
+	padding: 0 20px;
+	border-radius: 12px;
+	background: transparent;
+	font-size: 14px;
+	font-weight: 600;
+	color: #808191;
+	&.active {
+		color: map-get($map: $theme-colors, $key: neutral-white);
+		background-color: map-get($map: $theme-colors, $key: primary);
+	}
+}
+
+.sidebar__icon {
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	width: 24px;
+	height: 24px;
+	margin-right: 16px;
+}

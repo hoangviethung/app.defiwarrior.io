@@ -1,0 +1,25 @@
+.defi-nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 16px;
+	width: 100%;
+	height: $heght-nav;
+	z-index: 20;
+}
+
+.box-left {
+	display: flex;
+	align-items: center;
+	.defi-logo {
+		margin-left: 16px;
+		height: 44px;
+		img {
+			height: 100%;
+			width: auto;
+		}
+	}
+}

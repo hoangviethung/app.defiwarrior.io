@@ -1,0 +1,36 @@
+block var
+
+<!DOCTYPE html>
+html(lang="en")
+	head
+		// *** META *** //
+		include meta
+		// *** CSS *** //
+		include css
+		// *** CSS *** //
+		block css
+		// *** FAVICON *** //
+		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+		// *** TITLE *** //
+		title #{pageTitle}
+	body
+		// *** NAV *** //
+		block nav
+			include nav
+		// *** ASIDE *** //
+		block aside
+			include aside
+		// *** MAIN *** //
+		main
+			block main
+			// *** PAGE NAME *** //
+			#page-verify(data-class=`${bodyClass}`)
+		// *** OVERLAY *** //
+		#overlay
+		// *** FOOTER *** //
+		block footer
+			include footer
+		// *** JS *** //
+		include js
+		// *** JS CUSTOM *** //
+		block js
