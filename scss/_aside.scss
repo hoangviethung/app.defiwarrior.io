@@ -113,11 +113,8 @@
 	z-index: 2;
 	display: flex;
 	align-items: center;
-	height: 62px;
-	border-radius: 12px;
-	color: #11142d;
+	color: map-get($map: $theme-colors, $key: neutral-white);
 	cursor: pointer;
-	transition: background 0.25s;
 }
 
 .sidebar__avatar {
@@ -139,7 +136,6 @@
 }
 
 .sidebar__name {
-	color: map-get($map: $theme-colors, $key: neutral-white);
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;

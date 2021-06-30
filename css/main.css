@@ -3,9 +3,9 @@
   display: none; }
 
 .txt-body {
-  color: #202121; }
+  color: #ffffff; }
   .txt-body:hover {
-    color: #6b6f6f; }
+    color: white; }
 
 .txt-light {
   color: #ffffff; }
@@ -921,10 +921,14 @@ body {
   font-family: "Inter";
   font-size: 0.875rem;
   font-weight: 300;
+  color: #ffffff;
   background-color: #242731;
   overflow-x: hidden; }
   body.no-scroll {
     overflow-y: hidden; }
+
+section + section {
+  margin-top: 56px; }
 
 figure {
   position: relative; }
@@ -13312,11 +13316,8 @@ progress {
   z-index: 2;
   display: flex;
   align-items: center;
-  height: 62px;
-  border-radius: 12px;
-  color: #11142d;
-  cursor: pointer;
-  transition: background 0.25s; }
+  color: #ffffff;
+  cursor: pointer; }
 
 .sidebar__avatar {
   flex-shrink: 0;
@@ -13334,7 +13335,6 @@ progress {
   padding: 0 5px 0 16px; }
 
 .sidebar__name {
-  color: #ffffff;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

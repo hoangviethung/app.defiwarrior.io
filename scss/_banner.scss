@@ -13,13 +13,8 @@
 }
 
 .banner__title {
-	color: map-get($map: $theme-colors, $key: neutral-white);
 	font-size: 2.4rem;
 	margin-bottom: 4px;
-}
-
-.banner__text {
-	color: map-get($map: $theme-colors, $key: neutral-white);
 }
 
 @keyframes slidein {

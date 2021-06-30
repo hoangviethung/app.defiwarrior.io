@@ -4,15 +4,25 @@ block var
 	- bodyClass = "index-page"
 	- pageTitle = "Source Pug Sass Basic"
 block css
-	link(rel="stylesheet", href="./css/home.css")
+	link(rel="stylesheet", href="./css/farming.css")
 block main
+	// *** SECTION BANNER *** //
+	include ../components/banner
 	// *** SECTION FARMING *** //
 	section.farming
 		.container
-			.banner
-				.banner__container
-					.banner_preview
-						img(src="./images/character.png", alt="CHARACTER-DEFI")
-					.banner__wrap
-						h1.banner__title Farms
-						p.banner__text Lorem ipsum dolor sit amet consectetur adipisicing elit
+			.row
+				-for(i=0;i<8;i++)
+					.col-lg-4.col-md-6
+						.farming__item
+							.farming__header
+								.farming__character
+									img(src="./images/character_farming.png", alt="CHARACTER-DEFI")
+								.character__information
+									h4.character__name FiWA - BTC
+									ul.list-tags
+										li
+											i.fas.fa-badge-check
+											span core
+										li
+											span.badge.primary 40X

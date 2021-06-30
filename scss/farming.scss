@@ -1,0 +1,22 @@
+@import "_banner";
+
+.farming__item {
+	position: relative;
+	background: map-get($map: $theme-colors, $key: neutral-background-dark);
+	padding: 24px;
+	border-radius: 24px;
+	margin-bottom: 36px;
+}
+
+.farming__header {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.farming__character {
+	flex: 0 0 64px;
+	max-width: 64px;
+	width: 64px;
+	height: 64px;
+	overflow: hidden;
+}
