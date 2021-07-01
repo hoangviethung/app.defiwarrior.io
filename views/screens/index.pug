@@ -13,16 +13,40 @@ block main
 		.container
 			.row
 				-for(i=0;i<8;i++)
-					.col-lg-4.col-md-6
+					.col-xl-4.col-lg-6
 						.farming__item
 							.farming__header
 								.farming__character
 									img(src="./images/character_farming.png", alt="CHARACTER-DEFI")
 								.character__information
 									h4.character__name FiWA - BTC
-									ul.list-tags
-										li
+									ul
+										li.badge.outline.primary
 											i.fas.fa-badge-check
-											span core
-										li
-											span.badge.primary 40X
+											span Core
+										li.badge.primary
+											span 40X
+							.farming__body
+								.flex-between-alc
+									.block
+										span APR:
+									.block
+										i.fas.fa-calculator-alt
+										span 59.67%
+								.flex-between-alc
+									.block
+										span Earn:
+									.block
+										span GEM
+								.farming__action
+									.txt
+										span.txt-primary CAKE
+										span EARNED
+									.flex-between-alc
+										.block
+											h2 0.000
+										.block
+											button.bt.bt-lg(disable) Harvest
+									.txt
+										span.txt-primary CAKE
+										span EARNED

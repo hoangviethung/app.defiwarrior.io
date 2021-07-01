@@ -32,18 +32,56 @@
 
 .farming__item {
   position: relative;
-  background: #181a21;
+  background: #33394e;
   padding: 24px;
   border-radius: 24px;
   margin-bottom: 36px; }
 
 .farming__header {
   display: flex;
-  flex-wrap: wrap; }
+  justify-content: space-between; }
 
 .farming__character {
-  flex: 0 0 64px;
-  max-width: 64px;
   width: 64px;
   height: 64px;
   overflow: hidden; }
+
+.character__name {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right; }
+
+.character__information {
+  max-width: calc(100% - 64px);
+  padding-left: 16px; }
+  .character__information ul {
+    text-align: right; }
+    .character__information ul li + li {
+      margin-left: 4px; }
+
+.farming__body > .flex-between-alc {
+  margin-top: 16px; }
+  .farming__body > .flex-between-alc + .flex-between-alc {
+    margin-top: 8px; }
+
+.farming__body .block h2 {
+  color: #808191; }
+
+.farming__body .block:last-child span {
+  font-weight: 600; }
+
+.farming__body .block:last-child > i {
+  margin-right: 4px; }
+
+.farming__action {
+  margin-top: 16px; }
+  .farming__action .txt span {
+    font-size: 0.66rem;
+    font-weight: 600; }
+    .farming__action .txt span + span {
+      margin-left: 4px; }
+  .farming__action > .flex-between-alc {
+    margin-top: 8px; }

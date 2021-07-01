@@ -4,6 +4,9 @@
 .hidden {
 	display: none;
 }
+.txt-primary {
+	color: map-get($map: $theme-colors, $key: primary);
+}
 .txt-body {
 	color: map-get($map: $theme-colors, $key: txt-body);
 	&:hover {
@@ -94,7 +97,9 @@
 .jc-s {
 	justify-content: flex-start;
 }
-
+.jc-b {
+	justify-content: space-between;
+}
 .al-c {
 	align-items: center;
 }
@@ -146,4 +151,9 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+.flex-between-alc {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
