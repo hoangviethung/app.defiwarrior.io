@@ -1015,6 +1015,8 @@
     margin-right: 4px; }
   .badge.primary {
     background-color: #6c5dd3; }
+  .badge.secondary {
+    background-color: #3f8cff; }
   .badge.outline {
     background-color: transparent; }
     .badge.outline.primary {

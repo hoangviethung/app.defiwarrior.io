@@ -1,6 +1,6 @@
 @import "_banner";
 
-.farming__item {
+.farm__item {
 	position: relative;
 	background: map-get($map: $theme-colors, $key: neutral-background-lighter);
 	padding: 24px;
@@ -13,7 +13,7 @@
 	}
 }
 
-.farming__header {
+.farm__header {
 	display: flex;
 	justify-content: space-between;
 	@media (max-width: 350.98px) {
@@ -22,7 +22,7 @@
 	}
 }
 
-.farming__character {
+.farm__character {
 	width: 64px;
 	height: 64px;
 	overflow: hidden;
@@ -66,7 +66,7 @@
 	}
 }
 
-.farming__body {
+.farm__body {
 	> .flex-between-alc {
 		margin-top: 16px;
 		+ .flex-between-alc {
@@ -88,7 +88,7 @@
 	}
 }
 
-.farming__action {
+.farm__action {
 	margin-top: 16px;
 	.txt {
 		span {
@@ -108,7 +108,7 @@
 	}
 }
 
-.farming__footer {
+.farm__footer {
 	margin-top: 24px;
 	padding-top: 24px;
 	border-top: 1px solid map-get($map: $theme-colors, $key: gray-border);

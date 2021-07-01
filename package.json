@@ -19,7 +19,9 @@
 	"author": "hoangviethung",
 	"license": "ISC",
 	"dependencies": {
-		"node-sass": "^6.0.1"
+		"@fancyapps/ui": "^4.0.0-alpha.4",
+		"node-sass": "^6.0.1",
+		"swiper": "^6.7.1"
 	},
 	"devDependencies": {
 		"concurrently": "^6.2.0"

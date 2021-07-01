@@ -1,23 +1,29 @@
 extends ../layouts/layout
 
 block var
-	- bodyClass = "index-page"
-	- pageTitle = "Source Pug Sass Basic"
+	- bodyClass = "farm-page"
+	- pageTitle = "Farms | Defi x NFT"
+block library-css
+	link(rel="stylesheet", href="./vendors/fancyapps/fancybox.css")
 block css
-	link(rel="stylesheet", href="./css/farming.css")
+	link(rel="stylesheet", href="./css/farms.css")
+block library-js
+	script( href="./vendors/fancyapps/fancybox.umd.js")
+block banner
+block js
 block main
 	// *** SECTION BANNER *** //
 	include ../components/banner
-	// *** SECTION FARMING *** //
-	section.farming
+	// *** SECTION farm *** //
+	section.farms
 		.container
 			.row
 				-for(i=0;i<9;i++)
 					.col-xl-4.col-sm-6
-						.farming__item
-							.farming__header
-								.farming__character
-									img(src="./images/character_farming.png", alt="CHARACTER-DEFI")
+						.farm__item
+							.farm__header
+								.farm__character
+									img(src="./images/character_farm.png", alt="CHARACTER-DEFI")
 								.character__information
 									h4.character__name FiWA - BTC
 									ul
@@ -26,7 +32,7 @@ block main
 											span Core
 										li.badge.primary
 											span 40X
-							.farming__body
+							.farm__body
 								.flex-between-alc
 									.block
 										span APR:
@@ -38,7 +44,7 @@ block main
 										span Earn:
 									.block
 										span GEM
-								.farming__action
+								.farm__action
 									.txt
 										span.txt-primary CAKE
 										span EARNED
@@ -52,7 +58,7 @@ block main
 										span STAKED
 									.action_buttons
 										button.bt.bt-lg.bt-block.secondary Unlock Wallet
-							.farming__footer
+							.farm__footer
 								.ta-c
 									button.bt.cl-primary
 										span See More

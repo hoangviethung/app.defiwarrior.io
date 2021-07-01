@@ -5,9 +5,10 @@ html(lang="en")
 	head
 		// *** META *** //
 		include meta
+		// *** VENDORS CSS *** //
+		block library-css
 		// *** CSS *** //
 		include css
-		// *** CSS *** //
 		block css
 		// *** FAVICON *** //
 		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
@@ -30,7 +31,8 @@ html(lang="en")
 		// *** FOOTER *** //
 		block footer
 			include footer
+		// *** VENDORS JS *** //
+		block library-js
 		// *** JS *** //
 		include js
-		// *** JS CUSTOM *** //
 		block js

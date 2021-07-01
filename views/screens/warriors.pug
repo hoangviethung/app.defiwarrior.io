@@ -1,0 +1,30 @@
+extends ../layouts/layout
+
+block var
+	- bodyClass = "warriors-page"
+	- pageTitle = "My warriors | Defi x NFT"
+block library-css
+	link(rel="stylesheet", href="./vendors/swiper/swiper-bundle.css")
+block css
+	link(rel="stylesheet", href="./css/warriors.css")
+block library-js
+	script( href="./vendors/swiper/swiper-bundle.js")
+block js
+	script(src="./js/warriors.js")
+block main
+	// *** SECTION BANNER *** //
+	include ../components/banner
+	// *** SECTION WARRIORS *** //
+	section.warriors
+		.container
+			.warriors__slider
+				.warrior__item
+					.warrior__character
+						img(src="./images/warrior_item_01.png", alt="")
+					.warrior__information
+						.box-left
+							h4.warrior__name Bitcoin
+							span.warrior__id #B12000
+							ul
+								li.badge.secondary
+									span Swap
