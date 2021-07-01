@@ -6,8 +6,16 @@
 	width: $width-aside;
 	height: 100vh;
 	padding: $height-sidebar-top 0 $height-sidebar-bottom;
-	border-right: 1px solid rgba(228, 228, 228, 0.1);
+	border-right: 1px solid
+		darken(
+			$color: map-get($map: $theme-colors, $key: gray-border),
+			$amount: 5%
+		);
 	background-color: map-get($map: $theme-colors, $key: neutral-background);
+	@media (max-width: 1024.98px) {
+		width: $width-aside-mobile;
+		padding: 24px 0 $height-sidebar-bottom;
+	}
 }
 
 .sidebar__top {
@@ -21,6 +29,9 @@
 	justify-content: center;
 	align-items: center;
 	height: $height-sidebar-top;
+	@media (max-width: 1024.98px) {
+		display: none;
+	}
 }
 
 .sidebar__bottom {
@@ -32,7 +43,15 @@
 	align-items: center;
 	height: $height-sidebar-bottom;
 	padding: 0 20px;
-	border-top: 1px solid rgba(228, 228, 228, 0.1);
+	border-top: 1px solid
+		darken(
+			$color: map-get($map: $theme-colors, $key: gray-border),
+			$amount: 5%
+		);
+	@media (max-width: 1024.98px) {
+		padding: 0 8px;
+		height: $height-sidebar-bottom-mobile;
+	}
 }
 
 .sidebar__wrapper {
@@ -41,6 +60,9 @@
 	overflow-y: auto;
 	&::-webkit-scrollbar {
 		display: none;
+	}
+	@media (max-width: 1024.98px) {
+		padding: 0 4px 16px;
 	}
 }
 
@@ -60,7 +82,18 @@
 			right: 20px;
 			bottom: 0;
 			height: 1px;
-			background: rgba(228, 228, 228, 0.1);
+			background: darken(
+				$color: map-get($map: $theme-colors, $key: gray-border),
+				$amount: 5%
+			);
+		}
+		@media (max-width: 1024.98px) {
+			margin-bottom: 24px;
+			padding-bottom: 16px;
+			&::before {
+				left: 8px;
+				right: 8px;
+			}
 		}
 	}
 }
@@ -72,6 +105,9 @@
 	margin-bottom: 16px;
 	padding-left: 20px;
 	color: map-get($map: $theme-colors, $key: disable);
+	@media (max-width: 1024.98px) {
+		display: none;
+	}
 }
 
 .sidebar__item {
@@ -91,6 +127,14 @@
 	&:hover {
 		color: map-get($map: $theme-colors, $key: neutral-white);
 	}
+	@media (max-width: 1024.98px) {
+		padding: 0 4px;
+		height: 44px;
+		width: 44px;
+		margin: 0 auto;
+		text-align: center;
+		border-radius: 8px;
+	}
 }
 
 .sidebar__icon {
@@ -102,6 +146,16 @@
 	width: 24px;
 	height: 24px;
 	margin-right: 16px;
+	@media (max-width: 1024.98px) {
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.sidebar__text {
+	@media (max-width: 1024.98px) {
+		display: none;
+	}
 }
 
 .sidebar__profile {
@@ -133,6 +187,9 @@
 	flex: 0 0 calc(100% - 64px);
 	width: calc(100% - 64px);
 	padding: 0 5px 0 16px;
+	@media (max-width: 1024.98px) {
+		display: none;
+	}
 }
 
 .sidebar__name {

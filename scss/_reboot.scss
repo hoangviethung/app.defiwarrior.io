@@ -9,6 +9,9 @@
 main {
 	padding-top: $height-nav;
 	padding-left: $width-aside;
+	@media (max-width: 1024.98px) {
+		padding-left: $width-aside-mobile;
+	}
 }
 
 body {
@@ -27,6 +30,9 @@ body {
 section {
 	+ section {
 		margin-top: 56px;
+		@media (max-width: 767.98px) {
+			margin-top: 16px;
+		}
 	}
 }
 
@@ -141,6 +147,10 @@ a {
 	color: map-get($map: $theme-colors, $key: primary);
 	text-decoration: none;
 	transition: color 0.3s ease-in-out;
+}
+
+:focus-visible {
+	outline: 0;
 }
 
 a:not([href]):not([class]) {

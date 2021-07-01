@@ -12,8 +12,8 @@ block main
 	section.farming
 		.container
 			.row
-				-for(i=0;i<8;i++)
-					.col-xl-4.col-lg-6
+				-for(i=0;i<9;i++)
+					.col-xl-4.col-sm-6
 						.farming__item
 							.farming__header
 								.farming__character
@@ -48,5 +48,12 @@ block main
 										.block
 											button.bt.bt-lg(disable) Harvest
 									.txt
-										span.txt-primary CAKE
-										span EARNED
+										span.txt-primary FiWA - BTC LP
+										span STAKED
+									.action_buttons
+										button.bt.bt-lg.bt-block.secondary Unlock Wallet
+							.farming__footer
+								.ta-c
+									button.bt.cl-primary
+										span See More
+										i.fad.fa-angle-down

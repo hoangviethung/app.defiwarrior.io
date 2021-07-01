@@ -1,7 +1,7 @@
 $theme-colors: (
 	"primary": #6c5dd3,
 	"secondary": #3f8cff,
-	"gray-border": #e6eaea,
+	"gray-border": #40475d,
 	"txt-body": #ffffff,
 	"neutral-white": #ffffff,
 	"neutral-black": #111111,
@@ -22,5 +22,8 @@ $theme-transition: (
 
 $height-nav: 72px;
 $width-aside: 256px;
+$width-aside-mobile: 56px;
 $height-sidebar-top: 140px;
+$height-sidebar-top-mobile: 56px;
 $height-sidebar-bottom: 120px;
+$height-sidebar-bottom-mobile: 72px;

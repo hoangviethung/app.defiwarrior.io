@@ -6,17 +6,31 @@
 	padding: 24px;
 	border-radius: 24px;
 	margin-bottom: 36px;
+	@media (max-width: 767.98px) {
+		margin-bottom: 16px;
+		padding: 16px;
+		border-radius: 16px;
+	}
 }
 
 .farming__header {
 	display: flex;
 	justify-content: space-between;
+	@media (max-width: 350.98px) {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
 }
 
 .farming__character {
 	width: 64px;
 	height: 64px;
 	overflow: hidden;
+	@media (max-width: 350.98px) {
+		-ms-flex: 0 0 64px;
+		flex: 0 0 64px;
+		max-width: 64px;
+	}
 }
 
 .character__name {
@@ -26,11 +40,13 @@
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	text-align: right;
+	@media (max-width: 350.98px) {
+		text-align: left;
+	}
 }
 
 .character__information {
 	max-width: calc(100% - 64px);
-	padding-left: 16px;
 	ul {
 		text-align: right;
 		li {
@@ -38,6 +54,15 @@
 				margin-left: 4px;
 			}
 		}
+		@media (max-width: 350.98px) {
+			text-align: left;
+		}
+	}
+	@media (max-width: 350.98px) {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-top: 16px;
 	}
 }
 
@@ -76,5 +101,15 @@
 	}
 	> .flex-between-alc {
 		margin-top: 8px;
+		margin-bottom: 8px;
 	}
+	.action_buttons {
+		margin-top: 24px;
+	}
+}
+
+.farming__footer {
+	margin-top: 24px;
+	padding-top: 24px;
+	border-top: 1px solid map-get($map: $theme-colors, $key: gray-border);
 }
