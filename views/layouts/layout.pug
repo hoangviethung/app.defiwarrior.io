@@ -7,7 +7,6 @@ html(lang="en")
 		include meta
 		// *** VENDORS CSS *** //
 		block library-css
-		// *** CSS *** //
 		include css
 		block css
 		// *** FAVICON *** //
@@ -26,6 +25,8 @@ html(lang="en")
 			block main
 			// *** PAGE NAME *** //
 			#page-verify(data-class=`${bodyClass}`)
+			// *** POPUP FEFI WALLET CONNECT POPOP *** //
+			include ../components/defi_wallet_connect_popup
 		// *** OVERLAY *** //
 		#overlay
 		// *** FOOTER *** //
@@ -34,5 +35,5 @@ html(lang="en")
 		// *** VENDORS JS *** //
 		block library-js
 		// *** JS *** //
-		include js
 		block js
+		include js
