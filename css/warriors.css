@@ -40,22 +40,101 @@
     height: 100%;
     width: auto; }
 
-.warriors__slider {
-  padding: 24px;
-  border-radius: 24px;
-  background-color: #33394e; }
+.warriors [class*="col-"] {
+  margin-bottom: 36px; }
+  @media (max-width: 767.98px) {
+    .warriors [class*="col-"] {
+      margin-bottom: 16px; } }
+
+.call-to-action-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 24px; }
+  .call-to-action-right .bt + .bt {
+    margin-left: 16px; }
+  @media (max-width: 767.98px) {
+    .call-to-action-right {
+      justify-content: flex-start;
+      margin-bottom: 16px; } }
+
+.warrior__item {
+  background-color: #33394e;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%; }
+  .warrior__item:hover .warrior__character:after {
+    opacity: 1;
+    top: -30%;
+    left: -30%; }
+
+.warrior__character {
+  position: relative;
+  overflow: hidden;
+  padding: 24px; }
+  @media (max-width: 767.98px) {
+    .warrior__character {
+      padding: 16px; } }
+  .warrior__character:after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    top: -110%;
+    left: -210%;
+    width: 200%;
+    height: 200%;
+    opacity: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+    transition-property: left, top, opacity;
+    transition-duration: 1s, 1s, 0.15s;
+    transition-timing-function: ease; }
 
 .warrior__information {
-  width: 250px;
-  padding: 16px;
-  border-radius: 8px;
-  background-color: #6c5dd3; }
+  border-top: 1px solid #40475d;
+  padding: 16px 24px 24px; }
+  .warrior__information .box-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px; }
+  .warrior__information .box-left {
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-right: 10px;
+    padding-left: 10px; }
+  .warrior__information .box-right {
+    -ms-flex: 0 0 60%;
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 0.77rem; }
+    .warrior__information .box-right .flex-between-alc + .flex-between-alc {
+      margin-top: 8px; }
+  @media (max-width: 767.98px) {
+    .warrior__information {
+      padding: 16px; } }
+
+.warrior__character img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: auto; }
 
 .warrior__name {
-  font-size: 1.2rem;
   margin-bottom: 4px; }
 
 .warrior__id {
   display: inline-block;
   font-size: 0.77rem;
   margin-bottom: 8px; }
+
+.warrior__actions {
+  padding: 16px 24px 24px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #40475d; }
+  @media (max-width: 767.98px) {
+    .warrior__actions {
+      padding: 16px; } }

@@ -13,8 +13,8 @@
 .txt-light {
   color: #ffffff; }
 
-.text-x-thin {
-  font-weight: 100; }
+.txt-disable {
+  color: #808191 !important; }
 
 .clearfix:after {
   display: table;
@@ -970,7 +970,10 @@
   position: relative;
   text-align: center;
   font-weight: 500;
-  transition: all 0.3s linear; }
+  transition: all 0.3s linear;
+  height: 32px;
+  border-radius: 8px;
+  padding: 0 16px; }
   .bt span ~ i {
     margin-left: 4px; }
   .bt i {
@@ -988,18 +991,40 @@
   .bt.primary {
     color: #ffffff;
     background-color: #6c5dd3; }
+    .bt.primary:hover {
+      background-color: #4836c7; }
   .bt.bt-lg {
     height: 48px;
     padding: 0 24px;
     border-radius: 24px; }
+    .bt.bt-lg span ~ i {
+      margin-left: 16px; }
   .bt.bt-block {
     display: flex;
     justify-content: center;
     width: 100%; }
+  .bt.bt-see-more {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(36, 39, 49, 0.3); }
+    .bt.bt-see-more:hover {
+      color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(36, 39, 49, 0.8); }
   .bt[disable] {
     cursor: not-allowed;
     color: #808191;
     background-color: #5b5c69; }
+    .bt[disable]:hover {
+      color: #808191;
+      background-color: #5b5c69; }
+
+.bt-group .bt {
+  border-radius: 0; }
+  .bt-group .bt:first-child {
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px; }
+  .bt-group .bt:last-child {
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px; }
 
 .badge {
   font-size: 80%;
@@ -1027,16 +1052,23 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   text-align: center;
-  color: #ffffff;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s ease-in-out; }
-  .bt-circle > i {
-    font-size: 1.3rem; }
+  transition: all 0.3s linear; }
+  .bt-circle.primary {
+    color: #ffffff;
+    background-color: #6c5dd3; }
+    .bt-circle.primary:hover {
+      background-color: #4836c7; }
+  .bt-circle.secondary {
+    color: #ffffff;
+    background-color: #3f8cff; }
+    .bt-circle.secondary:hover {
+      background-color: #0c6dff; }
   .bt-circle:hover {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
 
@@ -1060,6 +1092,9 @@
     transform: translateY(-6px); }
   .bt-pushable:active .front {
     transform: translateY(-2px); }
+
+#defi-wallet-connect-popup {
+  display: none; }
 
 *,
 *::before,

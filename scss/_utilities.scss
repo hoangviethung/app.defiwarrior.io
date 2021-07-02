@@ -5,6 +5,9 @@
 	text-align: center;
 	font-weight: 500;
 	transition: map-get($map: $theme-transition, $key: all);
+	height: 32px;
+	border-radius: 8px;
+	padding: 0 16px;
 	span {
 		~ i {
 			margin-left: 4px;
@@ -36,16 +39,47 @@
 	&.primary {
 		color: map-get($map: $theme-colors, $key: neutral-white);
 		background-color: map-get($map: $theme-colors, $key: primary);
+		&:hover {
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: primary),
+				$amount: 10%
+			);
+		}
 	}
 	&.bt-lg {
 		height: 48px;
 		padding: 0 24px;
 		border-radius: 24px;
+		span {
+			~ i {
+				margin-left: 16px;
+			}
+		}
 	}
 	&.bt-block {
 		display: flex;
 		justify-content: center;
 		width: 100%;
+	}
+	&.bt-see-more {
+		color: rgba(
+			$color: map-get($map: $theme-colors, $key: neutral-white),
+			$alpha: 0.5
+		);
+		background-color: rgba(
+			$color: map-get($map: $theme-colors, $key: neutral-background),
+			$alpha: 0.3
+		);
+		&:hover {
+			color: rgba(
+				$color: map-get($map: $theme-colors, $key: neutral-white),
+				$alpha: 0.8
+			);
+			background-color: rgba(
+				$color: map-get($map: $theme-colors, $key: neutral-background),
+				$alpha: 0.8
+			);
+		}
 	}
 	&[disable] {
 		cursor: not-allowed;
@@ -54,6 +88,27 @@
 			$color: map-get($map: $theme-colors, $key: disable),
 			$amount: 15%
 		);
+		&:hover {
+			color: map-get($map: $theme-colors, $key: disable);
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: disable),
+				$amount: 15%
+			);
+		}
+	}
+}
+
+.bt-group {
+	.bt {
+		border-radius: 0;
+		&:first-child {
+			border-top-left-radius: 16px;
+			border-bottom-left-radius: 16px;
+		}
+		&:last-child {
+			border-top-right-radius: 16px;
+			border-bottom-right-radius: 16px;
+		}
 	}
 }
 
@@ -97,16 +152,32 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: 48px;
-	height: 48px;
+	width: 36px;
+	height: 36px;
 	text-align: center;
-	color: map-get($map: $theme-colors, $key: neutral-white);
 	border-radius: 50%;
 	overflow: hidden;
 	cursor: pointer;
-	transition: all 0.3s ease-in-out;
-	> i {
-		font-size: 1.3rem;
+	transition: map-get($map: $theme-transition, $key: all);
+	&.primary {
+		color: map-get($map: $theme-colors, $key: neutral-white);
+		background-color: map-get($map: $theme-colors, $key: primary);
+		&:hover {
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: primary),
+				$amount: 10%
+			);
+		}
+	}
+	&.secondary {
+		color: map-get($map: $theme-colors, $key: neutral-white);
+		background-color: map-get($map: $theme-colors, $key: secondary);
+		&:hover {
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: secondary),
+				$amount: 10%
+			);
+		}
 	}
 	&:hover {
 		box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.3);
@@ -143,4 +214,8 @@
 			transform: translateY(-2px);
 		}
 	}
+}
+
+#defi-wallet-connect-popup {
+	display: none;
 }

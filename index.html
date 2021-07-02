@@ -46,7 +46,7 @@
           </div>
           <div class="sidebar__group">
             <div class="sidebar__caption"><span>Trade</span></div>
-            <div class="sidebar__menu"><a class="sidebar__item" href="#">
+            <div class="sidebar__menu"><a class="sidebar__item" href="wallet-asset.html">
                 <div class="sidebar__icon"><i class="fad fa-wallet"></i></div>
                 <div class="sidebar__text">Wallet & Asset</div></a><a class="sidebar__item" href="#">
                 <div class="sidebar__icon"><i class="fad fa-sync"></i></div>
@@ -62,6 +62,7 @@
       </div>
       <div class="sidebar__bottom">
         <div class="sidebar__profile"><a class="sidebar__user" href="#">
+            <!-- Radio Image: 40x40-->
             <div class="sidebar__avatar"><img src="./images/dao_ngoc_thanh.png" alt="DAO-NGOC-THANH"/></div>
             <div class="sidebar__desc">
               <div class="sidebar__name">Đào Ngọc Thành</div>
@@ -90,7 +91,9 @@
             <div class="col-xl-4 col-sm-6">
               <div class="farm__item">
                 <div class="farm__header">
-                  <div class="farm__character"><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/></div>
+                  <div class="farm__character">
+                    <!-- Radio Image: 64x64--><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/>
+                  </div>
                   <div class="character__information">
                     <h4 class="character__name">FiWA - BTC</h4>
                     <ul>
@@ -112,21 +115,113 @@
                     <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
                     <div class="flex-between-alc">
                       <div class="block">
-                        <h2>0.000</h2>
+                        <h2 class="txt-disable">0.000</h2>
                       </div>
                       <div class="block">
-                        <button class="bt bt-lg" disable="disable">Harvest</button>
+                        <button class="bt bt-lg primary" disable="disable">Harvest</button>
                       </div>
                     </div>
                     <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
                     <div class="action_buttons">
-                      <button class="bt bt-lg bt-block secondary">Unlock Wallet</button>
+                      <button class="bt bt-lg bt-block secondary" data-fancybox="defi-wallet-connect-popup" data-src="#defi-wallet-connect-popup">Approve Contract</button>
                     </div>
                   </div>
                 </div>
                 <div class="farm__footer">
                   <div class="ta-c">
-                    <button class="bt cl-primary"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                    <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <div class="farm__item">
+                <div class="farm__header">
+                  <div class="farm__character">
+                    <!-- Radio Image: 64x64--><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/>
+                  </div>
+                  <div class="character__information">
+                    <h4 class="character__name">FiWA - BTC</h4>
+                    <ul>
+                      <li class="badge outline primary"><i class="fas fa-badge-check"></i><span>Core</span></li>
+                      <li class="badge primary"><span>40X</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="farm__body">
+                  <div class="flex-between-alc">
+                    <div class="block"><span>APR:</span></div>
+                    <div class="block"><i class="fas fa-calculator-alt"></i><span>59.67%</span></div>
+                  </div>
+                  <div class="flex-between-alc">
+                    <div class="block"><span>Earn:</span></div>
+                    <div class="block"><span>GEM</span></div>
+                  </div>
+                  <div class="farm__action">
+                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
+                    <div class="flex-between-alc">
+                      <div class="block">
+                        <h2 class="txt-disable">0.000</h2>
+                      </div>
+                      <div class="block">
+                        <button class="bt bt-lg primary" disable="disable">Harvest</button>
+                      </div>
+                    </div>
+                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
+                    <div class="action_buttons">
+                      <button class="bt bt-lg bt-block secondary" data-fancybox="defi-wallet-connect-popup" data-src="#defi-wallet-connect-popup">Approve Contract</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="farm__footer">
+                  <div class="ta-c">
+                    <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-sm-6">
+              <div class="farm__item">
+                <div class="farm__header">
+                  <div class="farm__character">
+                    <!-- Radio Image: 64x64--><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/>
+                  </div>
+                  <div class="character__information">
+                    <h4 class="character__name">FiWA - BTC</h4>
+                    <ul>
+                      <li class="badge outline primary"><i class="fas fa-badge-check"></i><span>Core</span></li>
+                      <li class="badge primary"><span>40X</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="farm__body">
+                  <div class="flex-between-alc">
+                    <div class="block"><span>APR:</span></div>
+                    <div class="block"><i class="fas fa-calculator-alt"></i><span>59.67%</span></div>
+                  </div>
+                  <div class="flex-between-alc">
+                    <div class="block"><span>Earn:</span></div>
+                    <div class="block"><span>GEM</span></div>
+                  </div>
+                  <div class="farm__action">
+                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
+                    <div class="flex-between-alc">
+                      <div class="block">
+                        <h2 class="txt-disable">0.000</h2>
+                      </div>
+                      <div class="block">
+                        <button class="bt bt-lg primary" disable="disable">Harvest</button>
+                      </div>
+                    </div>
+                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
+                    <div class="action_buttons">
+                      <button class="bt bt-lg bt-block secondary" data-fancybox="defi-wallet-connect-popup" data-src="#defi-wallet-connect-popup">Approve Contract</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="farm__footer">
+                  <div class="ta-c">
+                    <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
                   </div>
                 </div>
               </div>
@@ -156,21 +251,26 @@
                     <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
                     <div class="flex-between-alc">
                       <div class="block">
-                        <h2>0.000</h2>
+                        <h2 class="txt-disable">0.000</h2>
                       </div>
                       <div class="block">
-                        <button class="bt bt-lg" disable="disable">Harvest</button>
+                        <button class="bt bt-lg primary" disable="disable">Harvest</button>
                       </div>
                     </div>
-                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
-                    <div class="action_buttons">
-                      <button class="bt bt-lg bt-block secondary">Unlock Wallet</button>
+                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
+                    <div class="flex-between-alc">
+                      <div class="block">
+                        <h2 class="txt-disable">0.000</h2>
+                      </div>
+                      <div class="block">
+                        <button class="bt bt-lg primary">Stake LP</button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="farm__footer">
                   <div class="ta-c">
-                    <button class="bt cl-primary"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                    <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
                   </div>
                 </div>
               </div>
@@ -200,21 +300,26 @@
                     <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
                     <div class="flex-between-alc">
                       <div class="block">
-                        <h2>0.000</h2>
+                        <h2 class="txt-disable">0.000</h2>
                       </div>
                       <div class="block">
-                        <button class="bt bt-lg" disable="disable">Harvest</button>
+                        <button class="bt bt-lg primary" disable="disable">Harvest</button>
                       </div>
                     </div>
-                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
-                    <div class="action_buttons">
-                      <button class="bt bt-lg bt-block secondary">Unlock Wallet</button>
+                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
+                    <div class="flex-between-alc">
+                      <div class="block">
+                        <h2 class="txt-disable">0.000</h2>
+                      </div>
+                      <div class="block">
+                        <button class="bt bt-lg primary">Stake LP</button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="farm__footer">
                   <div class="ta-c">
-                    <button class="bt cl-primary"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                    <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
                   </div>
                 </div>
               </div>
@@ -244,21 +349,26 @@
                     <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
                     <div class="flex-between-alc">
                       <div class="block">
-                        <h2>0.000</h2>
+                        <h2 class="txt-disable">0.000</h2>
                       </div>
                       <div class="block">
-                        <button class="bt bt-lg" disable="disable">Harvest</button>
+                        <button class="bt bt-lg primary" disable="disable">Harvest</button>
                       </div>
                     </div>
-                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
-                    <div class="action_buttons">
-                      <button class="bt bt-lg bt-block secondary">Unlock Wallet</button>
+                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
+                    <div class="flex-between-alc">
+                      <div class="block">
+                        <h2 class="txt-disable">0.000</h2>
+                      </div>
+                      <div class="block">
+                        <button class="bt bt-lg primary">Stake LP</button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="farm__footer">
                   <div class="ta-c">
-                    <button class="bt cl-primary"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                    <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
                   </div>
                 </div>
               </div>
@@ -288,21 +398,27 @@
                     <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
                     <div class="flex-between-alc">
                       <div class="block">
-                        <h2>0.000</h2>
+                        <h2>0.058</h2><small>~0.74 USD</small>
                       </div>
                       <div class="block">
-                        <button class="bt bt-lg" disable="disable">Harvest</button>
+                        <button class="bt bt-lg primary">Harvest</button>
                       </div>
                     </div>
-                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
-                    <div class="action_buttons">
-                      <button class="bt bt-lg bt-block secondary">Unlock Wallet</button>
+                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
+                    <div class="flex-between-alc">
+                      <div class="block">
+                        <h2>1.390</h2><small>~10.48 USD</small>
+                      </div>
+                      <div class="block">
+                        <button class="bt-circle primary"><i class="fal fa-minus"></i></button>
+                        <button class="bt-circle primary"><i class="fal fa-plus"></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="farm__footer">
                   <div class="ta-c">
-                    <button class="bt cl-primary"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                    <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
                   </div>
                 </div>
               </div>
@@ -332,21 +448,27 @@
                     <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
                     <div class="flex-between-alc">
                       <div class="block">
-                        <h2>0.000</h2>
+                        <h2>0.058</h2><small>~0.74 USD</small>
                       </div>
                       <div class="block">
-                        <button class="bt bt-lg" disable="disable">Harvest</button>
+                        <button class="bt bt-lg primary">Harvest</button>
                       </div>
                     </div>
-                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
-                    <div class="action_buttons">
-                      <button class="bt bt-lg bt-block secondary">Unlock Wallet</button>
+                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
+                    <div class="flex-between-alc">
+                      <div class="block">
+                        <h2>1.390</h2><small>~10.48 USD</small>
+                      </div>
+                      <div class="block">
+                        <button class="bt-circle primary"><i class="fal fa-minus"></i></button>
+                        <button class="bt-circle primary"><i class="fal fa-plus"></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="farm__footer">
                   <div class="ta-c">
-                    <button class="bt cl-primary"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                    <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
                   </div>
                 </div>
               </div>
@@ -376,112 +498,35 @@
                     <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
                     <div class="flex-between-alc">
                       <div class="block">
-                        <h2>0.000</h2>
+                        <h2>0.058</h2><small>~0.74 USD</small>
                       </div>
                       <div class="block">
-                        <button class="bt bt-lg" disable="disable">Harvest</button>
+                        <button class="bt bt-lg primary">Harvest</button>
                       </div>
                     </div>
-                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
-                    <div class="action_buttons">
-                      <button class="bt bt-lg bt-block secondary">Unlock Wallet</button>
+                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
+                    <div class="flex-between-alc">
+                      <div class="block">
+                        <h2>1.390</h2><small>~10.48 USD</small>
+                      </div>
+                      <div class="block">
+                        <button class="bt-circle primary"><i class="fal fa-minus"></i></button>
+                        <button class="bt-circle primary"><i class="fal fa-plus"></i></button>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="farm__footer">
                   <div class="ta-c">
-                    <button class="bt cl-primary"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                    <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-xl-4 col-sm-6">
-              <div class="farm__item">
-                <div class="farm__header">
-                  <div class="farm__character"><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/></div>
-                  <div class="character__information">
-                    <h4 class="character__name">FiWA - BTC</h4>
-                    <ul>
-                      <li class="badge outline primary"><i class="fas fa-badge-check"></i><span>Core</span></li>
-                      <li class="badge primary"><span>40X</span></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="farm__body">
-                  <div class="flex-between-alc">
-                    <div class="block"><span>APR:</span></div>
-                    <div class="block"><i class="fas fa-calculator-alt"></i><span>59.67%</span></div>
-                  </div>
-                  <div class="flex-between-alc">
-                    <div class="block"><span>Earn:</span></div>
-                    <div class="block"><span>GEM</span></div>
-                  </div>
-                  <div class="farm__action">
-                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
-                    <div class="flex-between-alc">
-                      <div class="block">
-                        <h2>0.000</h2>
-                      </div>
-                      <div class="block">
-                        <button class="bt bt-lg" disable="disable">Harvest</button>
-                      </div>
-                    </div>
-                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
-                    <div class="action_buttons">
-                      <button class="bt bt-lg bt-block secondary">Unlock Wallet</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="farm__footer">
-                  <div class="ta-c">
-                    <button class="bt cl-primary"><span>See More</span><i class="fad fa-angle-down"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-sm-6">
-              <div class="farm__item">
-                <div class="farm__header">
-                  <div class="farm__character"><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/></div>
-                  <div class="character__information">
-                    <h4 class="character__name">FiWA - BTC</h4>
-                    <ul>
-                      <li class="badge outline primary"><i class="fas fa-badge-check"></i><span>Core</span></li>
-                      <li class="badge primary"><span>40X</span></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="farm__body">
-                  <div class="flex-between-alc">
-                    <div class="block"><span>APR:</span></div>
-                    <div class="block"><i class="fas fa-calculator-alt"></i><span>59.67%</span></div>
-                  </div>
-                  <div class="flex-between-alc">
-                    <div class="block"><span>Earn:</span></div>
-                    <div class="block"><span>GEM</span></div>
-                  </div>
-                  <div class="farm__action">
-                    <div class="txt"><span class="txt-primary">CAKE</span><span>EARNED</span></div>
-                    <div class="flex-between-alc">
-                      <div class="block">
-                        <h2>0.000</h2>
-                      </div>
-                      <div class="block">
-                        <button class="bt bt-lg" disable="disable">Harvest</button>
-                      </div>
-                    </div>
-                    <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
-                    <div class="action_buttons">
-                      <button class="bt bt-lg bt-block secondary">Unlock Wallet</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="farm__footer">
-                  <div class="ta-c">
-                    <button class="bt cl-primary"><span>See More</span><i class="fad fa-angle-down"></i></button>
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div id="defi-wallet-connect-popup">
+            <div class="popop-header">
+              <h2>Connect to a wallet</h2>
             </div>
           </div>
         </div>
@@ -494,7 +539,7 @@
     <!-- *** FOOTER *** //-->
     <footer></footer>
     <!-- *** VENDORS JS *** //-->
-    <script href="./vendors/fancyapps/fancybox.umd.js"></script>
+    <script src="./vendors/fancyapps/fancybox.umd.js"></script>
     <!-- *** JS *** //-->
     <script src="./js/core.js"></script>
   </body>

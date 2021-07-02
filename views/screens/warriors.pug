@@ -4,27 +4,51 @@ block var
 	- bodyClass = "warriors-page"
 	- pageTitle = "My warriors | Defi x NFT"
 block library-css
-	link(rel="stylesheet", href="./vendors/swiper/swiper-bundle.css")
 block css
 	link(rel="stylesheet", href="./css/warriors.css")
 block library-js
-	script( href="./vendors/swiper/swiper-bundle.js")
 block js
-	script(src="./js/warriors.js")
 block main
 	// *** SECTION BANNER *** //
 	include ../components/banner
 	// *** SECTION WARRIORS *** //
 	section.warriors
 		.container
-			.warriors__slider
-				.warrior__item
-					.warrior__character
-						img(src="./images/warrior_item_01.png", alt="")
-					.warrior__information
-						.box-left
-							h4.warrior__name Bitcoin
-							span.warrior__id #B12000
-							ul
-								li.badge.secondary
-									span Swap
+			.call-to-action-right
+				a.bt.bt-lg.primary(href="#")
+					span Check your assets
+					i.fad.fa-external-link
+			.row
+				-for(i=0;i<9;i++)
+					.col-2xl-3.col-xl-4.col-sm-6
+						.warrior__item
+							.warrior__character
+								// Radio Images: 250x300
+								img(src="./images/warrior_item_01.png", alt="CHARACTER")
+							.warrior__information
+								.box-row
+									.box-left
+										h4.warrior__name Bitcoin
+										span.warrior__id #B12000
+										ul
+											li.badge.secondary
+												span Swap
+									.box-right
+										.flex-between-alc
+											.block
+												span Farming:
+											.block
+												span 15
+										.flex-between-alc
+											.block
+												span Single battle:
+											.block
+												span 15
+										.flex-between-alc
+											.block
+												span Championship:
+											.block
+												span 15
+							.warrior__actions.bt-group
+								button.bt.primary PvP
+								button.bt.secondary CPS

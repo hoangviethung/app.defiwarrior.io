@@ -19,8 +19,8 @@
 .txt-light {
 	color: map-get($map: $theme-colors, $key: neutral-white);
 }
-.text-x-thin {
-	font-weight: 100;
+.txt-disable {
+	color: map-get($map: $theme-colors, $key: disable) !important;
 }
 .clearfix:after {
 	display: table;

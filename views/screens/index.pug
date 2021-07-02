@@ -8,8 +8,7 @@ block library-css
 block css
 	link(rel="stylesheet", href="./css/farms.css")
 block library-js
-	script( href="./vendors/fancyapps/fancybox.umd.js")
-block banner
+	script(src="./vendors/fancyapps/fancybox.umd.js")
 block js
 block main
 	// *** SECTION BANNER *** //
@@ -18,7 +17,53 @@ block main
 	section.farms
 		.container
 			.row
-				-for(i=0;i<9;i++)
+				-for(i=0;i<3;i++)
+					.col-xl-4.col-sm-6
+						.farm__item
+							.farm__header
+								.farm__character
+									// Radio Image: 64x64
+									img(src="./images/character_farm.png", alt="CHARACTER-DEFI")
+								.character__information
+									h4.character__name FiWA - BTC
+									ul
+										li.badge.outline.primary
+											i.fas.fa-badge-check
+											span Core
+										li.badge.primary
+											span 40X
+							.farm__body
+								.flex-between-alc
+									.block
+										span APR:
+									.block
+										i.fas.fa-calculator-alt
+										span 59.67%
+								.flex-between-alc
+									.block
+										span Earn:
+									.block
+										span GEM
+								.farm__action
+									.txt
+										span.txt-primary CAKE
+										span EARNED
+									.flex-between-alc
+										.block
+											h2.txt-disable 0.000
+										.block
+											button.bt.bt-lg.primary(disable) Harvest
+									.txt
+										span.txt-primary FiWA - BTC LP
+										span STAKED
+									.action_buttons
+										button.bt.bt-lg.bt-block.secondary(data-fancybox="defi-wallet-connect-popup" data-src="#defi-wallet-connect-popup") Approve Contract
+							.farm__footer
+								.ta-c
+									button.bt.bt-see-more
+										span See More
+										i.fad.fa-angle-down
+				-for(i=0;i<3;i++)
 					.col-xl-4.col-sm-6
 						.farm__item
 							.farm__header
@@ -50,16 +95,75 @@ block main
 										span EARNED
 									.flex-between-alc
 										.block
-											h2 0.000
+											h2.txt-disable 0.000
 										.block
-											button.bt.bt-lg(disable) Harvest
+											button.bt.bt-lg.primary(disable) Harvest
 									.txt
-										span.txt-primary FiWA - BTC LP
-										span STAKED
-									.action_buttons
-										button.bt.bt-lg.bt-block.secondary Unlock Wallet
+										span.txt-primary CAKE
+										span EARNED
+									.flex-between-alc
+										.block
+											h2.txt-disable 0.000
+										.block
+											button.bt.bt-lg.primary Stake LP
 							.farm__footer
 								.ta-c
-									button.bt.cl-primary
+									button.bt.bt-see-more
 										span See More
 										i.fad.fa-angle-down
+				-for(i=0;i<3;i++)
+					.col-xl-4.col-sm-6
+						.farm__item
+							.farm__header
+								.farm__character
+									img(src="./images/character_farm.png", alt="CHARACTER-DEFI")
+								.character__information
+									h4.character__name FiWA - BTC
+									ul
+										li.badge.outline.primary
+											i.fas.fa-badge-check
+											span Core
+										li.badge.primary
+											span 40X
+							.farm__body
+								.flex-between-alc
+									.block
+										span APR:
+									.block
+										i.fas.fa-calculator-alt
+										span 59.67%
+								.flex-between-alc
+									.block
+										span Earn:
+									.block
+										span GEM
+								.farm__action
+									.txt
+										span.txt-primary CAKE
+										span EARNED
+									.flex-between-alc
+										.block
+											h2 0.058
+											small ~0.74 USD
+										.block
+											button.bt.bt-lg.primary Harvest
+									.txt
+										span.txt-primary CAKE
+										span EARNED
+									.flex-between-alc
+										.block
+											h2 1.390
+											small ~10.48 USD
+										.block
+											button.bt-circle.primary
+												i.fal.fa-minus
+											button.bt-circle.primary
+												i.fal.fa-plus
+							.farm__footer
+								.ta-c
+									button.bt.bt-see-more
+										span See More
+										i.fad.fa-angle-down
+			#defi-wallet-connect-popup
+				.popop-header
+					h2 Connect to a wallet
