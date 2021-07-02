@@ -25,10 +25,6 @@
 .farm__header {
 	display: flex;
 	justify-content: space-between;
-	@media (max-width: 350.98px) {
-		flex-wrap: wrap;
-		justify-content: flex-start;
-	}
 }
 
 .farm__character {
@@ -63,15 +59,6 @@
 				margin-left: 4px;
 			}
 		}
-		@media (max-width: 350.98px) {
-			text-align: left;
-		}
-	}
-	@media (max-width: 350.98px) {
-		-ms-flex: 0 0 100%;
-		flex: 0 0 100%;
-		max-width: 100%;
-		margin-top: 16px;
 	}
 }
 

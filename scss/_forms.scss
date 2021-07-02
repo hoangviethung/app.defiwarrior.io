@@ -1,0 +1,18 @@
+.form-control {
+	color: map-get($map: $theme-colors, $key: neutral-white);
+	background-color: map-get($map: $theme-colors, $key: neutral-background);
+	box-shadow: unset;
+	border: 1px solid map-get($map: $theme-colors, $key: gray-border);
+	padding: 0 16px;
+	height: 48px;
+	border-radius: 24px;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+	border-color: map-get($map: $theme-colors, $key: danger);
+}
+
+.invalid-feedback {
+	color: map-get($map: $theme-colors, $key: danger);
+}

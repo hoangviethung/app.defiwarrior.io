@@ -60,10 +60,6 @@
 .farm__header {
   display: flex;
   justify-content: space-between; }
-  @media (max-width: 350.98px) {
-    .farm__header {
-      flex-wrap: wrap;
-      justify-content: flex-start; } }
 
 .farm__character {
   width: 64px;
@@ -92,15 +88,6 @@
     text-align: right; }
     .character__information ul li + li {
       margin-left: 4px; }
-    @media (max-width: 350.98px) {
-      .character__information ul {
-        text-align: left; } }
-  @media (max-width: 350.98px) {
-    .character__information {
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
-      margin-top: 16px; } }
 
 .farm__body > .flex-between-alc {
   margin-top: 16px; }

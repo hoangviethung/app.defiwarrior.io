@@ -75,7 +75,7 @@
 
 .warrior__information {
 	border-top: 1px solid map-get($map: $theme-colors, $key: gray-border);
-	padding: 16px 24px 24px;
+	padding: 16px 24px;
 	.box-row {
 		display: flex;
 		flex-wrap: wrap;
@@ -127,7 +127,7 @@
 }
 
 .warrior__actions {
-	padding: 16px 24px 24px;
+	padding: 16px 24px;
 	display: flex;
 	justify-content: center;
 	border-top: 1px solid map-get($map: $theme-colors, $key: gray-border);

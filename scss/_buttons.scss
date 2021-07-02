@@ -3,12 +3,14 @@
 	align-items: center;
 	position: relative;
 	text-align: center;
+	justify-content: center;
 	font-weight: 500;
 	transition: map-get($map: $theme-transition, $key: all);
 	height: 32px;
 	border-radius: 8px;
 	padding-left: 16px;
 	padding-right: 16px;
+	border: 1px solid transparent;
 	span {
 		~ i {
 			margin-left: 4px;
@@ -76,6 +78,24 @@
 		justify-content: center;
 		width: 100%;
 	}
+	&.bt-outline {
+		background-color: transparent;
+		&.primary {
+			color: map-get($map: $theme-colors, $key: primary);
+			border-color: map-get($map: $theme-colors, $key: primary);
+			&:hover {
+				background-color: transparent;
+				color: lighten(
+					$color: map-get($map: $theme-colors, $key: primary),
+					$amount: 10%
+				);
+				border-color: lighten(
+					$color: map-get($map: $theme-colors, $key: primary),
+					$amount: 10%
+				);
+			}
+		}
+	}
 	&.bt-see-more {
 		color: rgba(
 			$color: map-get($map: $theme-colors, $key: neutral-white),
@@ -123,6 +143,16 @@
 		&:last-child {
 			border-top-right-radius: 16px;
 			border-bottom-right-radius: 16px;
+		}
+		&.bt-lg {
+			&:first-child {
+				border-top-left-radius: 24px;
+				border-bottom-left-radius: 24px;
+			}
+			&:last-child {
+				border-top-right-radius: 24px;
+				border-bottom-right-radius: 24px;
+			}
 		}
 	}
 }

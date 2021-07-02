@@ -12,8 +12,23 @@ const fancyboxWalletConnect = () => {
 		});
 };
 
+const fancyboxStakeLPTokens = () => {
+	document
+		.querySelectorAll("[popup-to='stake_lp_tokens_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#stake_lp_tokens_popup",
+					type: "inline",
+					touch: false,
+				});
+			});
+		});
+};
+
 window.addEventListener("load", (e) => {
 	fancyboxWalletConnect();
+	fancyboxStakeLPTokens();
 });
 
 window.addEventListener("scroll", (e) => {});

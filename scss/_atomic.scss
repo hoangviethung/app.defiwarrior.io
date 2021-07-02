@@ -31,7 +31,7 @@
 [hidden] {
 	display: none !important;
 }
-.d-flex {
+.d-f {
 	display: flex;
 }
 .pull-left {
@@ -156,4 +156,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+.grid-gap-24 {
+	grid-gap: 24px;
+}
+
+.w-50 {
+	width: 50%;
 }

@@ -91,7 +91,7 @@
 
 .warrior__information {
   border-top: 1px solid #40475d;
-  padding: 16px 24px 24px; }
+  padding: 16px 24px; }
   .warrior__information .box-row {
     display: flex;
     flex-wrap: wrap;
@@ -131,7 +131,7 @@
   margin-bottom: 8px; }
 
 .warrior__actions {
-  padding: 16px 24px 24px;
+  padding: 16px 24px;
   display: flex;
   justify-content: center;
   border-top: 1px solid #40475d; }

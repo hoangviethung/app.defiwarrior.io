@@ -1,0 +1,20 @@
+#stake_lp_tokens_popup(style="display:none")
+	.popup_wrapper
+		.popup__header
+			h2.popup__title Stake LP tokens
+		.popup__body
+			.stake_lp_tokens__form
+				.flex-between-alc
+					span Stake
+					span Balance: 0
+				.flex-between-alc.grid-gap-24
+					input.form-control.is-invalid(type="text")
+					div.d-f.al-e
+						button.bt.bt-lg.secondary Max
+						b.stake_lp_tokens__name GEM-BNB LP
+				.flex-between-alc
+					.invalid-feedback No tokens to stake: Get GEM-BNB LP
+		.popup__footer
+			.flex-between-alc.grid-gap-24
+				button.bt.bt-lg.bt-outline.primary.w-50(data-fancybox-close) Cancel
+				button.bt.bt-lg.primary.w-50(disable) Confirm

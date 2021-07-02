@@ -46,20 +46,19 @@ aside.sidebar
 						.sidebar__text Liquidity Pool
 					a(href="#").sidebar__item
 						.sidebar__icon
-							i.fad.fa-retweet
-						.sidebar__text Swap
+							i.fad.fa-shopping-cart
+						.sidebar__text Buy Gem
 					a(href="#").sidebar__item
 						.sidebar__icon
 							i.far.fa-question-circle
 						.sidebar__text Help
 	.sidebar__bottom
 		.sidebar__profile
-			a(href="#").sidebar__user
+			.sidebar__user
 				// Radio Image: 40x40
 				.sidebar__avatar
-					img(src="./images/dao_ngoc_thanh.png", alt="DAO-NGOC-THANH")
+					img(src="./images/avatar_default.png", alt="USER")
 				.sidebar__desc
-					.sidebar__name Đào Ngọc Thành
-					.sidebar__status(status="onl")
-						i.fad.fa-circle
-						span Online
+					a.bt-pushable(popup-to="defi_wallet_connect_popup" href="javascript:;")
+						span.front Connect Wallet
+					a.sidebar__name(href="javascript:;" style="display:none") 0xb3a3c602d1654393ab22ef598868f3bf

@@ -84,3 +84,19 @@
 		}
 	}
 }
+
+#stake_lp_tokens_popup {
+	min-width: 465px;
+	.stake_lp_tokens__name {
+		display: inline-block;
+		margin-left: 8px;
+	}
+	.stake_lp_tokens__form {
+		border: 1px solid transparent;
+		.flex-between-alc {
+			+ .flex-between-alc {
+				margin-top: 16px;
+			}
+		}
+	}
+}

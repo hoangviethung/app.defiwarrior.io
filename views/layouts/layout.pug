@@ -6,7 +6,9 @@ html(lang="en")
 		// *** META *** //
 		include meta
 		// *** VENDORS CSS *** //
+		link(rel="stylesheet", href="./vendors/fancybox/jquery.fancybox.css")
 		block library-css
+		// *** CSS *** //
 		include css
 		block css
 		// *** FAVICON *** //
@@ -25,14 +27,18 @@ html(lang="en")
 			block main
 			// *** PAGE NAME *** //
 			#page-verify(data-class=`${bodyClass}`)
-			// *** POPUP FEFI WALLET CONNECT POPOP *** //
+			// *** POPUP DEFI WALLET CONNECT POPOP *** //
 			include ../components/defi_wallet_connect_popup
+			// *** POPUP DEFI STAKE LP TOKENS POPOP *** //
+			include ../components/stake_lp_tokens_popup
 		// *** OVERLAY *** //
 		#overlay
 		// *** FOOTER *** //
 		block footer
 			include footer
 		// *** VENDORS JS *** //
+		script(src="./vendors/jquery/jquery.js")
+		script(src="./vendors/fancybox/jquery.fancybox.js")
 		block library-js
 		// *** JS *** //
 		block js
