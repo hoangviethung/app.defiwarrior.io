@@ -964,6 +964,28 @@
   .offset-3xl-11 {
     margin-left: 91.666667%; } }
 
+.badge {
+  font-size: 80%;
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 10rem;
+  border: 1px solid transparent; }
+  .badge > i {
+    margin-right: 4px; }
+  .badge.primary {
+    background-color: #6c5dd3; }
+  .badge.secondary {
+    background-color: #3f8cff; }
+  .badge.outline {
+    background-color: transparent; }
+    .badge.outline.primary {
+      color: #9085de;
+      border-color: #9085de; }
+
 .bt {
   display: inline-flex;
   align-items: center;
@@ -973,7 +995,8 @@
   transition: all 0.3s linear;
   height: 32px;
   border-radius: 8px;
-  padding: 0 16px; }
+  padding-left: 16px;
+  padding-right: 16px; }
   .bt span ~ i {
     margin-left: 4px; }
   .bt i {
@@ -993,9 +1016,15 @@
     background-color: #6c5dd3; }
     .bt.primary:hover {
       background-color: #4836c7; }
+  .bt.neutral-background {
+    color: #ffffff;
+    background-color: #242731; }
+    .bt.neutral-background:hover {
+      background-color: #191b22; }
   .bt.bt-lg {
     height: 48px;
-    padding: 0 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     border-radius: 24px; }
     .bt.bt-lg span ~ i {
       margin-left: 16px; }
@@ -1025,28 +1054,6 @@
   .bt-group .bt:last-child {
     border-top-right-radius: 16px;
     border-bottom-right-radius: 16px; }
-
-.badge {
-  font-size: 80%;
-  display: inline-block;
-  padding: 6px 12px;
-  line-height: 1;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 10rem;
-  border: 1px solid transparent; }
-  .badge > i {
-    margin-right: 4px; }
-  .badge.primary {
-    background-color: #6c5dd3; }
-  .badge.secondary {
-    background-color: #3f8cff; }
-  .badge.outline {
-    background-color: transparent; }
-    .badge.outline.primary {
-      color: #9085de;
-      border-color: #9085de; }
 
 .bt-circle {
   display: inline-flex;
@@ -1093,8 +1100,59 @@
   .bt-pushable:active .front {
     transform: translateY(-2px); }
 
-#defi-wallet-connect-popup {
-  display: none; }
+.fancybox-content {
+  background-color: #33394e;
+  border-radius: 24px;
+  padding: 0; }
+
+.fancybox-slide--html .fancybox-close-small {
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  transition: all 0.3s linear; }
+
+.fancybox-close-small:hover {
+  background-color: #242731;
+  box-shadow: 0 5px 20px rgba(36, 39, 49, 0.3); }
+
+.popup__header {
+  border-bottom: 1px solid #40475d;
+  padding: 24px 120px 24px 24px; }
+
+.popup__title {
+  font-size: 1.4rem; }
+
+.popup__body {
+  padding: 24px; }
+
+.popup__footer {
+  padding: 24px; }
+
+#defi_wallet_connect_popup .item_option_wallet_connect .bt {
+  cursor: not-allowed;
+  opacity: 0.2;
+  justify-content: space-between;
+  border-radius: 8px; }
+  #defi_wallet_connect_popup .item_option_wallet_connect .bt sup {
+    margin-left: 8px;
+    background-color: #3f8cff;
+    padding: 4px 8px;
+    border-radius: 4px; }
+
+#defi_wallet_connect_popup .item_option_wallet_connect:not([disable]) .bt {
+  opacity: 1;
+  cursor: pointer; }
+  #defi_wallet_connect_popup .item_option_wallet_connect:not([disable]) .bt sup {
+    display: none; }
+
+#defi_wallet_connect_popup .item_option_wallet_connect + .item_option_wallet_connect {
+  margin-top: 8px; }
+
+#defi_wallet_connect_popup .support-document {
+  color: #3f8cff;
+  font-weight: 600; }
+  #defi_wallet_connect_popup .support-document > i {
+    margin-right: 8px; }
 
 *,
 *::before,

@@ -19,7 +19,8 @@
 	"author": "hoangviethung",
 	"license": "ISC",
 	"dependencies": {
-		"@fancyapps/ui": "^4.0.0-alpha.4",
+		"@fancyapps/fancybox": "^3.5.7",
+		"jquery": "^3.6.0",
 		"node-sass": "^6.0.1",
 		"swiper": "^6.7.1"
 	},
