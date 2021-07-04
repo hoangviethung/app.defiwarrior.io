@@ -1,3 +1,62 @@
+.activity__sorting {
+	display: flex;
+	margin-bottom: 48px;
+}
+
+.activity__tags {
+	display: flex;
+	flex-wrap: wrap;
+	align-self: flex-start;
+	margin-right: auto;
+	padding-top: 12px;
+	.activity__link {
+		padding: 0 16px;
+		border-radius: 20px;
+		line-height: 40px;
+		font-weight: 600;
+		color: #808191;
+		transition: all 0.2s;
+		&.active {
+			color: map-get($map: $theme-colors, $key: primary);
+			background-color: map-get(
+				$map: $theme-colors,
+				$key: neutral-background-dark
+			);
+		}
+	}
+}
+
+.tabs__nav {
+	display: flex;
+	padding: 8px;
+	border-radius: 16px;
+	border: 1px solid map-get($map: $theme-colors, $key: gray-border);
+}
+
+.tabs__link {
+	padding: 8px;
+	border-radius: 8px;
+	font-weight: 500;
+	color: map-get($map: $theme-colors, $key: disable);
+	transition: map-get($map: $theme-transition, $key: all);
+	text-align: center;
+	&.active {
+		color: map-get($map: $theme-colors, $key: neutral-white);
+		background-color: map-get($map: $theme-colors, $key: primary);
+	}
+	&:hover {
+		color: map-get($map: $theme-colors, $key: neutral-white);
+	}
+}
+
+.tabs__text {
+	font-size: 0.77rem;
+}
+
+.tabs__icon {
+	margin-bottom: 4px;
+}
+
 .badge {
 	font-size: 80%;
 	display: inline-block;
@@ -15,6 +74,7 @@
 		background-color: map-get($map: $theme-colors, $key: primary);
 	}
 	&.secondary {
+		color: map-get($map: $theme-colors, $key: neutral-black);
 		background-color: map-get($map: $theme-colors, $key: secondary);
 	}
 	&.outline {
@@ -29,5 +89,40 @@
 				$amount: 10%
 			);
 		}
+	}
+}
+
+.token__item {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 16px;
+	height: 48px;
+	color: map-get($map: $theme-colors, $key: neutral-white);
+	background-color: map-get(
+		$map: $theme-colors,
+		$key: neutral-background-dark
+	);
+	border-radius: 16px;
+	transition: map-get($map: $theme-transition, $key: all);
+	&:hover {
+		opacity: 0.8;
+	}
+	@media (max-width: 767.98px) {
+		padding: 0 8px;
+	}
+}
+
+.token__icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+}
+
+.token__name {
+	margin-right: 8px;
+	@media (max-width: 767.98px) {
+		display: none;
 	}
 }

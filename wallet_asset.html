@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./vendors/fancybox/jquery.fancybox.css"/>
     <!-- *** CSS *** //-->
     <link rel="stylesheet" href="./css/core.css"/>
-    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/wallet_asset.css"/>
     <!-- *** FAVICON *** //-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <!-- *** TITLE *** //-->
-    <title>Home | Defi x NFT</title>
+    <title>Wallet &amp; Asset | Defi x NFT</title>
   </head>
   <body>
     <div class="page">
@@ -87,8 +87,116 @@
               </div>
             </div>
           </section>
+          <!-- *** SECTION WALLET & ASSET *** //-->
+          <section class="wallet_asset">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="item__wallet">
+                    <h4 class="wallet__name">Metamask</h4>
+                    <p class="wallet__description">Connect wallet to mint character</p>
+                    <div class="wallet__buttons"><a class="bt bt-lg primary" popup-to="wallet_connect_popup" href="javascript:;">Connect</a></div>
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Binance Smart Chain Address: bvsbsb1328984tu91dvsd"/>
+                      <div class="input-group-append">
+                        <button class="bt-circle primary"><i class="fad fa-copy"></i></button><a class="bt-circle primary" href="#" target="_bank"><i class="fad fa-external-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="item__wallet">
+                    <h4 class="wallet__name">Solana</h4>
+                    <p class="wallet__description">0 FIWA</p>
+                    <div class="wallet__buttons">
+                      <button class="bt bt-lg primary">Refresh</button>
+                    </div>
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Solana Chain Address: bvsbsb1328984tu91dvsdsdfsfb12"/>
+                      <div class="input-group-append">
+                        <button class="bt-circle primary"><i class="fad fa-copy"></i></button><a class="bt-circle primary" href="#" target="_bank"><i class="fad fa-external-link"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="wallet_asset_table__wrapper">
+                    <h4 class="wallet_asset_table__title">Assets</h4>
+                    <div class="activity__sorting">
+                      <div class="activity__tags"><a class="activity__link active" href="#">Metamask</a><a class="activity__link" href="#">Solana</a></div>
+                    </div>
+                    <table class="table-custom table-wallet-asset">
+                      <thead>
+                        <tr>
+                          <th>Name Asset</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="asset__item">
+                              <div class="asset__logo"><img src="./icons/weth.svg" alt="WETH"/></div>
+                              <div class="asset__name">WETH</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="asset__item">
+                              <div class="asset__logo"><img src="./icons/weth.svg" alt="WETH"/></div>
+                              <div class="asset__name">WETH</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="asset__item">
+                              <div class="asset__logo"><img src="./icons/weth.svg" alt="WETH"/></div>
+                              <div class="asset__name">WETH</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="asset__item">
+                              <div class="asset__logo"><img src="./icons/weth.svg" alt="WETH"/></div>
+                              <div class="asset__name">WETH</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="asset__item">
+                              <div class="asset__logo"><img src="./icons/weth.svg" alt="WETH"/></div>
+                              <div class="asset__name">WETH</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="asset__item">
+                              <div class="asset__logo"><img src="./icons/weth.svg" alt="WETH"/></div>
+                              <div class="asset__name">WETH</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="asset__item">
+                              <div class="asset__logo"><img src="./icons/weth.svg" alt="WETH"/></div>
+                              <div class="asset__name">WETH</div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
           <!-- *** PAGE NAME *** //-->
-          <div id="page-verify" data-class="home-page"></div>
+          <div id="page-verify" data-class="wallet-asset-page"></div>
           <!-- *** POPUP DEFI WALLET CONNECT POPOP *** //-->
           <div id="wallet_connect_popup" style="display:none">
             <div class="popup_wrapper">

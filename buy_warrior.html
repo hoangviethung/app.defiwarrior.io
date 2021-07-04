@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="./vendors/fancybox/jquery.fancybox.css"/>
     <!-- *** CSS *** //-->
     <link rel="stylesheet" href="./css/core.css"/>
-    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/buy_warrior.css"/>
     <!-- *** FAVICON *** //-->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <!-- *** TITLE *** //-->
-    <title>Home | Defi x NFT</title>
+    <title>Buy Warrior | Defi x NFT</title>
   </head>
   <body>
     <div class="page">
@@ -75,20 +75,44 @@
         </nav>
         <!-- *** MAIN *** //-->
         <main>
-          <!-- *** SECTION BANNER *** //-->
-          <section class="banner">
-            <div class="container">
-              <div class="banner__container">
-                <div class="banner_preview"><img src="./images/character_banner.png" alt="CHARACTER-DEFI"/></div>
-                <div class="banner__wrap">
-                  <h1 class="banner__title">Title Banner</h1>
-                  <p class="banner__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          <section class="trade buy_warrior">
+            <div class="tabs">
+              <div class="tabs__nav"><a class="tabs__link" href="exchange.html">
+                  <div class="tabs__icon"><i class="fad fa-sync"></i></div>
+                  <div class="tabs__text">Swap</div></a><a class="tabs__link active" href="buy_warrior.html">
+                  <div class="tabs__icon"><i class="fas fa-sword"></i></div>
+                  <div class="tabs__text">Buy Warrior</div></a><a class="tabs__link" href="liquidity.html">
+                  <div class="tabs__icon"><i class="fad fa-dollar-sign"></i></div>
+                  <div class="tabs__text">Liquidity Pool</div></a></div>
+              <div class="tabs__content">
+                <div class="trade__header">
+                  <div class="box-left">
+                    <h2 class="trade__title">Buy Warrior</h2>
+                    <p class="trade__desc">Add Liquidity to receive Warrior</p>
+                  </div>
+                  <div class="box-right"><a href="#"><i class="fad fa-sliders-h"></i></a><a href="#"><i class="fad fa-history"></i></a></div>
+                </div>
+                <div class="trade__body"><a class="token__item">
+                    <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">FIWA-BTCB</span></div><i class="fad fa-chevron-down"></i></a>
+                  <div class="amount__item flex-between-alc">
+                    <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__name">FIWA</span></div>
+                    <div class="token__amount">0.003</div>
+                  </div>
+                  <div class="amount__item flex-between-alc">
+                    <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div>
+                    <div class="token__amount">0.003</div>
+                  </div>
+                  <div class="buy_warrior__character"><img src="./images/character_buy.png" alt="CHARACTER"/></div>
+                  <p class="buy_warrior__note">By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.</p>
+                </div>
+                <div class="trade__footer">
+                  <button class="bt bt-lg bt-block primary">Buy Warrior</button>
                 </div>
               </div>
             </div>
           </section>
           <!-- *** PAGE NAME *** //-->
-          <div id="page-verify" data-class="home-page"></div>
+          <div id="page-verify" data-class="buy-warrior-page"></div>
           <!-- *** POPUP DEFI WALLET CONNECT POPOP *** //-->
           <div id="wallet_connect_popup" style="display:none">
             <div class="popup_wrapper">

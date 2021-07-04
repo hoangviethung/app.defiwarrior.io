@@ -4,7 +4,10 @@
 	position: relative;
 	padding: 72px 64px;
 	border-radius: 24px;
-	background: map-get($map: $theme-colors, $key: primary);
+	background: rgba(
+		$color: map-get($map: $theme-colors, $key: primary),
+		$alpha: 0.1
+	);
 	overflow: hidden;
 	@media (max-width: 1024.98px) {
 		padding: 32px 24px;
@@ -24,6 +27,12 @@
 	margin-bottom: 4px;
 	@media (max-width: 575.98px) {
 		font-size: 1.6rem;
+	}
+}
+
+.banner__text {
+	@media (max-width: 575.98px) {
+		font-size: 0.77rem;
 	}
 }
 

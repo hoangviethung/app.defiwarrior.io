@@ -1,0 +1,8 @@
+.page__content {
+	padding-left: $width-sidebar;
+	padding-bottom: 56px;
+	@media (max-width: 1024.98px) {
+		padding-left: $width-sidebar-mobile;
+		padding-bottom: 16px;
+	}
+}

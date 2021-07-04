@@ -1,5 +1,11 @@
 nav.navigation
 	.container.h-100
-		.navigation__row
-			.box__left
-			.box__right
+		.row.no-gutters.al-c.h-100
+			.navigation__user
+				a.bt-pushable.primary(popup-to="wallet_connect_popup" href="javascript:;")
+					span.front Connect Wallet
+				a.your_wallet(href="javascript:;" style="display:none")
+					span 0xb3a3c602d1654393ab22ef598868f3bf
+				.navigation__avatar
+					// Radio Image: 48x48
+					img(src="./images/avatar_default.png", alt="USER")

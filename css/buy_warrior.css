@@ -1,0 +1,89 @@
+.trade {
+  max-width: 628px;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 64px;
+  padding-left: 64px; }
+  .trade .tabs__link {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%; }
+  .trade .tabs__content {
+    margin-top: 24px;
+    background-color: #242731;
+    border-radius: 24px; }
+  @media (max-width: 575.98px) {
+    .trade .tabs__text {
+      display: none; } }
+  @media (max-width: 767.98px) {
+    .trade {
+      padding-right: 16px;
+      padding-left: 16px; } }
+
+.trade__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  border-bottom: 1px solid #40475d; }
+  .trade__header .box-left {
+    max-width: 70%; }
+  .trade__header .box-right > a {
+    color: rgba(253, 224, 76, 0.8);
+    font-size: 1.2rem;
+    transition: all 0.3s linear; }
+    .trade__header .box-right > a + a {
+      margin-left: 16px; }
+    .trade__header .box-right > a:hover {
+      color: #fde04c; }
+  @media (max-width: 767.98px) {
+    .trade__header {
+      padding: 16px; } }
+
+.trade__title {
+  font-size: 1.2rem; }
+
+.trade__desc {
+  color: #808191;
+  font-size: 0.77rem;
+  margin-top: 8px; }
+
+.trade__body {
+  padding: 24px; }
+  @media (max-width: 767.98px) {
+    .trade__body {
+      padding: 16px; } }
+
+.trade__footer {
+  padding: 24px; }
+  @media (max-width: 767.98px) {
+    .trade__footer {
+      padding: 16px; } }
+
+.buy_warrior .token__item {
+  margin-bottom: 24px; }
+
+.amount__item {
+  padding: 0 16px; }
+  .amount__item + .amount__item {
+    margin-top: 16px; }
+
+@keyframes scale {
+  0% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+
+.buy_warrior__character {
+  margin: 24px 0; }
+  .buy_warrior__character img {
+    display: block;
+    margin: 0 auto;
+    animation: scale 1s infinite;
+    animation-direction: alternate; }
+
+.buy_warrior__note {
+  color: #808191;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 0.77rem; }

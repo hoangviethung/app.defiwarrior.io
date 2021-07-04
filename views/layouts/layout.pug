@@ -16,21 +16,24 @@ html(lang="en")
 		// *** TITLE *** //
 		title #{pageTitle}
 	body
-		// *** NAV *** //
-		block nav
-			include nav
-		// *** ASIDE *** //
-		block aside
-			include aside
-		// *** MAIN *** //
-		main
-			block main
-			// *** PAGE NAME *** //
-			#page-verify(data-class=`${bodyClass}`)
-			// *** POPUP DEFI WALLET CONNECT POPOP *** //
-			include ../components/defi_wallet_connect_popup
-			// *** POPUP DEFI STAKE LP TOKENS POPOP *** //
-			include ../components/stake_lp_tokens_popup
+		.page
+			// *** ASIDE *** //
+			block aside
+				include aside
+			// *** ASIDE *** //
+			.page__content
+				// *** NAV *** //
+				block nav
+					include nav
+				// *** MAIN *** //
+				main
+					block main
+					// *** PAGE NAME *** //
+					#page-verify(data-class=`${bodyClass}`)
+					// *** POPUP DEFI WALLET CONNECT POPOP *** //
+					include ../components/wallet_connect_popup
+					// *** POPUP DEFI STAKE LP TOKENS POPOP *** //
+					include ../components/stake_lp_tokens_popup
 		// *** OVERLAY *** //
 		#overlay
 		// *** FOOTER *** //
@@ -39,6 +42,7 @@ html(lang="en")
 		// *** VENDORS JS *** //
 		script(src="./vendors/jquery/jquery.js")
 		script(src="./vendors/fancybox/jquery.fancybox.js")
+		script(src="./vendors/notify/notify.js")
 		block library-js
 		// *** JS *** //
 		block js

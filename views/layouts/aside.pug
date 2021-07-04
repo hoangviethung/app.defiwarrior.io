@@ -1,14 +1,22 @@
 aside.sidebar
 	.sidebar__top
-		a(href="index.html").sidebar__logo
+		a(href="index.html").sidebar__logo.pos-demo
 			img(src="./images/logo.png", alt="defi-logo")
+		.sildebar__button
+			i.fad.fa-indent
 	.sidebar__wrapper
 		.sidebar__list
 			.sidebar__group
 				.sidebar__caption
 					span Dashboard
+					i.fad.fa-chevron-down
 				.sidebar__menu
 					a(href="index.html").sidebar__item.active
+						.sidebar__icon
+							i.fad.fa-chart-pie-alt
+						.sidebar__text Overview
+				.sidebar__menu
+					a(href="farms.html").sidebar__item
 						.sidebar__icon
 							i.far.fa-warehouse-alt
 						.sidebar__text Farms
@@ -31,16 +39,17 @@ aside.sidebar
 			.sidebar__group
 				.sidebar__caption
 					span Trade
+					i.fad.fa-chevron-down
 				.sidebar__menu
-					a(href="wallet-asset.html").sidebar__item
+					a(href="wallet_asset.html").sidebar__item
 						.sidebar__icon
 							i.fad.fa-wallet
 						.sidebar__text Wallet & Asset
-					a(href="#").sidebar__item
+					a(href="exchange.html").sidebar__item
 						.sidebar__icon
 							i.fad.fa-sync
 						.sidebar__text Exchange
-					a(href="#").sidebar__item
+					a(href="liquidity.html").sidebar__item
 						.sidebar__icon
 							i.fad.fa-dollar-sign
 						.sidebar__text Liquidity Pool
@@ -53,12 +62,3 @@ aside.sidebar
 							i.far.fa-question-circle
 						.sidebar__text Help
 	.sidebar__bottom
-		.sidebar__profile
-			.sidebar__user
-				// Radio Image: 40x40
-				.sidebar__avatar
-					img(src="./images/avatar_default.png", alt="USER")
-				.sidebar__desc
-					a.bt-pushable(popup-to="defi_wallet_connect_popup" href="javascript:;")
-						span.front Connect Wallet
-					a.sidebar__name(href="javascript:;" style="display:none") 0xb3a3c602d1654393ab22ef598868f3bf

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- *** META *** //-->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- *** VENDORS CSS *** //-->
+    <link rel="stylesheet" href="./vendors/fancybox/jquery.fancybox.css"/>
+    <!-- *** CSS *** //-->
+    <link rel="stylesheet" href="./css/core.css"/>
+    <link rel="stylesheet" href="./css/farms.css"/>
+    <!-- *** FAVICON *** //-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <!-- *** TITLE *** //-->
+    <title>Farms | Defi x NFT</title>
+  </head>
+  <body>
+    <div class="page">
+      <!-- *** ASIDE *** //-->
+      <aside class="sidebar">
+        <div class="sidebar__top"><a class="sidebar__logo pos-demo" href="index.html"><img src="./images/logo.png" alt="defi-logo"/></a>
+          <div class="sildebar__button"><i class="fad fa-indent"></i></div>
+        </div>
+        <div class="sidebar__wrapper">
+          <div class="sidebar__list">
+            <div class="sidebar__group">
+              <div class="sidebar__caption"><span>Dashboard</span><i class="fad fa-chevron-down"></i></div>
+              <div class="sidebar__menu"><a class="sidebar__item active" href="index.html">
+                  <div class="sidebar__icon"><i class="fad fa-chart-pie-alt"></i></div>
+                  <div class="sidebar__text">Overview</div></a></div>
+              <div class="sidebar__menu"><a class="sidebar__item" href="farms.html">
+                  <div class="sidebar__icon"><i class="far fa-warehouse-alt"></i></div>
+                  <div class="sidebar__text">Farms</div></a><a class="sidebar__item" href="warriors.html">
+                  <div class="sidebar__icon"><i class="fas fa-sword"></i></div>
+                  <div class="sidebar__text">My Warrior</div></a><a class="sidebar__item" href="#">
+                  <div class="sidebar__icon"><i class="fas fa-users-crown"></i></div>
+                  <div class="sidebar__text">Comunities</div></a><a class="sidebar__item" href="#">
+                  <div class="sidebar__icon"><i class="far fa-sparkles"></i></div>
+                  <div class="sidebar__text">News</div></a><a class="sidebar__item" href="#">
+                  <div class="sidebar__icon"><i class="far fa-question-circle"></i></div>
+                  <div class="sidebar__text">Help</div></a></div>
+            </div>
+            <div class="sidebar__group">
+              <div class="sidebar__caption"><span>Trade</span><i class="fad fa-chevron-down"></i></div>
+              <div class="sidebar__menu"><a class="sidebar__item" href="wallet_asset.html">
+                  <div class="sidebar__icon"><i class="fad fa-wallet"></i></div>
+                  <div class="sidebar__text">Wallet & Asset</div></a><a class="sidebar__item" href="exchange.html">
+                  <div class="sidebar__icon"><i class="fad fa-sync"></i></div>
+                  <div class="sidebar__text">Exchange</div></a><a class="sidebar__item" href="liquidity.html">
+                  <div class="sidebar__icon"><i class="fad fa-dollar-sign"></i></div>
+                  <div class="sidebar__text">Liquidity Pool</div></a><a class="sidebar__item" href="#">
+                  <div class="sidebar__icon"><i class="fad fa-shopping-cart"></i></div>
+                  <div class="sidebar__text">Buy Gem</div></a><a class="sidebar__item" href="#">
+                  <div class="sidebar__icon"><i class="far fa-question-circle"></i></div>
+                  <div class="sidebar__text">Help</div></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar__bottom"></div>
+      </aside>
+      <!-- *** ASIDE *** //-->
+      <div class="page__content">
+        <!-- *** NAV *** //-->
+        <nav class="navigation">
+          <div class="container h-100">
+            <div class="row no-gutters al-c h-100">
+              <div class="navigation__user"><a class="bt-pushable primary" popup-to="wallet_connect_popup" href="javascript:;"><span class="front">Connect Wallet</span></a><a class="your_wallet" href="javascript:;" style="display:none"><span>0xb3a3c602d1654393ab22ef598868f3bf</span></a>
+                <div class="navigation__avatar">
+                  <!-- Radio Image: 48x48--><img src="./images/avatar_default.png" alt="USER"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- *** MAIN *** //-->
+        <main>
+          <!-- *** SECTION BANNER *** //-->
+          <section class="banner">
+            <div class="container">
+              <div class="banner__container">
+                <div class="banner_preview"><img src="./images/character_banner.png" alt="CHARACTER-DEFI"/></div>
+                <div class="banner__wrap">
+                  <h1 class="banner__title">Title Banner</h1>
+                  <p class="banner__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- *** SECTION FARMS *** //-->
+          <section class="farms">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-4 col-sm-6">
+                  <div class="farm__item">
+                    <div class="farm__header">
+                      <div class="farm__character">
+                        <!-- Radio Image: 64x64--><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/>
+                      </div>
+                      <div class="character__information">
+                        <h4 class="character__name">FiWA - BTC</h4>
+                        <ul>
+                          <li class="badge primary"><span>40X</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="farm__body">
+                      <div class="flex-between-alc">
+                        <div class="block"><span>APR:</span></div>
+                        <div class="block"><i class="fas fa-calculator-alt"></i><span>59.67%</span></div>
+                      </div>
+                      <div class="flex-between-alc">
+                        <div class="block"><span>Earn:</span></div>
+                        <div class="block"><span>GEM</span></div>
+                      </div>
+                      <div class="farm__action">
+                        <div class="txt"><span class="txt-primary">GEM</span><span>EARNED</span></div>
+                        <div class="flex-between-alc">
+                          <div class="block">
+                            <h2 class="txt-disable">0.000</h2>
+                          </div>
+                          <div class="block">
+                            <button class="bt bt-lg primary" disable="disable">Harvest</button>
+                          </div>
+                        </div>
+                        <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
+                        <div class="action_buttons"><a class="bt bt-lg bt-block primary" popup-to="wallet_connect_popup" href="javascript:;">Unlock Wallet</a></div>
+                      </div>
+                    </div>
+                    <div class="farm__footer">
+                      <div class="ta-c">
+                        <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                  <div class="farm__item">
+                    <div class="farm__header">
+                      <div class="farm__character">
+                        <!-- Radio Image: 64x64--><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/>
+                      </div>
+                      <div class="character__information">
+                        <h4 class="character__name">FiWA - BTC</h4>
+                        <ul>
+                          <li class="badge primary"><span>40X</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="farm__body">
+                      <div class="flex-between-alc">
+                        <div class="block"><span>APR:</span></div>
+                        <div class="block"><i class="fas fa-calculator-alt"></i><span>59.67%</span></div>
+                      </div>
+                      <div class="flex-between-alc">
+                        <div class="block"><span>Earn:</span></div>
+                        <div class="block"><span>GEM</span></div>
+                      </div>
+                      <div class="farm__action">
+                        <div class="txt"><span class="txt-primary">GEM</span><span>EARNED</span></div>
+                        <div class="flex-between-alc">
+                          <div class="block">
+                            <h2 class="txt-disable">0.000</h2>
+                          </div>
+                          <div class="block">
+                            <button class="bt bt-lg primary" disable="disable">Harvest</button>
+                          </div>
+                        </div>
+                        <div class="txt"><span class="txt-primary">FiWA - BTC LP</span><span>STAKED</span></div>
+                        <div class="action_buttons">
+                          <button class="bt bt-lg bt-block primary">Approve Contract</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="farm__footer">
+                      <div class="ta-c">
+                        <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                  <div class="farm__item">
+                    <div class="farm__header">
+                      <div class="farm__character"><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/></div>
+                      <div class="character__information">
+                        <h4 class="character__name">FiWA - BTC</h4>
+                        <ul>
+                          <li class="badge primary"><span>40X</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="farm__body">
+                      <div class="flex-between-alc">
+                        <div class="block"><span>APR:</span></div>
+                        <div class="block"><i class="fas fa-calculator-alt"></i><span>59.67%</span></div>
+                      </div>
+                      <div class="flex-between-alc">
+                        <div class="block"><span>Earn:</span></div>
+                        <div class="block"><span>GEM</span></div>
+                      </div>
+                      <div class="farm__action">
+                        <div class="txt"><span class="txt-primary">GEM</span><span>EARNED</span></div>
+                        <div class="flex-between-alc">
+                          <div class="block">
+                            <h2 class="txt-disable">0.000</h2>
+                          </div>
+                          <div class="block">
+                            <button class="bt bt-lg primary" disable="disable">Harvest</button>
+                          </div>
+                        </div>
+                        <div class="txt"><span class="txt-primary">GEM</span><span>EARNED</span></div>
+                        <div class="flex-between-alc">
+                          <div class="block">
+                            <h2 class="txt-disable">0.000</h2>
+                          </div>
+                          <div class="block">
+                            <button class="bt bt-lg primary" popup-to="stake_lp_tokens_popup" href="javascript:;">Stake LP</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="farm__footer">
+                      <div class="ta-c">
+                        <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-sm-6">
+                  <div class="farm__item">
+                    <div class="farm__header">
+                      <div class="farm__character"><img src="./images/character_farm.png" alt="CHARACTER-DEFI"/></div>
+                      <div class="character__information">
+                        <h4 class="character__name">FiWA - BTC</h4>
+                        <ul>
+                          <li class="badge primary"><span>40X</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="farm__body">
+                      <div class="flex-between-alc">
+                        <div class="block"><span>APR:</span></div>
+                        <div class="block"><i class="fas fa-calculator-alt"></i><span>59.67%</span></div>
+                      </div>
+                      <div class="flex-between-alc">
+                        <div class="block"><span>Earn:</span></div>
+                        <div class="block"><span>GEM</span></div>
+                      </div>
+                      <div class="farm__action">
+                        <div class="txt"><span class="txt-primary">GEM</span><span>EARNED</span></div>
+                        <div class="flex-between-alc">
+                          <div class="block">
+                            <h2>0.058</h2><small>~0.74 USD</small>
+                          </div>
+                          <div class="block">
+                            <button class="bt bt-lg primary">Harvest</button>
+                          </div>
+                        </div>
+                        <div class="txt"><span class="txt-primary">GEM</span><span>EARNED</span></div>
+                        <div class="flex-between-alc">
+                          <div class="block">
+                            <h2>1.390</h2><small>~10.48 USD</small>
+                          </div>
+                          <div class="block">
+                            <button class="bt-circle primary"><i class="fal fa-minus"></i></button>
+                            <button class="bt-circle primary"><i class="fal fa-plus"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="farm__footer">
+                      <div class="ta-c">
+                        <button class="bt bt-see-more"><span>See More</span><i class="fad fa-angle-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- *** PAGE NAME *** //-->
+          <div id="page-verify" data-class="farms-page"></div>
+          <!-- *** POPUP DEFI WALLET CONNECT POPOP *** //-->
+          <div id="wallet_connect_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">Connect to a wallet</h2>
+              </div>
+              <div class="popup__body">
+                <ul class="list_option_wallet_connect">
+                  <li class="item_option_wallet_connect">
+                    <button class="bt bt-block bt-lg neutral-background"><img src="./icons/metamask.svg" alt="Metamask"/>
+                      <p><span>Metamask</span></p>
+                    </button>
+                  </li>
+                  <li class="item_option_wallet_connect" disable="disable">
+                    <button class="bt bt-block bt-lg neutral-background"><img src="./icons/trustwallet.svg" alt="TrustWallet"/>
+                      <p><span>TrustWallet</span></p>
+                    </button>
+                  </li>
+                  <li class="item_option_wallet_connect" disable="disable">
+                    <button class="bt bt-block bt-lg neutral-background"><img src="./icons/mathwallet.svg" alt="Metamask"/>
+                      <p><span>MathWallet</span></p>
+                    </button>
+                  </li>
+                  <li class="item_option_wallet_connect" disable="disable">
+                    <button class="bt bt-block bt-lg neutral-background"><img src="./icons/tokenpocket.svg" alt="TokenPocket"/>
+                      <p><span>TokenPocket</span></p>
+                    </button>
+                  </li>
+                  <li class="item_option_wallet_connect" disable="disable">
+                    <button class="bt bt-block bt-lg neutral-background"><img src="./icons/walletconnect.svg" alt="WalletConnect"/>
+                      <p><span>WalletConnect</span></p>
+                    </button>
+                  </li>
+                  <li class="item_option_wallet_connect" disable="disable">
+                    <button class="bt bt-block bt-lg neutral-background"><img src="./icons/binancechainwallet.svg" alt="BinanceChainWallet"/>
+                      <p><span>Binance Chain Wallet</span></p>
+                    </button>
+                  </li>
+                  <li class="item_option_wallet_connect" disable="disable">
+                    <button class="bt bt-block bt-lg neutral-background"><img src="./icons/safepalwallet.svg" alt="SafePalWallet"/>
+                      <p><span>SafePal Wallet</span></p>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="popup__footer ta-c"><a class="support-document" href="https://bap-software.net/vi/" target="_blank" rel="noreferrer noopener"><i class="fad fa-question-circle"></i><span>Learn how to connect</span></a></div>
+            </div>
+          </div>
+          <!-- *** POPUP DEFI STAKE LP TOKENS POPOP *** //-->
+          <div id="stake_lp_tokens_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">Stake LP tokens</h2>
+              </div>
+              <div class="popup__body">
+                <div class="stake_lp_tokens__form">
+                  <div class="form__item flex-between-alc"><span>Stake</span><span>Balance: 0</span></div>
+                  <div class="form__item grid-auto-auto-gap-16">
+                    <input class="form-control is-invalid" type="text" placeholder="Enter your token"/>
+                    <div class="d-f al-e">
+                      <button class="bt bt-lg secondary">Max</button><b class="stake_lp_tokens__name">GEM-BNB LP</b>
+                    </div>
+                  </div>
+                  <div class="form__item flex-between-alc">
+                    <div class="invalid-feedback">No tokens to stake: Get GEM-BNB LP</div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup__footer">
+                <div class="grid-auto-auto-gap-24">
+                  <button class="bt bt-lg bt-block bt-outline primary" data-fancybox-close="data-fancybox-close">Cancel</button>
+                  <button class="bt bt-lg bt-block primary" disable="disable">Confirm</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <!-- *** OVERLAY *** //-->
+    <div id="overlay"></div>
+    <!-- *** FOOTER *** //-->
+    <footer></footer>
+    <!-- *** VENDORS JS *** //-->
+    <script src="./vendors/jquery/jquery.js"></script>
+    <script src="./vendors/fancybox/jquery.fancybox.js"></script>
+    <script src="./vendors/notify/notify.js"></script>
+    <!-- *** JS *** //-->
+    <script src="./js/core.js"></script>
+  </body>
+</html>

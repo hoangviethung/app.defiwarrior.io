@@ -1,0 +1,17 @@
+@import "_varivable";
+@import "_trade";
+
+.exchange__item {
+	label {
+		margin-bottom: 16px;
+	}
+}
+
+.exchange__reverse {
+	display: flex;
+	justify-content: center;
+	margin: 16px 0;
+	@media (max-width: 767.98px) {
+		margin: 8px 0;
+	}
+}

@@ -11,13 +11,18 @@
 	padding-left: 16px;
 	padding-right: 16px;
 	border: 1px solid transparent;
+	i {
+		~ span {
+			margin-left: 8px;
+		}
+	}
 	span {
 		~ i {
-			margin-left: 4px;
+			margin-left: 8px;
 		}
 	}
 	i {
-		font-size: 1.4rem;
+		font-size: 1rem;
 		line-height: 1;
 	}
 	&.cl-primary {
@@ -29,8 +34,17 @@
 			);
 		}
 	}
+	&.cl-secondary {
+		color: map-get($map: $theme-colors, $key: secondary);
+		&:hover {
+			color: lighten(
+				$color: map-get($map: $theme-colors, $key: secondary),
+				$amount: 10%
+			);
+		}
+	}
 	&.secondary {
-		color: map-get($map: $theme-colors, $key: neutral-white);
+		color: map-get($map: $theme-colors, $key: neutral-black);
 		background-color: map-get($map: $theme-colors, $key: secondary);
 		&:hover {
 			background-color: darken(
@@ -179,7 +193,7 @@
 		}
 	}
 	&.secondary {
-		color: map-get($map: $theme-colors, $key: neutral-white);
+		color: map-get($map: $theme-colors, $key: neutral-black);
 		background-color: map-get($map: $theme-colors, $key: secondary);
 		&:hover {
 			background-color: darken(
@@ -195,10 +209,6 @@
 
 .bt-pushable {
 	display: inline-flex;
-	background-color: darken(
-		$color: map-get($map: $theme-colors, $key: secondary),
-		$amount: 20%
-	);
 	border-radius: 8px;
 	border: none;
 	padding: 0;
@@ -207,11 +217,28 @@
 		display: block;
 		padding: 8px 16px;
 		border-radius: 8px;
-		background-color: map-get($map: $theme-colors, $key: secondary);
 		color: map-get($map: $theme-colors, $key: neutral-white);
 		will-change: transform;
 		transition: transform 250ms;
 		transform: translateY(-4px);
+	}
+	&.primary {
+		background-color: darken(
+			$color: map-get($map: $theme-colors, $key: primary),
+			$amount: 20%
+		);
+		.front {
+			background-color: map-get($map: $theme-colors, $key: primary);
+		}
+	}
+	&.secondary {
+		background-color: darken(
+			$color: map-get($map: $theme-colors, $key: secondary),
+			$amount: 20%
+		);
+		.front {
+			background-color: map-get($map: $theme-colors, $key: secondary);
+		}
 	}
 	&:hover {
 		.front {

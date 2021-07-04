@@ -16,3 +16,28 @@
 .invalid-feedback {
 	color: map-get($map: $theme-colors, $key: danger);
 }
+
+.input-group > .custom-file,
+.input-group > .custom-select,
+.input-group > .form-control {
+	position: relative;
+	flex: 1 1 auto;
+	width: 1%;
+	margin-bottom: 0;
+}
+
+.input-group {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+}
+
+.input-group-append {
+	padding-left: 8px;
+	.bt-circle {
+		+ .bt-circle {
+			margin-left: 8px;
+		}
+	}
+}

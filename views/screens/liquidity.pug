@@ -1,0 +1,42 @@
+extends ../layouts/layout
+
+block var
+	- bodyClass = "liquidity-page"
+	- pageTitle = "Liquidity | Defi x NFT"
+block library-css
+block css
+	link(rel="stylesheet", href="./css/liquidity.css")
+block library-js
+block js
+block main
+	section.trade.liquidity
+		.tabs
+			.tabs__nav
+				a.tabs__link(href="exchange.html")
+					.tabs__icon
+						i.fad.fa-sync
+					.tabs__text Swap
+				a.tabs__link(href="buy_warrior.html")
+					.tabs__icon
+						i.fas.fa-sword
+					.tabs__text Buy Warrior
+				a.tabs__link.active(href="liquidity.html")
+					.tabs__icon
+						i.fad.fa-dollar-sign
+					.tabs__text Liquidity Pool
+			.tabs__content
+				.trade__header
+					.box-left
+						h2.trade__title Your Liquidity
+						p.trade__desc Remove liquidity to receive tokens back
+					.box-right
+						a(href="#")
+							i.fad.fa-sliders-h
+						a(href="#")
+							i.fad.fa-history
+				.trade__body
+					.liquidity__note Connect to a wallet to view your liquidity.
+				.trade__footer
+					button.bt.bt-lg.bt-block.primary(popup-to="wallet_connect_popup" href="javascript:;")
+						i.fad.fa-plus
+						span Add Liquidity

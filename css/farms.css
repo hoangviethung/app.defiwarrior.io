@@ -2,7 +2,7 @@
   position: relative;
   padding: 72px 64px;
   border-radius: 24px;
-  background: #6c5dd3;
+  background: rgba(52, 94, 255, 0.1);
   overflow: hidden; }
   @media (max-width: 1024.98px) {
     .banner__container {
@@ -21,6 +21,10 @@
   @media (max-width: 575.98px) {
     .banner__title {
       font-size: 1.6rem; } }
+
+@media (max-width: 575.98px) {
+  .banner__text {
+    font-size: 0.77rem; } }
 
 @keyframes slidein {
   0% {
@@ -48,7 +52,7 @@
 
 .farm__item {
   position: relative;
-  background: #33394e;
+  background: #242731;
   padding: 24px;
   border-radius: 24px;
   height: 100%; }
@@ -95,10 +99,10 @@
     margin-top: 8px; }
 
 .farm__body .block h2 {
-  color: #3f8cff; }
+  color: #fde04c; }
 
 .farm__body .block small {
-  color: #3f8cff;
+  color: #fde04c;
   display: inline-block;
   margin-top: 4px;
   font-weight: 600; }

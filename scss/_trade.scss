@@ -1,0 +1,83 @@
+.trade {
+	max-width: 628px;
+	width: 100%;
+	margin: 0 auto;
+	padding-right: 64px;
+	padding-left: 64px;
+	.tabs__link {
+		-ms-flex: 0 0 33.3333%;
+		flex: 0 0 33.3333%;
+		max-width: 33.3333%;
+	}
+	.tabs__content {
+		margin-top: 24px;
+		background-color: map-get(
+			$map: $theme-colors,
+			$key: neutral-background-lighter
+		);
+		border-radius: 24px;
+	}
+	.tabs__text {
+		@media (max-width: 575.98px) {
+			display: none;
+		}
+	}
+	@media (max-width: 767.98px) {
+		padding-right: 16px;
+		padding-left: 16px;
+	}
+}
+
+.trade__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 24px;
+	border-bottom: 1px solid map-get($map: $theme-colors, $key: gray-border);
+	.box-left {
+		max-width: 70%;
+	}
+	.box-right {
+		> a {
+			color: rgba(
+				$color: map-get($map: $theme-colors, $key: secondary),
+				$alpha: 0.8
+			);
+			font-size: 1.2rem;
+			transition: map-get($map: $theme-transition, $key: all);
+			+ a {
+				margin-left: 16px;
+			}
+			&:hover {
+				color: map-get($map: $theme-colors, $key: secondary);
+			}
+		}
+	}
+	@media (max-width: 767.98px) {
+		padding: 16px;
+	}
+}
+
+.trade__title {
+	font-size: 1.2rem;
+}
+
+.trade__desc {
+	color: map-get($map: $theme-colors, $key: disable);
+	font-size: 0.77rem;
+	margin-top: 8px;
+}
+
+.trade__body {
+	padding: 24px;
+	@media (max-width: 767.98px) {
+		padding: 16px;
+	}
+}
+
+.trade__footer {
+	padding: 24px;
+	@media (max-width: 767.98px) {
+		padding: 16px;
+	}
+}

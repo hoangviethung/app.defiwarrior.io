@@ -1,0 +1,41 @@
+@import "_varivable";
+@import "_trade";
+
+.buy_warrior {
+	.token__item {
+		margin-bottom: 24px;
+	}
+}
+
+.amount__item {
+	padding: 0 16px;
+	+ .amount__item {
+		margin-top: 16px;
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.buy_warrior__character {
+	margin: 24px 0;
+	img {
+		display: block;
+		margin: 0 auto;
+		animation: scale 1s infinite;
+		animation-direction: alternate;
+	}
+}
+
+.buy_warrior__note {
+	color: map-get($map: $theme-colors, $key: disable);
+	text-align: center;
+	margin-top: 16px;
+	font-size: 0.77rem;
+}

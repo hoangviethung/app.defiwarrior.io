@@ -49,19 +49,35 @@
 	padding: 24px;
 }
 
-#defi_wallet_connect_popup {
+#wallet_connect_popup {
+	max-width: 400px;
+	.list_option_wallet_connect {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: -8px;
+		margin-left: -8px;
+	}
+
 	.item_option_wallet_connect {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-right: 8px;
+		padding-left: 8px;
+		margin-bottom: 16px;
 		.bt {
 			cursor: not-allowed;
-			opacity: 0.2;
-			justify-content: space-between;
+			opacity: 0.1;
 			border-radius: 8px;
-			sup {
-				margin-left: 8px;
-				background-color: map-get($map: $theme-colors, $key: secondary);
-				padding: 4px 8px;
-				border-radius: 4px;
-			}
+			flex-direction: column;
+			height: 100px;
+		}
+		img {
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			overflow: hidden;
+			margin-bottom: 8px;
 		}
 		&:not([disable]) {
 			.bt {
@@ -72,15 +88,22 @@
 				}
 			}
 		}
-		+ .item_option_wallet_connect {
-			margin-top: 8px;
-		}
 	}
 	.support-document {
-		color: map-get($map: $theme-colors, $key: secondary);
+		color: rgba(
+			$color: map-get($map: $theme-colors, $key: secondary),
+			$alpha: 0.5
+		);
 		font-weight: 600;
+		transition: map-get($map: $theme-transition, $key: all);
 		> i {
 			margin-right: 8px;
+		}
+		&:hover {
+			color: rgba(
+				$color: map-get($map: $theme-colors, $key: secondary),
+				$alpha: 1
+			);
 		}
 	}
 }
@@ -93,8 +116,8 @@
 	}
 	.stake_lp_tokens__form {
 		border: 1px solid transparent;
-		.flex-between-alc {
-			+ .flex-between-alc {
+		.form__item {
+			+ .form__item {
 				margin-top: 16px;
 			}
 		}

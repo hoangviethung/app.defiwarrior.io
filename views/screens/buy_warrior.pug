@@ -1,0 +1,58 @@
+extends ../layouts/layout
+
+block var
+	- bodyClass = "buy-warrior-page"
+	- pageTitle = "Buy Warrior | Defi x NFT"
+block library-css
+block css
+	link(rel="stylesheet", href="./css/buy_warrior.css")
+block library-js
+block js
+block main
+	section.trade.buy_warrior
+		.tabs
+			.tabs__nav
+				a.tabs__link(href="exchange.html")
+					.tabs__icon
+						i.fad.fa-sync
+					.tabs__text Swap
+				a.tabs__link.active(href="buy_warrior.html")
+					.tabs__icon
+						i.fas.fa-sword
+					.tabs__text Buy Warrior
+				a.tabs__link(href="liquidity.html")
+					.tabs__icon
+						i.fad.fa-dollar-sign
+					.tabs__text Liquidity Pool
+			.tabs__content
+				.trade__header
+					.box-left
+						h2.trade__title Buy Warrior
+						p.trade__desc Add Liquidity to receive Warrior
+					.box-right
+						a(href="#")
+							i.fad.fa-sliders-h
+						a(href="#")
+							i.fad.fa-history
+				.trade__body
+					a.token__item
+						.token__information
+							img.token__icon(src="./images/FIWA.png", alt="FIWA")
+							img.token__icon(src="./images/BTCB.png", alt="BTCB")
+							span.token__name FIWA-BTCB
+						i.fad.fa-chevron-down
+					.amount__item.flex-between-alc
+						.token__information
+							img.token__icon(src="./images/FIWA.png", alt="FIWA")
+							span.token__name FIWA
+						.token__amount 0.003
+					.amount__item.flex-between-alc
+						.token__information
+							img.token__icon(src="./images/BTCB.png", alt="BTCB")
+							span.token__name BTCB
+						.token__amount 0.003
+					.buy_warrior__character
+						img(src="./images/character_buy.png", alt="CHARACTER")
+					p.buy_warrior__note By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.
+				.trade__footer
+					button.bt.bt-lg.bt-block.primary Buy Warrior
