@@ -5,9 +5,9 @@
 	padding-right: 64px;
 	padding-left: 64px;
 	.tabs__link {
-		-ms-flex: 0 0 33.3333%;
-		flex: 0 0 33.3333%;
-		max-width: 33.3333%;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
 	}
 	.tabs__content {
 		margin-top: 24px;
@@ -16,6 +16,11 @@
 			$key: neutral-background-lighter
 		);
 		border-radius: 24px;
+		border: 2px solid
+			lighten(
+				$color: map-get($map: $theme-colors, $key: primary),
+				$amount: 10%
+			);
 	}
 	.tabs__text {
 		@media (max-width: 575.98px) {

@@ -7,6 +7,9 @@
 .txt-primary {
 	color: map-get($map: $theme-colors, $key: primary);
 }
+.txt-secondary-highlight {
+	color: map-get($map: $theme-colors, $key: secondary-highlight);
+}
 .txt-body {
 	color: map-get($map: $theme-colors, $key: txt-body);
 	&:hover {

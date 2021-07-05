@@ -4,10 +4,10 @@
 	position: relative;
 	text-align: center;
 	justify-content: center;
-	font-weight: 500;
+	font-weight: 600;
 	transition: map-get($map: $theme-transition, $key: all);
-	height: 32px;
-	border-radius: 8px;
+	height: 36px;
+	border-radius: 16px;
 	padding-left: 16px;
 	padding-right: 16px;
 	border: 1px solid transparent;
@@ -43,24 +43,53 @@
 			);
 		}
 	}
-	&.secondary {
-		color: map-get($map: $theme-colors, $key: neutral-black);
-		background-color: map-get($map: $theme-colors, $key: secondary);
-		&:hover {
-			background-color: darken(
-				$color: map-get($map: $theme-colors, $key: secondary),
-				$amount: 10%
-			);
-		}
-	}
 	&.primary {
 		color: map-get($map: $theme-colors, $key: neutral-white);
 		background-color: map-get($map: $theme-colors, $key: primary);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: primary), $amount: 10%);
 		&:hover {
 			background-color: darken(
 				$color: map-get($map: $theme-colors, $key: primary),
 				$amount: 10%
 			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: primary), $amount:
+						20%);
+		}
+	}
+	&.secondary {
+		color: map-get($map: $theme-colors, $key: neutral-black);
+		background-color: map-get($map: $theme-colors, $key: secondary);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: secondary), $amount: 20%);
+		&:hover {
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: secondary),
+				$amount: 10%
+			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: secondary), $amount:
+						30%);
+		}
+	}
+	&.secondary-highlight {
+		color: map-get($map: $theme-colors, $key: neutral-black);
+		background-color: map-get(
+			$map: $theme-colors,
+			$key: secondary-highlight
+		);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: secondary-highlight), $amount:
+					10%);
+		&:hover {
+			background-color: darken(
+				$color: map-get($map: $theme-colors, $key: secondary-highlight),
+				$amount: 10%
+			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: secondary-highlight), $amount:
+						20%);
 		}
 	}
 	&.neutral-background {
@@ -110,39 +139,24 @@
 			}
 		}
 	}
-	&.bt-see-more {
-		color: rgba(
-			$color: map-get($map: $theme-colors, $key: neutral-white),
-			$alpha: 0.5
-		);
-		background-color: rgba(
-			$color: map-get($map: $theme-colors, $key: neutral-background),
-			$alpha: 0.3
-		);
-		&:hover {
-			color: rgba(
-				$color: map-get($map: $theme-colors, $key: neutral-white),
-				$alpha: 0.8
-			);
-			background-color: rgba(
-				$color: map-get($map: $theme-colors, $key: neutral-background),
-				$alpha: 0.8
-			);
-		}
-	}
 	&[disable] {
 		cursor: not-allowed;
 		color: map-get($map: $theme-colors, $key: disable);
 		background-color: darken(
 			$color: map-get($map: $theme-colors, $key: disable),
-			$amount: 15%
+			$amount: 25%
 		);
+		box-shadow: inset 0px -4px 4px darken($color:
+					map-get($map: $theme-colors, $key: disable), $amount: 30%);
 		&:hover {
 			color: map-get($map: $theme-colors, $key: disable);
 			background-color: darken(
 				$color: map-get($map: $theme-colors, $key: disable),
 				$amount: 15%
 			);
+			box-shadow: inset 0px -4px 4px darken($color:
+						map-get($map: $theme-colors, $key: disable), $amount:
+						10%);
 		}
 	}
 }
@@ -204,50 +218,5 @@
 	}
 	&:hover {
 		box-shadow: 0 5px 10px rgba($color: #000000, $alpha: 0.3);
-	}
-}
-
-.bt-pushable {
-	display: inline-flex;
-	border-radius: 8px;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-	.front {
-		display: block;
-		padding: 8px 16px;
-		border-radius: 8px;
-		color: map-get($map: $theme-colors, $key: neutral-white);
-		will-change: transform;
-		transition: transform 250ms;
-		transform: translateY(-4px);
-	}
-	&.primary {
-		background-color: darken(
-			$color: map-get($map: $theme-colors, $key: primary),
-			$amount: 20%
-		);
-		.front {
-			background-color: map-get($map: $theme-colors, $key: primary);
-		}
-	}
-	&.secondary {
-		background-color: darken(
-			$color: map-get($map: $theme-colors, $key: secondary),
-			$amount: 20%
-		);
-		.front {
-			background-color: map-get($map: $theme-colors, $key: secondary);
-		}
-	}
-	&:hover {
-		.front {
-			transform: translateY(-6px);
-		}
-	}
-	&:active {
-		.front {
-			transform: translateY(-2px);
-		}
 	}
 }

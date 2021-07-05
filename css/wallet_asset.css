@@ -2,7 +2,7 @@
   position: relative;
   padding: 72px 64px;
   border-radius: 24px;
-  background: rgba(52, 94, 255, 0.1);
+  background: rgba(126, 47, 255, 0.1);
   overflow: hidden; }
   @media (max-width: 1024.98px) {
     .banner__container {
@@ -46,7 +46,7 @@
 
 .item__wallet {
   padding: 24px;
-  background-color: #242731;
+  background-color: #200040;
   border-radius: 24px; }
   .item__wallet .input-group {
     margin-top: 24px; }

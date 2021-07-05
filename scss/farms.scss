@@ -16,6 +16,11 @@
 	padding: 24px;
 	border-radius: 24px;
 	height: 100%;
+	border: 2px solid
+		lighten(
+			$color: map-get($map: $theme-colors, $key: primary),
+			$amount: 10%
+		);
 	@media (max-width: 767.98px) {
 		padding: 16px;
 		border-radius: 16px;
