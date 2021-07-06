@@ -78,12 +78,11 @@
   font-size: 1.2rem;
   margin-bottom: 16px; }
 
-.table-wallet-asset {
-  border-radius: 24px; }
-  .table-wallet-asset .asset__item {
-    display: inline-flex;
-    align-items: center; }
-  .table-wallet-asset .asset__logo {
-    width: 32px;
-    height: 32px;
-    margin-right: 16px; }
+.table-wallet-asset .asset__item {
+  display: inline-flex;
+  align-items: center; }
+
+.table-wallet-asset .asset__logo {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px; }

@@ -1,8 +1,13 @@
+.table-custom-wrapper {
+	border-radius: 24px;
+	overflow: hidden;
+	border: 2px solid map-get($map: $theme-colors, $key: primary);
+}
+
 .table-custom {
 	width: 100%;
 	border-spacing: 0;
 	vertical-align: middle;
-	border: 2px solid map-get($map: $theme-colors, $key: primary);
 	tr {
 		&:last-child {
 			td {

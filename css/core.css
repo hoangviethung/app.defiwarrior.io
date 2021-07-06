@@ -1297,11 +1297,15 @@
       background-color: #00a7cc;
       box-shadow: inset 0px -4px 4px #007d99; }
 
+.table-custom-wrapper {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid #7e2fff; }
+
 .table-custom {
   width: 100%;
   border-spacing: 0;
-  vertical-align: middle;
-  border: 2px solid #7e2fff; }
+  vertical-align: middle; }
   .table-custom tr:last-child td:first-child {
     border-bottom-left-radius: 24px; }
   .table-custom tr:last-child td:last-child {

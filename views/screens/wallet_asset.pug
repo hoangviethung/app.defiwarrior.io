@@ -48,15 +48,16 @@ block main
 							.activity__tags
 								a.activity__link.active(href="#") Metamask
 								a.activity__link(href="#") Solana
-						table.table-custom.table-wallet-asset
-							thead
-								tr
-									th Name Asset
-							tbody
-								-for(i=1;i<8;i++)
+						.table-custom-wrapper
+							table.table-custom.table-wallet-asset
+								thead
 									tr
-										td
-											.asset__item
-												.asset__logo
-													img(src="./icons/weth.svg", alt="WETH")
-												.asset__name WETH
+										th Name Asset
+								tbody
+									-for(i=1;i<8;i++)
+										tr
+											td
+												.asset__item
+													.asset__logo
+														img(src="./icons/weth.svg", alt="WETH")
+													.asset__name WETH
