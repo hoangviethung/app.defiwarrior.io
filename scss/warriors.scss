@@ -33,6 +33,7 @@
 	border-radius: 16px;
 	overflow: hidden;
 	height: 100%;
+	border: 2px solid map-get($map: $theme-colors, $key: secondary-highlight);
 	&:hover {
 		.warrior__character {
 			&:after {
@@ -74,7 +75,8 @@
 }
 
 .warrior__information {
-	border-top: 1px solid map-get($map: $theme-colors, $key: gray-border);
+	border-top: 1px solid
+		rgba($color: map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
 	padding: 16px 24px;
 	.box-row {
 		display: flex;
@@ -130,7 +132,8 @@
 	padding: 16px 24px;
 	display: flex;
 	justify-content: center;
-	border-top: 1px solid map-get($map: $theme-colors, $key: gray-border);
+	border-top: 1px solid
+		rgba($color: map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
 	@media (max-width: 767.98px) {
 		padding: 16px;
 	}

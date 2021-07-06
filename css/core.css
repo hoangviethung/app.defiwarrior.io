@@ -1060,6 +1060,7 @@
     background-color: #ffce5f;
     box-shadow: inset 0px -4px 4px #ffbe2c; }
   .badge.secondary-highlight {
+    color: #111111;
     background-color: #00d1ff; }
   .badge.outline {
     background-color: transparent; }
@@ -1181,9 +1182,18 @@
       box-shadow: inset 0px -4px 4px #007d99; }
   .bt.neutral-background {
     color: #ffffff;
-    background-color: #041228; }
+    background-color: #041228;
+    box-shadow: inset 0px -4px 4px black; }
     .bt.neutral-background:hover {
-      background-color: #020811; }
+      background-color: #020811;
+      box-shadow: inset 0px -4px 4px black; }
+  .bt.neutral-background-dark {
+    color: #ffffff;
+    background-color: #191b20;
+    box-shadow: inset 0px -4px 4px #15161a; }
+    .bt.neutral-background-dark:hover {
+      background-color: #0e0f12;
+      box-shadow: inset 0px -4px 4px #030303; }
   .bt.bt-lg {
     height: 48px;
     padding-left: 24px;
@@ -1211,8 +1221,8 @@
     box-shadow: inset 0px -4px 4px #707098; }
     .bt[disable]:hover {
       color: #c9c9d8;
-      background-color: #9d9db8;
-      box-shadow: inset 0px -4px 4px #ababc3; }
+      background-color: #7f7fa3;
+      box-shadow: inset 0px -4px 4px #707098; }
 
 .bt-group .bt {
   border-radius: 0; }
@@ -1242,16 +1252,25 @@
   transition: all 0.3s linear; }
   .bt-circle.primary {
     color: #ffffff;
-    background-color: #7e2fff; }
+    background-color: #7e2fff;
+    box-shadow: inset 0px -4px 4px #5f00fb; }
     .bt-circle.primary:hover {
-      background-color: #5f00fb; }
+      background-color: #5f00fb;
+      box-shadow: inset 0px -4px 4px #4c00c8; }
   .bt-circle.secondary {
     color: #111111;
-    background-color: #ffce5f; }
+    background-color: #ffce5f;
+    box-shadow: inset 0px -4px 4px #ffbe2c; }
     .bt-circle.secondary:hover {
-      background-color: #ffbe2c; }
-  .bt-circle:hover {
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); }
+      background-color: #ffbe2c;
+      box-shadow: inset 0px -4px 4px #f8ac00; }
+  .bt-circle.secondary-highlight {
+    color: #111111;
+    background-color: #00d1ff;
+    box-shadow: inset 0px -4px 4px #00a7cc; }
+    .bt-circle.secondary-highlight:hover {
+      background-color: #00a7cc;
+      box-shadow: inset 0px -4px 4px #007d99; }
 
 .table-custom {
   width: 100%;
@@ -1281,6 +1300,7 @@
 
 .fancybox-content {
   background-color: #200040;
+  border: 2px solid #7e2fff;
   border-radius: 24px;
   padding: 0; }
 
@@ -1291,11 +1311,11 @@
   transition: all 0.3s linear; }
 
 .fancybox-close-small:hover {
-  background-color: #041228;
-  box-shadow: 0 5px 20px rgba(4, 18, 40, 0.3); }
+  background-color: #7e2fff;
+  box-shadow: 0 5px 20px rgba(126, 47, 255, 0.3); }
 
 .popup__header {
-  border-bottom: 1px solid #40475d;
+  border-bottom: 1px solid rgba(126, 47, 255, 0.2);
   padding: 24px 120px 24px 24px; }
 
 .popup__title {
@@ -1323,7 +1343,7 @@
     margin-bottom: 16px; }
     #wallet_connect_popup .item_option_wallet_connect .bt {
       cursor: not-allowed;
-      opacity: 0.1;
+      opacity: 0.3;
       border-radius: 8px;
       flex-direction: column;
       height: 100px; }
