@@ -2,29 +2,42 @@
 	width: 100%;
 	border-spacing: 0;
 	vertical-align: middle;
+	border: 2px solid map-get($map: $theme-colors, $key: primary);
+	tr {
+		&:last-child {
+			td {
+				&:first-child {
+					border-bottom-left-radius: 24px;
+				}
+			}
+			td {
+				&:last-child {
+					border-bottom-right-radius: 24px;
+				}
+			}
+		}
+	}
 	thead {
 		tr {
 			display: block;
-			border-radius: 8px;
 			background-color: map-get(
 				$map: $theme-colors,
 				$key: neutral-background-lighter
 			);
 		}
 		th {
-			height: 40px;
+			height: 56px;
 			font-size: 0.66rem;
 			font-weight: 600;
 			letter-spacing: 1px;
 			text-transform: uppercase;
-			color: map-get($map: $theme-colors, $key: disable);
+			color: map-get($map: $theme-colors, $key: secondary);
 			padding-left: 16px;
 		}
 	}
 	tbody {
 		tr {
 			display: block;
-			border-radius: 8px;
 			&:nth-child(2n) {
 				background-color: map-get(
 					$map: $theme-colors,

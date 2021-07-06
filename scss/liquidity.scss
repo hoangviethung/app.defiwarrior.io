@@ -2,12 +2,11 @@
 @import "_trade";
 
 .liquidity__note {
-	color: map-get($map: $theme-colors, $key: disable);
 	text-align: center;
 	padding: 32px 16px;
 	border-radius: 8px;
-	background-color: map-get(
-		$map: $theme-colors,
-		$key: neutral-background-dark
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: primary),
+		$alpha: 0.2
 	);
 }

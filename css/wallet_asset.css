@@ -48,7 +48,7 @@
   padding: 24px;
   background-color: #200040;
   border-radius: 24px;
-  border: 2px solid #00d1ff; }
+  border: 2px solid #7e2fff; }
   .item__wallet .input-group {
     margin-top: 24px; }
   @media (max-width: 1024.98px) {
@@ -69,20 +69,21 @@
 .wallet__buttons {
   margin-top: 24px; }
 
-.wallet_assets_table__wrapper {
+.wallet_asset_table__wrapper {
   margin-top: 56px; }
-  .wallet_assets_table__wrapper .activity__sorting {
-    margin-bottom: 16px; }
+  .wallet_asset_table__wrapper .activity__sorting {
+    margin-bottom: 24px; }
 
-.wallet_assets_table__title {
+.wallet_asset_table__title {
   font-size: 1.2rem;
   margin-bottom: 16px; }
 
-.table-wallet-asset .asset__item {
-  display: inline-flex;
-  align-items: center; }
-
-.table-wallet-asset .asset__logo {
-  width: 32px;
-  height: 32px;
-  margin-right: 16px; }
+.table-wallet-asset {
+  border-radius: 24px; }
+  .table-wallet-asset .asset__item {
+    display: inline-flex;
+    align-items: center; }
+  .table-wallet-asset .asset__logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px; }

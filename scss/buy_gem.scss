@@ -1,0 +1,17 @@
+@import "_varivable";
+@import "_trade";
+
+.buy_gem__item {
+	label {
+		margin-bottom: 16px;
+	}
+}
+
+.buy_gem__reverse {
+	display: flex;
+	justify-content: center;
+	margin: 16px 0;
+	@media (max-width: 767.98px) {
+		margin: 8px 0;
+	}
+}

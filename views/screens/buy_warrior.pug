@@ -10,7 +10,7 @@ block library-js
 block js
 block main
 	section.trade.buy_warrior
-		.tabs
+		.tabs.primary
 			.tabs__nav
 				a.tabs__link.active(href="buy_warrior.html")
 					.tabs__icon
@@ -26,9 +26,9 @@ block main
 						h2.trade__title Buy Warrior
 						p.trade__desc Add Liquidity to receive Warrior
 					.box-right
-						a(href="#")
+						a.bt-circle.secondary(href="#")
 							i.fad.fa-sliders-h
-						a(href="#")
+						a.bt-circle.secondary(href="#")
 							i.fad.fa-history
 				.trade__body
 					a.token__item
@@ -51,4 +51,4 @@ block main
 						img(src="./images/character_buy.png", alt="CHARACTER")
 					p.buy_warrior__note By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.
 				.trade__footer
-					button.bt.bt-lg.bt-block.primary Buy Warrior
+					button.bt.bt-lg.bt-block.secondary Buy Warrior

@@ -8,14 +8,15 @@
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; }
-  .trade .tabs__content {
-    margin-top: 24px;
-    background-color: #200040;
-    border-radius: 24px;
-    border: 2px solid #9e62ff; }
   @media (max-width: 575.98px) {
     .trade .tabs__text {
       display: none; } }
+  .trade .tabs.primary .trade__header {
+    border-bottom: 1px solid rgba(126, 47, 255, 0.2); }
+  .trade .tabs.secondary .trade__header {
+    border-bottom: 1px solid rgba(255, 206, 95, 0.2); }
+  .trade .tabs.secondary-highlight .trade__header {
+    border-bottom: 1px solid rgba(0, 209, 255, 0.2); }
   @media (max-width: 767.98px) {
     .trade {
       padding-right: 16px;
@@ -25,18 +26,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px;
-  border-bottom: 1px solid #40475d; }
+  padding: 24px; }
   .trade__header .box-left {
     max-width: 70%; }
-  .trade__header .box-right > a {
-    color: rgba(255, 206, 95, 0.8);
-    font-size: 1.2rem;
-    transition: all 0.3s linear; }
-    .trade__header .box-right > a + a {
-      margin-left: 16px; }
-    .trade__header .box-right > a:hover {
-      color: #ffce5f; }
+  .trade__header .box-right > a + a {
+    margin-left: 16px; }
   @media (max-width: 767.98px) {
     .trade__header {
       padding: 16px; } }

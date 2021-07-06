@@ -5,6 +5,10 @@
 	.token__item {
 		margin-bottom: 24px;
 	}
+	.tabs__content {
+		background-image: url(../images/background_buy_warrior.png);
+		background-size: cover;
+	}
 }
 
 .amount__item {
@@ -34,7 +38,6 @@
 }
 
 .buy_warrior__note {
-	color: map-get($map: $theme-colors, $key: disable);
 	text-align: center;
 	margin-top: 16px;
 	font-size: 0.77rem;
