@@ -9,11 +9,6 @@
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
-	.tabs__text {
-		@media (max-width: 575.98px) {
-			display: none;
-		}
-	}
 	.tabs {
 		&.primary {
 			.trade__header {
@@ -60,6 +55,9 @@
 	padding: 24px;
 	.box-left {
 		max-width: 70%;
+		@media (max-width: 575.98px) {
+			max-width: 60%;
+		}
 	}
 	.box-right {
 		> a {

@@ -10,7 +10,7 @@
 	border-radius: 16px;
 	padding-left: 16px;
 	padding-right: 16px;
-	border: 1px solid transparent;
+	border: 2px solid transparent;
 	i {
 		~ span {
 			margin-left: 8px;
@@ -154,6 +154,7 @@
 		&.primary {
 			color: map-get($map: $theme-colors, $key: primary);
 			border-color: map-get($map: $theme-colors, $key: primary);
+			box-shadow: unset;
 			&:hover {
 				background-color: transparent;
 				color: lighten(
@@ -164,6 +165,46 @@
 					$color: map-get($map: $theme-colors, $key: primary),
 					$amount: 10%
 				);
+				box-shadow: unset;
+			}
+		}
+		&.secondary {
+			color: map-get($map: $theme-colors, $key: secondary);
+			border-color: map-get($map: $theme-colors, $key: secondary);
+			box-shadow: unset;
+			&:hover {
+				background-color: transparent;
+				color: lighten(
+					$color: map-get($map: $theme-colors, $key: secondary),
+					$amount: 10%
+				);
+				border-color: lighten(
+					$color: map-get($map: $theme-colors, $key: secondary),
+					$amount: 10%
+				);
+				box-shadow: unset;
+			}
+		}
+		&.secondary-highlight {
+			color: map-get($map: $theme-colors, $key: secondary-highlight);
+			border-color: map-get(
+				$map: $theme-colors,
+				$key: secondary-highlight
+			);
+			box-shadow: unset;
+			&:hover {
+				background-color: transparent;
+				color: lighten(
+					$color:
+						map-get($map: $theme-colors, $key: secondary-highlight),
+					$amount: 10%
+				);
+				border-color: lighten(
+					$color:
+						map-get($map: $theme-colors, $key: secondary-highlight),
+					$amount: 10%
+				);
+				box-shadow: unset;
 			}
 		}
 	}

@@ -8,9 +8,6 @@
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; }
-  @media (max-width: 575.98px) {
-    .trade .tabs__text {
-      display: none; } }
   .trade .tabs.primary .trade__header {
     border-bottom: 1px solid rgba(126, 47, 255, 0.2); }
   .trade .tabs.secondary .trade__header {
@@ -29,6 +26,9 @@
   padding: 24px; }
   .trade__header .box-left {
     max-width: 70%; }
+    @media (max-width: 575.98px) {
+      .trade__header .box-left {
+        max-width: 60%; } }
   .trade__header .box-right > a + a {
     margin-left: 16px; }
   @media (max-width: 767.98px) {

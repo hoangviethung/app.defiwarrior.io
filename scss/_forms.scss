@@ -5,16 +5,22 @@
 	border: 1px solid map-get($map: $theme-colors, $key: gray-border);
 	padding: 0 16px;
 	height: 48px;
+	width: 100%;
 	border-radius: 24px;
 }
 
 .form-control.is-invalid,
 .was-validated .form-control:invalid {
+	color: map-get($map: $theme-colors, $key: danger);
 	border-color: map-get($map: $theme-colors, $key: danger);
+	&::placeholder {
+		color: map-get($map: $theme-colors, $key: danger);
+	}
 }
 
 .invalid-feedback {
 	color: map-get($map: $theme-colors, $key: danger);
+	font-weight: 600;
 }
 
 .input-group > .custom-file,

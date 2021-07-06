@@ -26,9 +26,24 @@ const fancyboxStakeLPTokens = () => {
 		});
 };
 
+const fancyboxSelectToken = () => {
+	document
+		.querySelectorAll("[popup-to='select_token_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#select_token_popup",
+					type: "inline",
+					touch: false,
+				});
+			});
+		});
+};
+
 window.addEventListener("load", (e) => {
 	fancyboxWalletConnect();
 	fancyboxStakeLPTokens();
+	fancyboxSelectToken();
 });
 
 window.addEventListener("scroll", (e) => {});
