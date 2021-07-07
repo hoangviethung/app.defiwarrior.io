@@ -10,7 +10,6 @@
 	border-radius: 16px;
 	padding-left: 16px;
 	padding-right: 16px;
-	border: 2px solid transparent;
 	i {
 		~ span {
 			margin-left: 8px;
@@ -28,7 +27,7 @@
 	&.cl-primary {
 		color: map-get($map: $theme-colors, $key: primary);
 		&:hover {
-			color: lighten(
+			color: darken(
 				$color: map-get($map: $theme-colors, $key: primary),
 				$amount: 10%
 			);
@@ -37,11 +36,17 @@
 	&.cl-secondary {
 		color: map-get($map: $theme-colors, $key: secondary);
 		&:hover {
-			color: lighten(
+			color: darken(
 				$color: map-get($map: $theme-colors, $key: secondary),
 				$amount: 10%
 			);
 		}
+	}
+	&.cl-secondary-highlight {
+		color: map-get($map: $theme-colors, $key: secondary-highlight);
+	}
+	&.cl-white {
+		color: map-get($map: $theme-colors, $key: neutral-white);
 	}
 	&.primary {
 		color: map-get($map: $theme-colors, $key: neutral-white);
@@ -151,6 +156,7 @@
 	}
 	&.bt-outline {
 		background-color: transparent;
+		border: 2px solid transparent;
 		&.primary {
 			color: map-get($map: $theme-colors, $key: primary);
 			border-color: map-get($map: $theme-colors, $key: primary);

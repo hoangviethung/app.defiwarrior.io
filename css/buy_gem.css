@@ -8,12 +8,6 @@
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%; }
-  .trade .tabs.primary .trade__header {
-    border-bottom: 1px solid rgba(126, 47, 255, 0.2); }
-  .trade .tabs.secondary .trade__header {
-    border-bottom: 1px solid rgba(255, 206, 95, 0.2); }
-  .trade .tabs.secondary-highlight .trade__header {
-    border-bottom: 1px solid rgba(0, 209, 255, 0.2); }
   @media (max-width: 767.98px) {
     .trade {
       padding-right: 16px;

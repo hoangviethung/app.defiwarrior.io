@@ -10,7 +10,7 @@ block library-js
 block js
 block main
 	section.trade.liquidity
-		.tabs.primary
+		.tabs.neutral-background-lighter
 			.tabs__nav
 				a.tabs__link(href="exchange.html")
 					.tabs__icon
@@ -21,7 +21,7 @@ block main
 						i.fad.fa-dollar-sign
 					.tabs__text Liquidity Pool
 			.tabs__content
-				.trade__header
+				.tabs__content__header.trade__header
 					.box-left
 						h2.trade__title Your Liquidity
 						p.trade__desc Remove liquidity to receive tokens back
@@ -30,9 +30,9 @@ block main
 							i.fad.fa-sliders-h
 						a.bt-circle.secondary(href="#")
 							i.fad.fa-history
-				.trade__body
+				.tabs__content__body.trade__body
 					.liquidity__note Connect to a wallet to view your liquidity.
-				.trade__footer
+				.tabs__content__footer.trade__footer
 					button.bt.bt-lg.bt-block.primary(popup-to="wallet_connect_popup" href="javascript:;")
 						i.fad.fa-plus
 						span Add Liquidity

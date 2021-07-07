@@ -9,39 +9,6 @@
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
-	.tabs {
-		&.primary {
-			.trade__header {
-				border-bottom: 1px solid
-					rgba(
-						$color: map-get($map: $theme-colors, $key: primary),
-						$alpha: 0.2
-					);
-			}
-		}
-		&.secondary {
-			.trade__header {
-				border-bottom: 1px solid
-					rgba(
-						$color: map-get($map: $theme-colors, $key: secondary),
-						$alpha: 0.2
-					);
-			}
-		}
-		&.secondary-highlight {
-			.trade__header {
-				border-bottom: 1px solid
-					rgba(
-						$color:
-							map-get(
-								$map: $theme-colors,
-								$key: secondary-highlight
-							),
-						$alpha: 0.2
-					);
-			}
-		}
-	}
 	@media (max-width: 767.98px) {
 		padding-right: 16px;
 		padding-left: 16px;

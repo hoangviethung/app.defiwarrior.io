@@ -132,13 +132,19 @@
 	align-items: center;
 	height: 56px;
 	padding: 0 16px;
-	border-radius: 16px;
+	border-radius: 28px;
 	background: transparent;
 	font-weight: 600;
 	color: map-get($map: $theme-colors, $key: disable);
 	&.active {
-		color: map-get($map: $theme-colors, $key: neutral-white);
-		background-color: map-get($map: $theme-colors, $key: primary);
+		color: map-get($map: $theme-colors, $key: primary);
+		background-color: rgba(
+			$color: map-get($map: $theme-colors, $key: primary),
+			$alpha: 0.1
+		);
+		&:hover {
+			color: map-get($map: $theme-colors, $key: primary);
+		}
 	}
 	&:hover {
 		color: map-get($map: $theme-colors, $key: neutral-white);

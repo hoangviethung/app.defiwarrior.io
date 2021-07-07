@@ -2,7 +2,7 @@
 	color: map-get($map: $theme-colors, $key: neutral-white);
 	background-color: map-get($map: $theme-colors, $key: neutral-background);
 	box-shadow: unset;
-	border: 1px solid map-get($map: $theme-colors, $key: gray-border);
+	border: 2px solid map-get($map: $theme-colors, $key: gray-border);
 	padding: 0 16px;
 	height: 48px;
 	width: 100%;

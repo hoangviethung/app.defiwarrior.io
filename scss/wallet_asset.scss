@@ -1,13 +1,19 @@
 @import "_banner";
 
+.table-wallet-asset {
+	background-image: url(../images/background_table.png);
+}
+
 .item__wallet {
 	padding: 24px;
 	background-color: map-get(
 		$map: $theme-colors,
 		$key: neutral-background-lighter
 	);
+	box-shadow: inset 0px -4px 4px lighten($color:
+				map-get($map: $theme-colors, $key: neutral-background-lighter), $amount:
+				10%);
 	border-radius: 24px;
-	border: 2px solid map-get($map: $theme-colors, $key: primary);
 	.input-group {
 		margin-top: 24px;
 	}
@@ -54,5 +60,8 @@
 		width: 32px;
 		height: 32px;
 		margin-right: 16px;
+	}
+	.asset__name {
+		font-weight: 600;
 	}
 }

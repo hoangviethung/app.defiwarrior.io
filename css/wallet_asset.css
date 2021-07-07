@@ -4,6 +4,7 @@
   border-radius: 24px;
   overflow: hidden;
   background-image: url(../images/background_banner.png);
+  box-shadow: inset 0 4px 8px rgba(126, 47, 255, 0.2);
   background-size: cover; }
   @media (max-width: 1024.98px) {
     .banner__container {
@@ -44,11 +45,14 @@
     height: 100%;
     width: auto; }
 
+.table-wallet-asset {
+  background-image: url(../images/background_table.png); }
+
 .item__wallet {
   padding: 24px;
   background-color: #200040;
-  border-radius: 24px;
-  border: 2px solid #7e2fff; }
+  box-shadow: inset 0px -4px 4px #3a0073;
+  border-radius: 24px; }
   .item__wallet .input-group {
     margin-top: 24px; }
   @media (max-width: 1024.98px) {
@@ -86,3 +90,6 @@
   width: 32px;
   height: 32px;
   margin-right: 16px; }
+
+.table-wallet-asset .asset__name {
+  font-weight: 600; }

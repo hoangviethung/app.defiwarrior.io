@@ -26,14 +26,16 @@
 }
 
 .warrior__item {
-	background-color: map-get(
-		$map: $theme-colors,
-		$key: neutral-background-lighter
-	);
 	border-radius: 16px;
 	overflow: hidden;
 	height: 100%;
-	border: 2px solid map-get($map: $theme-colors, $key: secondary-highlight);
+	background-image: url(../images/background_warrior_item.png);
+	background-size: cover;
+	box-shadow: inset 0 4px 8px
+		rgba(
+			$color: map-get($map: $theme-colors, $key: secondary-highlight),
+			$alpha: 0.2
+		);
 	&:hover {
 		.warrior__character {
 			&:after {

@@ -21,7 +21,7 @@ block main
 						i.fad.fa-shopping-cart
 					.tabs__text Buy Gem
 			.tabs__content
-				.trade__header
+				.tabs__content__header.trade__header
 					.box-left
 						h2.trade__title Buy Warrior
 						p.trade__desc Add Liquidity to receive Warrior
@@ -30,8 +30,8 @@ block main
 							i.fad.fa-sliders-h
 						a.bt-circle.secondary(href="#")
 							i.fad.fa-history
-				.trade__body
-					a.token__item
+				.tabs__content__body.trade__body
+					a.token__item.primary
 						.token__information
 							img.token__icon(src="./images/FIWA.png", alt="FIWA")
 							img.token__icon(src="./images/BTCB.png", alt="BTCB")
@@ -50,5 +50,5 @@ block main
 					.buy_warrior__character
 						img(src="./images/character_buy.png", alt="CHARACTER")
 					p.buy_warrior__note By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.
-				.trade__footer
+				.tabs__content__footer.trade__footer
 					button.bt.bt-lg.bt-block.secondary Buy Warrior

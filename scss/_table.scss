@@ -1,7 +1,36 @@
 .table-custom-wrapper {
 	border-radius: 24px;
 	overflow: hidden;
-	border: 2px solid map-get($map: $theme-colors, $key: primary);
+	&.primary {
+		box-shadow: inset 0px -4px 4px rgba($color:
+					map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
+	}
+	&.secondary {
+		box-shadow: inset 0px -4px 4px rgba($color:
+					map-get($map: $theme-colors, $key: secondary), $alpha: 0.2);
+	}
+	&.secondary-highlight {
+		box-shadow: inset 0px -4px 4px rgba($color:
+					map-get($map: $theme-colors, $key: secondary-highlight), $alpha:
+					0.2);
+		tbody {
+			tr {
+				&:nth-child(2n) {
+					background-color: rgba(
+						$color:
+							map-get(
+								$map: $theme-colors,
+								$key: secondary-highlight
+							),
+						$alpha: 0.1
+					);
+				}
+			}
+		}
+		&.table-has-background {
+			background-size: cover;
+		}
+	}
 }
 
 .table-custom {
@@ -25,10 +54,6 @@
 	thead {
 		tr {
 			display: block;
-			background-color: map-get(
-				$map: $theme-colors,
-				$key: neutral-background-lighter
-			);
 		}
 		th {
 			height: 56px;
@@ -40,17 +65,7 @@
 			padding-left: 16px;
 		}
 	}
-	tbody {
-		tr {
-			display: block;
-			&:nth-child(2n) {
-				background-color: map-get(
-					$map: $theme-colors,
-					$key: neutral-background-lighter
-				);
-			}
-		}
-	}
+
 	td {
 		height: 72px;
 		font-size: 0.77rem;
