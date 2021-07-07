@@ -7,6 +7,15 @@
 	height: 48px;
 	width: 100%;
 	border-radius: 24px;
+	transition: map-get($map: $theme-transition, $key: all);
+	&:focus {
+		box-shadow: map-get($map: $theme-colors, $key: primary) 0px 0px 0px 1px,
+			rgba(
+					$color: map-get($map: $theme-colors, $key: primary),
+					$alpha: 0.4
+				)
+				0px 0px 0px 4px;
+	}
 }
 
 .form-control.is-invalid,

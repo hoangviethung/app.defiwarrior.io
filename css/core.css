@@ -1143,7 +1143,10 @@
   padding: 0 16px;
   height: 48px;
   width: 100%;
-  border-radius: 24px; }
+  border-radius: 24px;
+  transition: all 0.3s linear; }
+  .form-control:focus {
+    box-shadow: #22c8e5 0px 0px 0px 1px, rgba(34, 200, 229, 0.4) 0px 0px 0px 4px; }
 
 .form-control.is-invalid,
 .was-validated .form-control:invalid {
@@ -1447,7 +1450,7 @@
       #wallet_connect_popup .item_option_wallet_connect:not([disable]) .bt sup {
         display: none; }
   #wallet_connect_popup .support-document {
-    color: rgba(255, 206, 95, 0.5);
+    color: rgba(255, 206, 95, 0.8);
     font-weight: 600;
     transition: all 0.3s linear; }
     #wallet_connect_popup .support-document > i {
@@ -1508,9 +1511,46 @@
   #select_token_popup .manage-tokens {
     color: rgba(255, 206, 95, 0.8);
     font-weight: 600;
-    transition: all 0.3s linear;
-    margin-top: 24px; }
+    transition: all 0.3s linear; }
     #select_token_popup .manage-tokens:hover {
+      color: #ffce5f; }
+
+#select_liquidity_popup {
+  min-width: 350px; }
+  #select_liquidity_popup .select_liquidity__list {
+    margin-top: 24px;
+    max-height: 400px;
+    overflow-y: auto; }
+    #select_liquidity_popup .select_liquidity__list::-webkit-scrollbar {
+      display: none; }
+    @media (max-width: 767.98px) {
+      #select_liquidity_popup .select_liquidity__list {
+        max-height: 250px; } }
+  #select_liquidity_popup .select_liquidity__item {
+    display: grid;
+    align-items: center;
+    padding: 8px;
+    grid-template-columns: 32px 32px 1fr;
+    grid-gap: 8px;
+    border-radius: 24px;
+    background-color: rgba(34, 200, 229, 0.2);
+    transition: all 0.3s linear; }
+    #select_liquidity_popup .select_liquidity__item + .select_liquidity__item {
+      margin-top: 16px; }
+    #select_liquidity_popup .select_liquidity__item:hover {
+      background-color: rgba(34, 200, 229, 0.5); }
+  #select_liquidity_popup .select_liquidity__name {
+    font-weight: 600;
+    color: #ffffff; }
+  #select_liquidity_popup .select_liquidity__note {
+    color: #c9c9d8;
+    font-size: 0.66rem;
+    margin-top: 4px; }
+  #select_liquidity_popup .manage-liquidities {
+    color: rgba(255, 206, 95, 0.8);
+    font-weight: 600;
+    transition: all 0.3s linear; }
+    #select_liquidity_popup .manage-liquidities:hover {
       color: #ffce5f; }
 
 *,

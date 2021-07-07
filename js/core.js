@@ -40,10 +40,40 @@ const fancyboxSelectToken = () => {
 		});
 };
 
+const fancyboxSelectLiquidity = () => {
+	document
+		.querySelectorAll("[popup-to='select_liquidity_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#select_liquidity_popup",
+					type: "inline",
+					touch: false,
+				});
+			});
+		});
+};
+
+const fancyboxTradeSettings = () => {
+	document
+		.querySelectorAll("[popup-to='trade_settings_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#trade_settings_popup",
+					type: "inline",
+					touch: false,
+				});
+			});
+		});
+};
+
 window.addEventListener("load", (e) => {
 	fancyboxWalletConnect();
 	fancyboxStakeLPTokens();
 	fancyboxSelectToken();
+	fancyboxSelectLiquidity();
+	fancyboxTradeSettings();
 });
 
 window.addEventListener("scroll", (e) => {});

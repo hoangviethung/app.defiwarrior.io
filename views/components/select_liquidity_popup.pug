@@ -1,0 +1,21 @@
+#select_liquidity_popup(style="display:none")
+	.popup_wrapper
+		.popup__header
+			h2.popup__title Select a Liquidity
+		.popup__body
+			.select_liquidity__search
+				input.form-control(type="text" placeholder="Search name or paste address")
+			.select_liquidity__list
+				-for(i=0;i<10;i++)
+					a(href="#").select_liquidity__item
+						.select_liquidity__logo
+							img(src="./images/FIWA.png", alt="FIWA")
+						.select_liquidity__logo
+							img(src="./images/BTCB.png", alt="BTCB")
+						.select_liquidity__information
+							p.select_liquidity__name FIWA - BTCB
+							p.select_liquidity__note 0.05313
+		.popup__footer
+			.d-f.jc-c
+				a.manage-liquidities(href="liquidity.html" target="_blank" rel="noreferrer noopener")
+					span Manage Liquidities
