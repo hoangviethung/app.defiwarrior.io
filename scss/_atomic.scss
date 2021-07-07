@@ -7,6 +7,9 @@
 .txt-primary {
 	color: map-get($map: $theme-colors, $key: primary);
 }
+.txt-secondary {
+	color: map-get($map: $theme-colors, $key: secondary);
+}
 .txt-secondary-highlight {
 	color: map-get($map: $theme-colors, $key: secondary-highlight);
 }
@@ -24,6 +27,9 @@
 }
 .txt-disable {
 	color: map-get($map: $theme-colors, $key: disable) !important;
+}
+.fs-1rem {
+	font-size: 1rem;
 }
 .clearfix:after {
 	display: table;
@@ -124,6 +130,9 @@
 .fullsize {
 	width: 100%;
 	height: 100%;
+}
+.ml-05rem {
+	margin-left: 0.5rem;
 }
 .ml-at {
 	margin-left: auto;

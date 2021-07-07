@@ -25,6 +25,14 @@
 	&::placeholder {
 		color: map-get($map: $theme-colors, $key: danger);
 	}
+	&:focus {
+		box-shadow: map-get($map: $theme-colors, $key: danger) 0px 0px 0px 1px,
+			rgba(
+					$color: map-get($map: $theme-colors, $key: danger),
+					$alpha: 0.4
+				)
+				0px 0px 0px 4px;
+	}
 }
 
 .invalid-feedback {

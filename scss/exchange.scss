@@ -5,6 +5,9 @@
 	label {
 		margin-bottom: 16px;
 	}
+	+ .exchange__item {
+		margin-top: 16px;
+	}
 }
 
 .exchange__reverse {
@@ -13,5 +16,48 @@
 	margin: 16px 0;
 	@media (max-width: 767.98px) {
 		margin: 8px 0;
+	}
+}
+
+.exchange__total {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px;
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: secondary-highlight),
+		$alpha: 0.1
+	);
+	border-radius: 16px;
+	@media (max-width: 767.98px) {
+		flex-direction: column;
+		.flex-between-alc {
+			margin-top: 8px;
+			.fs-1rem {
+				font-size: 0.875rem;
+			}
+		}
+	}
+}
+
+.exchange__final {
+	padding: 24px;
+	margin: 24px;
+	border-radius: 16px;
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: secondary-highlight),
+		$alpha: 0.2
+	);
+	box-shadow: inset 0px -4px 4px rgba($color:
+				map-get($map: $theme-colors, $key: secondary-highlight), $alpha:
+				0.2);
+}
+
+.exchange_final__item {
+	span {
+		font-weight: 600;
+	}
+	+ .exchange_final__item {
+		margin-top: 8px;
 	}
 }

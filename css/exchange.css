@@ -1,7 +1,8 @@
 .trade {
   max-width: 628px;
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 64px;
   padding-left: 64px; }
   .trade .tabs__link {
@@ -52,6 +53,9 @@
 .exchange__item label {
   margin-bottom: 16px; }
 
+.exchange__item + .exchange__item {
+  margin-top: 16px; }
+
 .exchange__reverse {
   display: flex;
   justify-content: center;
@@ -59,3 +63,31 @@
   @media (max-width: 767.98px) {
     .exchange__reverse {
       margin: 8px 0; } }
+
+.exchange__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: rgba(126, 47, 255, 0.1);
+  border-radius: 16px; }
+  @media (max-width: 767.98px) {
+    .exchange__total {
+      flex-direction: column; }
+      .exchange__total .flex-between-alc {
+        margin-top: 8px; }
+        .exchange__total .flex-between-alc .fs-1rem {
+          font-size: 0.875rem; } }
+
+.exchange__final {
+  padding: 24px;
+  margin: 24px;
+  border-radius: 16px;
+  background-color: rgba(126, 47, 255, 0.2);
+  box-shadow: inset 0px -4px 4px rgba(126, 47, 255, 0.2); }
+
+.exchange_final__item span {
+  font-weight: 600; }
+
+.exchange_final__item + .exchange_final__item {
+  margin-top: 8px; }
