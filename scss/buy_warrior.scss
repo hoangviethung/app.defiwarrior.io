@@ -2,18 +2,14 @@
 @import "_trade";
 
 .buy_warrior {
-	.token__item {
-		margin-bottom: 24px;
-	}
 	.tabs__content {
 		background-image: url(../images/background_buy_warrior.png);
 		background-size: cover;
 	}
 }
 
-.amount__item {
-	padding: 0 16px;
-	+ .amount__item {
+.buy_warrior__item {
+	+ .buy_warrior__item {
 		margin-top: 16px;
 	}
 }

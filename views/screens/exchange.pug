@@ -33,7 +33,7 @@ block main
 				.tabs__content__body.trade__body
 					.exchange__item
 						label.flex-between-alc
-							span From
+							span.fw-600 From
 						.input-group
 							input.form-control(type="number" placeholder="0.00")
 							.input-group-append
@@ -42,18 +42,20 @@ block main
 										img.token__icon(src="./images/BTCB.png", alt="BTCB")
 										span.token__name BTCB
 									i.fad.fa-chevron-down
-					.exchange__reverse
-						button.bt.cl-secondary
-							i.fad.fa-sort-alt
+					.exchange__item
+						.flex-jcc
+							button.bt.cl-secondary
+								i.fad.fa-sort-alt
 					.exchange__item
 						label.flex-between-alc
-							span To
+							span.fw-600 To
 						.input-group
 							input.form-control(type="number" placeholder="0.00")
 							.input-group-append
 								a.token__item.secondary-highlight(popup-to="select_token_popup" href="javascript:;")
-									img.token__icon(src="./images/BTCB.png", alt="BTCB")
-									span.token__name BTCB
+									.token__information
+										img.token__icon(src="./images/BTCB.png", alt="BTCB")
+										span.token__name BTCB
 									i.fad.fa-chevron-down
 				.tabs__content__footer.trade__footer
 					button.bt.bt-lg.bt-block.primary(popup-to="wallet_connect_popup" href="javascript:;") Unlock Wallet
@@ -81,7 +83,7 @@ block main
 				.tabs__content__body.trade__body
 					.exchange__item
 						label.flex-between-alc
-							span From
+							span.fw-600 From
 						.input-group
 							input.form-control(type="number" placeholder="0.00")
 							.input-group-append
@@ -92,17 +94,19 @@ block main
 										img.token__icon(src="./images/BTCB.png", alt="BTCB")
 										span.token__name BTCB
 									i.fad.fa-chevron-down
-					.exchange__reverse
-						button.bt.cl-secondary
-							i.fad.fa-sort-alt
+					.exchange__item
+						.flex-jcc
+							button.bt.cl-secondary
+								i.fad.fa-sort-alt
 					.exchange__item
 						label.flex-between-alc
-							span To
+							span.fw-600 To
 						.input-group
 							input.form-control(type="number" placeholder="0.00")
 							.input-group-append
 								a.token__item.secondary-highlight(popup-to="select_token_popup" href="javascript:;")
-									span.token__name Select a currency
+									.token__information
+										span.token__label_select Select a currency
 									i.fad.fa-chevron-down
 				.tabs__content__footer.trade__footer
 					button.bt.bt-lg.bt-block.primary(disable) Enter an amount
@@ -130,8 +134,8 @@ block main
 				.tabs__content__body.trade__body
 					.exchange__item
 						label.flex-between-alc
-							span From
-							span Balance: 0.093436
+							span.fw-600 From
+							span.fw-600 Balance: 0.093436
 						.input-group
 							input.form-control(type="number" placeholder="0.00" value="0.083436025518163143")
 							.input-group-append
@@ -140,13 +144,14 @@ block main
 										img.token__icon(src="./images/FIWA.png", alt="FIWA")
 										span.token__name FIWA
 									i.fad.fa-chevron-down
-					.exchange__reverse
-						button.bt.cl-secondary
-							i.fad.fa-sort-alt
+					.exchange__item
+						.flex-jcc
+							button.bt.cl-secondary
+								i.fad.fa-sort-alt
 					.exchange__item
 						label.flex-between-alc
-							span To (estimated)
-							span Balance: 1.0098
+							span.fw-600 To (estimated)
+							span.fw-600 Balance: 1.0098
 						.input-group
 							input.form-control(type="number" placeholder="0.00" value="27.7179")
 							.input-group-append
@@ -157,25 +162,30 @@ block main
 									i.fad.fa-chevron-down
 					.exchange__item
 						.exchange__total
-							b.txt-primary Price
-							.flex-between-alc
-								b.fs-1rem 329.109 BUSD per BNB
-								button.bt-circle.secondary.ml-0x5rem
-									i.fal.fa-repeat
-					.exchange__item
-						.exchange__total
-							b.txt-primary Slippage Tolerance
-							.flex-between-alc
-								b.fs-1rem 0.8%
+							.exchange__total__item
+								.flex-between-alc
+									b.txt-primary Price
+									.flex-between-alc
+										b.fs-1rem 329.109 BUSD per BNB
+										button.bt-circle.secondary.ml-0x5rem
+											i.fal.fa-repeat
+							.exchange__total__item
+								.flex-between-alc
+									b.txt-primary Slippage Tolerance
+									.flex-between-alc
+										b.fs-1rem 0.8%
 				.tabs__content__footer.trade__footer
 					button.bt.bt-lg.bt-block.primary(popup-to="confirm_swap_popup" href="javascript:;") Swap
 		.exchange__final
-			.exchange_final__item.flex-between-alc
-				span Minimum received
-				span 45.81 ALPACA
-			.exchange_final__item.flex-between-alc
-				span Price Impact
-				span.txt-secondary <0.01%
-			.exchange_final__item.flex-between-alc
-				span Liquidity Provider Fee
-				span 0.0002085 BNB
+			.exchange_final__item
+				.flex-between-alc
+					span Minimum received
+					span 45.81 ALPACA
+			.exchange_final__item
+				.flex-between-alc
+					span Price Impact
+					span.txt-secondary <0.01%
+			.exchange_final__item
+				.flex-between-alc
+					span Liquidity Provider Fee
+					span 0.0002085 BNB

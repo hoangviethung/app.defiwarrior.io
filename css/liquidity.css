@@ -14,6 +14,9 @@
       padding-right: 16px;
       padding-left: 16px; } }
 
+.trade__navigation {
+  padding: 24px 24px 0 24px; }
+
 .trade__header {
   display: flex;
   align-items: center;
@@ -55,3 +58,50 @@
   padding: 32px 16px;
   border-radius: 8px;
   background-color: rgba(34, 200, 229, 0.2); }
+  .liquidity__note p + p {
+    margin-top: 8; }
+
+.liquidity__item label {
+  font-weight: 600;
+  margin-bottom: 16px; }
+
+.liquidity__item + .liquidity__item {
+  margin-top: 16px; }
+
+.liquidity__total {
+  padding: 16px;
+  background-color: rgba(126, 47, 255, 0.1);
+  border-radius: 16px;
+  margin-top: 24px; }
+
+.liquidity__total__item + .liquidity__total__item {
+  margin-top: 24px; }
+  @media (max-width: 767.98px) {
+    .liquidity__total__item + .liquidity__total__item {
+      margin-top: 16px; } }
+
+.liquidity__total__item .flex-between-alc > div p + p {
+  margin-top: 8px; }
+
+@media (max-width: 767.98px) {
+  .liquidity__total__item .flex-between-alc {
+    flex-direction: column; }
+    .liquidity__total__item .flex-between-alc > div + div {
+      margin-top: 16px; } }
+
+.liquidity__total__item .flex-between-alc + .flex-between-alc {
+  margin-top: 16px; }
+
+.liquidity__final {
+  padding: 24px;
+  margin: 24px;
+  border-radius: 16px;
+  background-color: rgba(126, 47, 255, 0.2);
+  box-shadow: inset 0px -4px 4px rgba(126, 47, 255, 0.2); }
+  @media (max-width: 767.98px) {
+    .liquidity__final {
+      margin: 16px 0 0 0;
+      padding: 16px; } }
+
+.liquidity_final__item + .liquidity_final__item {
+  margin-top: 16px; }

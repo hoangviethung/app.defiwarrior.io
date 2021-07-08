@@ -316,3 +316,35 @@
 		}
 	}
 }
+
+#confirm_liquidity_popup {
+	max-width: 600px;
+	width: 100%;
+	.confirm_liquidity__item {
+		+ .confirm_liquidity__item {
+			margin-top: 16px;
+		}
+		> .flex-between-alc {
+			+ .flex-between-alc {
+				margin-top: 16px;
+			}
+			> div {
+				p {
+					+ p {
+						margin-top: 8px;
+					}
+				}
+			}
+		}
+	}
+	.pool_token__name--lg {
+		margin-left: 0;
+		@media (max-width: 767.98px) {
+			display: block;
+		}
+	}
+	.pool_token__price--2xl {
+		margin-right: 16px;
+		margin-left: 0;
+	}
+}

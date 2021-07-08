@@ -31,24 +31,28 @@ block main
 						a.bt-circle.secondary(href="#")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
-					a.token__item.primary(popup-to="select_liquidity_popup" href="javascript:;")
-						.token__information
-							img.token__icon(src="./images/FIWA.png", alt="FIWA")
-							img.token__icon(src="./images/BTCB.png", alt="BTCB")
-							span.token__name FIWA-BTCB
-						i.fad.fa-chevron-down
-					.amount__item.flex-between-alc
-						.token__information
-							img.token__icon(src="./images/FIWA.png", alt="FIWA")
-							span.token__name FIWA
-						.token__amount 0.003
-					.amount__item.flex-between-alc
-						.token__information
-							img.token__icon(src="./images/BTCB.png", alt="BTCB")
-							span.token__name BTCB
-						.token__amount 0.003
-					.buy_warrior__character
-						img(src="./images/character_buy.png", alt="CHARACTER")
-					p.buy_warrior__note By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.
+					.buy_warrior__item
+						a.token__item.token__item--block.primary(popup-to="select_liquidity_popup" href="javascript:;")
+							.token__information
+								img.token__icon(src="./images/FIWA.png", alt="FIWA")
+								img.token__icon(src="./images/BTCB.png", alt="BTCB")
+								span.token__name FIWA-BTCB
+							i.fad.fa-chevron-down
+					.buy_warrior__item
+						.token__item.token__item--block
+							.token__information
+								img.token__icon(src="./images/FIWA.png", alt="FIWA")
+								span.token__name FIWA
+							.token__price 0.003
+					.buy_warrior__item
+						.token__item.token__item--block
+							.token__information
+								img.token__icon(src="./images/BTCB.png", alt="BTCB")
+								span.token__name BTCB
+							.token__price 0.003
+					.buy_warrior__item
+						.buy_warrior__character
+							img(src="./images/character_buy.png", alt="CHARACTER")
+						p.buy_warrior__note By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.
 				.tabs__content__footer.trade__footer
 					button.bt.bt-lg.bt-block.secondary Buy Warrior

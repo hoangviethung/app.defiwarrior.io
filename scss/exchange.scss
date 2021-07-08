@@ -10,19 +10,7 @@
 	}
 }
 
-.exchange__reverse {
-	display: flex;
-	justify-content: center;
-	margin: 16px 0;
-	@media (max-width: 767.98px) {
-		margin: 8px 0;
-	}
-}
-
 .exchange__total {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	padding: 16px;
 	background-color: rgba(
 		$color: map-get($map: $theme-colors, $key: secondary-highlight),
@@ -36,6 +24,17 @@
 			.fs-1rem {
 				font-size: 0.875rem;
 			}
+		}
+	}
+}
+
+.exchange__total__item {
+	+ .exchange__total__item {
+		margin-top: 24px;
+	}
+	> .flex-between-alc {
+		@media (max-width: 767.98px) {
+			flex-direction: column;
 		}
 	}
 }
@@ -63,5 +62,11 @@
 	}
 	+ .exchange_final__item {
 		margin-top: 8px;
+	}
+
+	@media (max-width: 767.98px) {
+		> .flex-between-alc {
+			flex-direction: column;
+		}
 	}
 }

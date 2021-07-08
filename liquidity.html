@@ -93,10 +93,14 @@
                   <div class="box-right"><a class="bt-circle secondary" href="#"><i class="fad fa-sliders-h"></i></a><a class="bt-circle secondary" href="#"><i class="fad fa-history"></i></a></div>
                 </div>
                 <div class="tabs__content__body trade__body">
-                  <div class="liquidity__note">Connect to a wallet to view your liquidity.</div>
+                  <div class="liquidity__item">
+                    <div class="liquidity__note">
+                      <p>Connect to a wallet to view your liquidity.</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="tabs__content__footer trade__footer">
-                  <button class="bt bt-lg bt-block primary" popup-to="wallet_connect_popup" href="javascript:;"><i class="fad fa-plus"></i><span>Add Liquidity</span></button>
+                  <button class="bt bt-lg bt-block primary" popup-to="wallet_connect_popup" href="javascript:;">Connect Wallet</button>
                 </div>
               </div>
             </div>
@@ -111,47 +115,445 @@
               <div class="tabs__content">
                 <div class="tabs__content__header trade__header">
                   <div class="box-left">
+                    <h2 class="trade__title">Your Liquidity</h2>
+                    <p class="trade__desc">Remove liquidity to receive tokens back</p>
+                  </div>
+                  <div class="box-right"><a class="bt-circle secondary" href="#"><i class="fad fa-sliders-h"></i></a><a class="bt-circle secondary" href="#"><i class="fad fa-history"></i></a></div>
+                </div>
+                <div class="tabs__content__body trade__body">
+                  <div class="liquidity__item">
+                    <p class="fs-1rem fw-600 ta-c txt-disable">Don't see a pool you joined?</p>
+                    <div class="flex-alc-jcc mt-1rem">
+                      <button class="bt bt-outline primary">Find other LP tokens</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content__footer trade__footer">
+                  <button class="bt bt-lg bt-block primary"><i class="fal fa-plus"></i><span>Add Liquidity</span></button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="trade liquidity">
+            <div class="tabs neutral-background-lighter">
+              <div class="tabs__nav"><a class="tabs__link" href="exchange.html">
+                  <div class="tabs__icon"><i class="fad fa-sync"></i></div>
+                  <div class="tabs__text">Swap</div></a><a class="tabs__link active" href="liquidity.html">
+                  <div class="tabs__icon"><i class="fad fa-dollar-sign"></i></div>
+                  <div class="tabs__text">Liquidity Pool</div></a></div>
+              <div class="tabs__content">
+                <div class="tabs__content__header trade__header">
+                  <div class="box-left">
+                    <h2 class="trade__title">Your Liquidity</h2>
+                    <p class="trade__desc">Remove liquidity to receive tokens back</p>
+                  </div>
+                  <div class="box-right"><a class="bt-circle secondary" href="#"><i class="fad fa-sliders-h"></i></a><a class="bt-circle secondary" href="#"><i class="fad fa-history"></i></a></div>
+                </div>
+                <div class="tabs__content__body trade__body">
+                  <div class="liquidity__item">
+                    <div class="pool_token__item secondary-highlight" role="buton">
+                      <div class="js-show-pool-token-item-hidden flex-between-alc">
+                        <div>
+                          <div class="pool_token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="pool_token__name">GEM-BNB LP</span></div>
+                          <div class="pool_token__information"><span class="pool_token__price">0.05313</span></div>
+                        </div>
+                        <div><i class="fad fa-chevron-down"></i></div>
+                      </div>
+                      <div class="pool_token__item__hidden">
+                        <div class="flex-between-alc">
+                          <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__name">Pooled FIWA</span></div><b>0.00332964</b>
+                        </div>
+                        <div class="flex-between-alc">
+                          <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">Pooled BTCB</span></div><b>1.05067</b>
+                        </div>
+                        <div class="flex-between-alc"><b>Share of pool</b><b><0.01%</b></div>
+                        <div class="flex-between-alc pool_token__item__action">
+                          <button class="bt bt-outline primary">Remove</button>
+                          <button class="bt bt-outline primary"><i class="fal fa-plus"></i><span>Add liquidity instead</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <div class="pool_token__item secondary-highlight" role="buton">
+                      <div class="js-show-pool-token-item-hidden flex-between-alc">
+                        <div>
+                          <div class="pool_token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="pool_token__name">GEM-BNB LP</span></div>
+                          <div class="pool_token__information"><span class="pool_token__price">0.05313</span></div>
+                        </div>
+                        <div><i class="fad fa-chevron-down"></i></div>
+                      </div>
+                      <div class="pool_token__item__hidden">
+                        <div class="flex-between-alc">
+                          <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__name">Pooled FIWA</span></div><b>0.00332964</b>
+                        </div>
+                        <div class="flex-between-alc">
+                          <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">Pooled BTCB</span></div><b>1.05067</b>
+                        </div>
+                        <div class="flex-between-alc"><b>Share of pool</b><b><0.01%</b></div>
+                        <div class="flex-between-alc pool_token__item__action">
+                          <button class="bt bt-outline primary">Remove</button>
+                          <button class="bt bt-outline primary"><i class="fal fa-plus"></i><span>Add liquidity instead</span></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <p class="fs-1rem fw-600 ta-c txt-disable">Don't see a pool you joined?</p>
+                    <div class="flex-alc-jcc mt-1rem">
+                      <button class="bt bt-outline primary">Find other LP tokens</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content__footer trade__footer">
+                  <button class="bt bt-lg bt-block primary"><i class="fal fa-plus"></i><span>Add Liquidity</span></button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="trade liquidity">
+            <div class="tabs neutral-background-lighter">
+              <div class="tabs__nav"><a class="tabs__link" href="exchange.html">
+                  <div class="tabs__icon"><i class="fad fa-sync"></i></div>
+                  <div class="tabs__text">Swap</div></a><a class="tabs__link active" href="liquidity.html">
+                  <div class="tabs__icon"><i class="fad fa-dollar-sign"></i></div>
+                  <div class="tabs__text">Liquidity Pool</div></a></div>
+              <div class="tabs__content">
+                <div class="tabs__content__navigation trade__navigation">
+                  <div class="bt-circle secondary"><i class="fad fa-arrow-left"></i></div>
+                </div>
+                <div class="tabs__content__header trade__header">
+                  <div class="box-left">
                     <h2 class="trade__title">Add Liquidity</h2>
                     <p class="trade__desc">Add liquidity to receive LP tokens</p>
                   </div>
                   <div class="box-right"><a class="bt-circle secondary" href="#"><i class="fad fa-sliders-h"></i></a><a class="bt-circle secondary" href="#"><i class="fad fa-history"></i></a></div>
                 </div>
                 <div class="tabs__content__body trade__body">
-                  <div class="exchange__item">
-                    <label class="flex-between-alc"><span>From</span><span>Balance: 0.093436</span></label>
+                  <div class="liquidity__item">
+                    <label class="flex-between-alc"><span>Input</span></label>
                     <div class="input-group">
-                      <input class="form-control" type="number" placeholder="0.00" value="0.083436025518163143"/>
+                      <input class="form-control" type="number" placeholder="0.00"/>
                       <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
-                          <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div><i class="fad fa-chevron-down"></i></a></div>
+                          <div class="token__information"><span class="token__label_select">Select a currency</span></div><i class="fad fa-chevron-down"></i></a></div>
                     </div>
                   </div>
-                  <div class="exchange__reverse">
-                    <button class="bt cl-secondary"><i class="fad fa-sort-alt"></i></button>
+                  <div class="liquidity__item">
+                    <div class="flex-jcc">
+                      <div class="txt-secondary"><i class="fal fa-plus"></i></div>
+                    </div>
                   </div>
-                  <div class="exchange__item">
-                    <label class="flex-between-alc"><span>To (estimated)</span><span>Balance: 1.0098</span></label>
+                  <div class="liquidity__item">
+                    <label class="flex-between-alc"><span>Input</span></label>
                     <div class="input-group">
-                      <input class="form-control" type="number" placeholder="0.00" value="27.7179"/>
+                      <input class="form-control" type="number" placeholder="0.00"/>
                       <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
-                          <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div><i class="fad fa-chevron-down"></i></a></div>
-                    </div>
-                  </div>
-                  <div class="exchange__item">
-                    <div class="exchange__total"><b class="txt-primary">Price</b>
-                      <div class="flex-between-alc"><b class="fs-1rem">329.109 BUSD per BNB</b>
-                        <button class="bt-circle secondary ml-0x5rem"><i class="fal fa-repeat"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="exchange__item">
-                    <div class="exchange__total"><b class="txt-primary">Slippage Tolerance</b>
-                      <div class="flex-between-alc"><b class="fs-1rem">0.8%</b></div>
+                          <div class="token__information"><span class="token__label_select">Select a currency</span></div><i class="fad fa-chevron-down"></i></a></div>
                     </div>
                   </div>
                 </div>
                 <div class="tabs__content__footer trade__footer">
                   <button class="bt bt-lg bt-block primary" disable="disable">Invalid pair</button>
                 </div>
+              </div>
+            </div>
+          </section>
+          <section class="trade liquidity">
+            <div class="tabs neutral-background-lighter">
+              <div class="tabs__nav"><a class="tabs__link" href="exchange.html">
+                  <div class="tabs__icon"><i class="fad fa-sync"></i></div>
+                  <div class="tabs__text">Swap</div></a><a class="tabs__link active" href="liquidity.html">
+                  <div class="tabs__icon"><i class="fad fa-dollar-sign"></i></div>
+                  <div class="tabs__text">Liquidity Pool</div></a></div>
+              <div class="tabs__content">
+                <div class="tabs__content__navigation trade__navigation">
+                  <div class="bt-circle secondary"><i class="fad fa-arrow-left"></i></div>
+                </div>
+                <div class="tabs__content__header trade__header">
+                  <div class="box-left">
+                    <h2 class="trade__title">Add Liquidity</h2>
+                    <p class="trade__desc">Add liquidity to receive LP tokens</p>
+                  </div>
+                  <div class="box-right"><a class="bt-circle secondary" href="#"><i class="fad fa-sliders-h"></i></a><a class="bt-circle secondary" href="#"><i class="fad fa-history"></i></a></div>
+                </div>
+                <div class="tabs__content__body trade__body">
+                  <div class="liquidity__item">
+                    <label class="flex-between-alc"><span>Input</span><span>Balance: 0.093436</span></label>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00"/>
+                      <div class="input-group-append">
+                        <button class="bt secondary">Max</button>
+                      </div>
+                      <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                          <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__name">FIWA</span></div><i class="fad fa-chevron-down"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <div class="flex-jcc">
+                      <div class="txt-secondary"><i class="fal fa-plus"></i></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <label class="flex-between-alc"><span>Input</span></label>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00"/>
+                      <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                          <div class="token__information"><span class="token__label_select">Select a currency</span></div><i class="fad fa-chevron-down"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content__footer trade__footer">
+                  <button class="bt bt-lg bt-block primary" disable="disable">Invalid pair</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="trade liquidity">
+            <div class="tabs neutral-background-lighter">
+              <div class="tabs__nav"><a class="tabs__link" href="exchange.html">
+                  <div class="tabs__icon"><i class="fad fa-sync"></i></div>
+                  <div class="tabs__text">Swap</div></a><a class="tabs__link active" href="liquidity.html">
+                  <div class="tabs__icon"><i class="fad fa-dollar-sign"></i></div>
+                  <div class="tabs__text">Liquidity Pool</div></a></div>
+              <div class="tabs__content">
+                <div class="tabs__content__navigation trade__navigation">
+                  <div class="bt-circle secondary"><i class="fad fa-arrow-left"></i></div>
+                </div>
+                <div class="tabs__content__header trade__header">
+                  <div class="box-left">
+                    <h2 class="trade__title">Remove GEM-BNB liquidity</h2>
+                    <p class="trade__desc">To receive GEM and BNB</p>
+                  </div>
+                </div>
+                <div class="tabs__content__body trade__body">
+                  <div class="liquidity__item">
+                    <label class="flex-between-alc"><span>Input</span><span>Balance: 0.093436</span></label>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00"/>
+                      <div class="input-group-append">
+                        <button class="bt secondary">Max</button>
+                      </div>
+                      <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_liquidity_popup" href="javascript:;">
+                          <div class="pool_token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">FIWA - BTCB</span></div><i class="fad fa-chevron-down"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <div class="flex-jcc">
+                      <div class="txt-secondary"><i class="fal fa-arrow-down"></i></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <label class="flex-between-alc"><span>Output</span><span>Balance: 0.093436</span></label>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00"/>
+                      <div class="input-group-append">
+                        <button class="bt secondary">Max</button>
+                      </div>
+                      <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                          <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__name">FIWA</span></div><i class="fad fa-chevron-down"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <div class="flex-jcc">
+                      <div class="txt-secondary"><i class="fal fa-plus"></i></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <label class="flex-between-alc"><span>Output</span><span>Balance: 0.093436</span></label>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00"/>
+                      <div class="input-group-append">
+                        <button class="bt secondary">Max</button>
+                      </div>
+                      <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                          <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div><i class="fad fa-chevron-down"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <div class="liquidity__total">
+                      <div class="liquidity__total__item">
+                        <p class="txt-primary fw-700 ta-c">Price</p>
+                      </div>
+                      <div class="liquidity__total__item">
+                        <div class="flex-between-alc"><span class="fw-600">1 BELT =</span><span class="fw-600">0.0378173 BNB</span></div>
+                        <div class="flex-between-alc"><span class="fw-600">1 BNB =</span><span class="fw-600">26.4429 BELT</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content__footer trade__footer">
+                  <div class="grid-auto-auto-gap-24">
+                    <button class="bt bt-lg bt-block primary" disable="disable">Approved</button>
+                    <button class="bt bt-lg bt-block primary">Remove</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="liquidity__final">
+              <div class="liquidity_final__item">
+                <p class="txt-primary fw-700">LP tokens in your wallet</p>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc">
+                  <div class="pool_token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="pool_token__name">GEM-BNB LP</span></div><span class="fw-600">0.01365</span>
+                </div>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc"><span class="fw-600">Share of Pool:</span><span class="fw-600">0.000000%</span></div>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc"><span class="fw-600">Pooled GEM:</span><span class="fw-600">0.065041</span></div>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc"><span class="fw-600">Pooled BNB:</span><span class="fw-600">0.00297429</span></div>
+              </div>
+            </div>
+          </section>
+          <section class="trade liquidity">
+            <div class="tabs neutral-background-lighter">
+              <div class="tabs__nav"><a class="tabs__link" href="exchange.html">
+                  <div class="tabs__icon"><i class="fad fa-sync"></i></div>
+                  <div class="tabs__text">Swap</div></a><a class="tabs__link active" href="liquidity.html">
+                  <div class="tabs__icon"><i class="fad fa-dollar-sign"></i></div>
+                  <div class="tabs__text">Liquidity Pool</div></a></div>
+              <div class="tabs__content">
+                <div class="tabs__content__navigation trade__navigation">
+                  <div class="bt-circle secondary"><i class="fad fa-arrow-left"></i></div>
+                </div>
+                <div class="tabs__content__header trade__header">
+                  <div class="box-left">
+                    <h2 class="trade__title">Add Liquidity</h2>
+                    <p class="trade__desc">Add liquidity to receive LP tokens</p>
+                  </div>
+                  <div class="box-right"><a class="bt-circle secondary" href="#"><i class="fad fa-sliders-h"></i></a><a class="bt-circle secondary" href="#"><i class="fad fa-history"></i></a></div>
+                </div>
+                <div class="tabs__content__body trade__body">
+                  <div class="liquidity__item">
+                    <label class="flex-between-alc"><span>Input</span><span>Balance: 0.093436</span></label>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00" value="1.82015"/>
+                      <div class="input-group-append">
+                        <button class="bt secondary">Max</button>
+                      </div>
+                      <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                          <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__name">FIWA</span></div><i class="fad fa-chevron-down"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <div class="flex-jcc">
+                      <div class="txt-secondary"><i class="fal fa-plus"></i></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <label class="flex-between-alc"><span>Input</span><span>Balance: 0.0821267</span></label>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00" value="0.083436025518163143"/>
+                      <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                          <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div><i class="fad fa-chevron-down"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item">
+                    <div class="liquidity__total">
+                      <div class="liquidity__total__item">
+                        <p class="txt-primary ta-c fw-700">Prices and pool share</p>
+                      </div>
+                      <div class="liquidity__total__item">
+                        <div class="flex-between-alc">
+                          <div class="ta-c">
+                            <p class="fw-600">0.0457736</p>
+                            <p class="fw-600">BNB per GEM</p>
+                          </div>
+                          <div class="ta-c">
+                            <p class="fw-600">21.8466</p>
+                            <p class="fw-600">GEM per BNB</p>
+                          </div>
+                          <div class="ta-c">
+                            <p class="fw-600"><0.01%</p>
+                            <p class="fw-600">Share of Pool</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content__footer trade__footer">
+                  <button class="bt bt-lg bt-block primary" popup-to="confirm_liquidity_popup" href="javascript:;">Supply</button>
+                </div>
+              </div>
+            </div>
+            <div class="liquidity__final">
+              <div class="liquidity_final__item">
+                <p class="txt-primary fw-700">LP tokens in your wallet</p>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc">
+                  <div class="pool_token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="pool_token__name">GEM-BNB LP</span></div><span class="fw-600">0.01365</span>
+                </div>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc"><span class="fw-600">Share of Pool:</span><span class="fw-600">0.000000%</span></div>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc"><span class="fw-600">Pooled GEM:</span><span class="fw-600">0.065041</span></div>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc"><span class="fw-600">Pooled BNB:</span><span class="fw-600">0.00297429</span></div>
+              </div>
+            </div>
+          </section>
+          <section class="trade liquidity">
+            <div class="tabs neutral-background-lighter">
+              <div class="tabs__nav"><a class="tabs__link" href="exchange.html">
+                  <div class="tabs__icon"><i class="fad fa-sync"></i></div>
+                  <div class="tabs__text">Swap</div></a><a class="tabs__link active" href="liquidity.html">
+                  <div class="tabs__icon"><i class="fad fa-dollar-sign"></i></div>
+                  <div class="tabs__text">Liquidity Pool</div></a></div>
+              <div class="tabs__content">
+                <div class="tabs__content__navigation trade__navigation">
+                  <div class="bt-circle secondary"><i class="fad fa-arrow-left"></i></div>
+                </div>
+                <div class="tabs__content__header trade__header">
+                  <div class="box-left">
+                    <h2 class="trade__title">Import Pool</h2>
+                    <p class="trade__desc">Import an existing pool</p>
+                  </div>
+                  <div class="box-right"><a class="bt-circle secondary" href="#"><i class="fad fa-sliders-h"></i></a><a class="bt-circle secondary" href="#"><i class="fad fa-history"></i></a></div>
+                </div>
+                <div class="tabs__content__body trade__body">
+                  <div class="liquidity__item"><a class="token__item token__item--block secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                      <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__name">FIWA</span></div><i class="fad fa-chevron-down"></i></a></div>
+                  <div class="liquidity__item">
+                    <div class="flex-jcc">
+                      <div class="txt-secondary"><i class="fal fa-plus"></i></div>
+                    </div>
+                  </div>
+                  <div class="liquidity__item"><a class="token__item token__item--block secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                      <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div><i class="fad fa-chevron-down"></i></a></div>
+                  <div class="liquidity__item">
+                    <div class="liquidity__note">
+                      <p>Pool Found!</p><a class="bt" href="#">Manage this pool.</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="liquidity__final">
+              <div class="liquidity_final__item">
+                <p class="txt-primary fw-700">LP tokens in your wallet</p>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc">
+                  <div class="pool_token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="pool_token__name">GEM-BNB LP</span></div><span class="fw-600">0.01365</span>
+                </div>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc"><span class="fw-600">Share of Pool:</span><span class="fw-600">0.000000%</span></div>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc"><span class="fw-600">Pooled GEM:</span><span class="fw-600">0.065041</span></div>
+              </div>
+              <div class="liquidity_final__item">
+                <div class="flex-between-alc"><span class="fw-600">Pooled BNB:</span><span class="fw-600">0.00297429</span></div>
               </div>
             </div>
           </section>
@@ -391,24 +793,27 @@
               <div class="popup__body">
                 <div class="confirm_swap__item">
                   <div class="flex-between-alc">
-                    <div class="flex-alc"><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><b class="fs-1x4rem">0.083436</b></div>
-                    <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">FIWA</span></div>
+                    <div class="token__information"><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><span class="token__price token__price--lg">0.083436</span></div><span class="token__name token__name--lg token__name--mr-0">FIWA</span>
                   </div>
                 </div>
-                <div class="confirm_swap__item confirm_swap__convert">
+                <div class="confirm_swap__item">
                   <button class="bt cl-secondary"><i class="fad fa-long-arrow-down"></i></button>
                 </div>
                 <div class="confirm_swap__item">
                   <div class="flex-between-alc">
-                    <div class="flex-alc"><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/><b class="fs-1x4rem txt-primary">0.083436</b></div>
+                    <div class="token__information"><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/><span class="token__price token__price--lg txt-primary">0.083436</span></div>
                     <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">BTCB</span></div>
                   </div>
                 </div>
-                <div class="confirm_swap__item confirm_swap__action">
-                  <div class="flex-between-alc">
-                    <div class="flex-alc"><i class="fs-1rem fal fa-exclamation-circle"></i><b class="fs-1rem ml-0x5rem">Price Updated</b></div>
-                    <div class="box-right">
-                      <button class="bt bt-lg primary">Accept</button>
+                <div class="confirm_swap__item">
+                  <div class="confirm_swap__action">
+                    <div class="flex-between-alc">
+                      <div>
+                        <div class="flex-alc"><i class="fs-1rem fal fa-exclamation-circle"></i><b class="fs-1rem ml-0x5rem">Price Updated</b></div>
+                      </div>
+                      <div>
+                        <button class="bt bt-lg primary">Accept</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -417,15 +822,60 @@
                 </div>
                 <div class="confirm_swap__item">
                   <div class="confirm_swap__final">
-                    <div class="confirm_swap__item flex-between-alc"><span>Price</span><span>322.045 BUSD / BNB</span></div>
-                    <div class="confirm_swap__item flex-between-alc"><span>Minimum received</span><span>26.72 BUSD</span></div>
-                    <div class="confirm_swap__item flex-between-alc"><span>Price Impact</span><span class="txt-secondary"><0.01%</span></div>
-                    <div class="confirm_swap__item flex-between-alc"><span>Liquidity Provider Fee</span><span>0.00020859 BNB</span></div>
+                    <div class="confirm_swap__item">
+                      <div class="flex-between-alc"><span>Price</span><span>322.045 BUSD / BNB</span></div>
+                    </div>
+                    <div class="confirm_swap__item">
+                      <div class="flex-between-alc"><span>Minimum received</span><span>26.72 BUSD</span></div>
+                    </div>
+                    <div class="confirm_swap__item">
+                      <div class="flex-between-alc"><span>Price Impact</span><span class="txt-secondary"><0.01%</span></div>
+                    </div>
+                    <div class="confirm_swap__item">
+                      <div class="flex-between-alc"><span>Liquidity Provider Fee</span><span>0.00020859 BNB</span></div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="popup__footer">
                 <button class="bt bt-lg bt-block primary" disable="disable">Confirm Swap</button>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP CONFIRM LIQUIDITY *** //-->
+          <div id="confirm_liquidity_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">You will receive</h2>
+              </div>
+              <div class="popup__body">
+                <div class="confirm_liquidity__item">
+                  <div class="pool_token__information"><b class="pool_token__price pool_token__price--2xl txt-primary">0.20511</b><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/></div>
+                </div>
+                <div class="confirm_liquidity__item">
+                  <div class="pool_token__information"><span class="pool_token__name pool_token__name--lg">CAKE/BUSD Pool Tokens</span></div>
+                </div>
+                <div class="confirm_liquidity__item">
+                  <p class="fs-0x77rem">Output is estimated. If the price changes by more than 0.5% your transaction will revert.</p>
+                </div>
+                <div class="confirm_liquidity__item">
+                  <div class="flex-between-alc"><span>CAKE Deposited</span>
+                    <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__price">0.0696463</span></div>
+                  </div>
+                  <div class="flex-between-alc"><span>BUSD Deposited</span>
+                    <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__price">1.0098</span></div>
+                  </div>
+                  <div class="flex-between-alc"><span>Rates</span>
+                    <div>
+                      <p>1 REM = 14.36 BUSD</p>
+                      <p>1 CAKE = 14.36 BUSD</p>
+                    </div>
+                  </div>
+                  <div class="flex-between-alc"><span>Share of Pool:</span><span>0.000005406%</span></div>
+                </div>
+              </div>
+              <div class="popup__footer">
+                <button class="bt bt-lg bt-block primary">Confirm Supply</button>
               </div>
             </div>
           </div>
@@ -441,6 +891,7 @@
     <script src="./vendors/fancybox/jquery.fancybox.js"></script>
     <script src="./vendors/notify/notify.js"></script>
     <!-- *** JS *** //-->
+    <script src="./js/liquidity.js"></script>
     <script src="./js/core.js"></script>
   </body>
 </html>

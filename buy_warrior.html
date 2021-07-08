@@ -92,18 +92,25 @@
                   </div>
                   <div class="box-right"><a class="bt-circle secondary" href="#"><i class="fad fa-sliders-h"></i></a><a class="bt-circle secondary" href="#"><i class="fad fa-history"></i></a></div>
                 </div>
-                <div class="tabs__content__body trade__body"><a class="token__item primary" popup-to="select_liquidity_popup" href="javascript:;">
-                    <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">FIWA-BTCB</span></div><i class="fad fa-chevron-down"></i></a>
-                  <div class="amount__item flex-between-alc">
-                    <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__name">FIWA</span></div>
-                    <div class="token__amount">0.003</div>
+                <div class="tabs__content__body trade__body">
+                  <div class="buy_warrior__item"><a class="token__item token__item--block primary" popup-to="select_liquidity_popup" href="javascript:;">
+                      <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">FIWA-BTCB</span></div><i class="fad fa-chevron-down"></i></a></div>
+                  <div class="buy_warrior__item">
+                    <div class="token__item token__item--block">
+                      <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__name">FIWA</span></div>
+                      <div class="token__price">0.003</div>
+                    </div>
                   </div>
-                  <div class="amount__item flex-between-alc">
-                    <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div>
-                    <div class="token__amount">0.003</div>
+                  <div class="buy_warrior__item">
+                    <div class="token__item token__item--block">
+                      <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div>
+                      <div class="token__price">0.003</div>
+                    </div>
                   </div>
-                  <div class="buy_warrior__character"><img src="./images/character_buy.png" alt="CHARACTER"/></div>
-                  <p class="buy_warrior__note">By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.</p>
+                  <div class="buy_warrior__item">
+                    <div class="buy_warrior__character"><img src="./images/character_buy.png" alt="CHARACTER"/></div>
+                    <p class="buy_warrior__note">By adding liquidity you’ll get a warrior. Different type of pair tokens will mint different warriors. Warriors can do farming automatically, and user now can use warriors to play the game.</p>
+                  </div>
                 </div>
                 <div class="tabs__content__footer trade__footer">
                   <button class="bt bt-lg bt-block secondary">Buy Warrior</button>
@@ -347,24 +354,27 @@
               <div class="popup__body">
                 <div class="confirm_swap__item">
                   <div class="flex-between-alc">
-                    <div class="flex-alc"><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><b class="fs-1x4rem">0.083436</b></div>
-                    <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">FIWA</span></div>
+                    <div class="token__information"><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><span class="token__price token__price--lg">0.083436</span></div><span class="token__name token__name--lg token__name--mr-0">FIWA</span>
                   </div>
                 </div>
-                <div class="confirm_swap__item confirm_swap__convert">
+                <div class="confirm_swap__item">
                   <button class="bt cl-secondary"><i class="fad fa-long-arrow-down"></i></button>
                 </div>
                 <div class="confirm_swap__item">
                   <div class="flex-between-alc">
-                    <div class="flex-alc"><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/><b class="fs-1x4rem txt-primary">0.083436</b></div>
+                    <div class="token__information"><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/><span class="token__price token__price--lg txt-primary">0.083436</span></div>
                     <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">BTCB</span></div>
                   </div>
                 </div>
-                <div class="confirm_swap__item confirm_swap__action">
-                  <div class="flex-between-alc">
-                    <div class="flex-alc"><i class="fs-1rem fal fa-exclamation-circle"></i><b class="fs-1rem ml-0x5rem">Price Updated</b></div>
-                    <div class="box-right">
-                      <button class="bt bt-lg primary">Accept</button>
+                <div class="confirm_swap__item">
+                  <div class="confirm_swap__action">
+                    <div class="flex-between-alc">
+                      <div>
+                        <div class="flex-alc"><i class="fs-1rem fal fa-exclamation-circle"></i><b class="fs-1rem ml-0x5rem">Price Updated</b></div>
+                      </div>
+                      <div>
+                        <button class="bt bt-lg primary">Accept</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -373,15 +383,60 @@
                 </div>
                 <div class="confirm_swap__item">
                   <div class="confirm_swap__final">
-                    <div class="confirm_swap__item flex-between-alc"><span>Price</span><span>322.045 BUSD / BNB</span></div>
-                    <div class="confirm_swap__item flex-between-alc"><span>Minimum received</span><span>26.72 BUSD</span></div>
-                    <div class="confirm_swap__item flex-between-alc"><span>Price Impact</span><span class="txt-secondary"><0.01%</span></div>
-                    <div class="confirm_swap__item flex-between-alc"><span>Liquidity Provider Fee</span><span>0.00020859 BNB</span></div>
+                    <div class="confirm_swap__item">
+                      <div class="flex-between-alc"><span>Price</span><span>322.045 BUSD / BNB</span></div>
+                    </div>
+                    <div class="confirm_swap__item">
+                      <div class="flex-between-alc"><span>Minimum received</span><span>26.72 BUSD</span></div>
+                    </div>
+                    <div class="confirm_swap__item">
+                      <div class="flex-between-alc"><span>Price Impact</span><span class="txt-secondary"><0.01%</span></div>
+                    </div>
+                    <div class="confirm_swap__item">
+                      <div class="flex-between-alc"><span>Liquidity Provider Fee</span><span>0.00020859 BNB</span></div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="popup__footer">
                 <button class="bt bt-lg bt-block primary" disable="disable">Confirm Swap</button>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP CONFIRM LIQUIDITY *** //-->
+          <div id="confirm_liquidity_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">You will receive</h2>
+              </div>
+              <div class="popup__body">
+                <div class="confirm_liquidity__item">
+                  <div class="pool_token__information"><b class="pool_token__price pool_token__price--2xl txt-primary">0.20511</b><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/></div>
+                </div>
+                <div class="confirm_liquidity__item">
+                  <div class="pool_token__information"><span class="pool_token__name pool_token__name--lg">CAKE/BUSD Pool Tokens</span></div>
+                </div>
+                <div class="confirm_liquidity__item">
+                  <p class="fs-0x77rem">Output is estimated. If the price changes by more than 0.5% your transaction will revert.</p>
+                </div>
+                <div class="confirm_liquidity__item">
+                  <div class="flex-between-alc"><span>CAKE Deposited</span>
+                    <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__price">0.0696463</span></div>
+                  </div>
+                  <div class="flex-between-alc"><span>BUSD Deposited</span>
+                    <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__price">1.0098</span></div>
+                  </div>
+                  <div class="flex-between-alc"><span>Rates</span>
+                    <div>
+                      <p>1 REM = 14.36 BUSD</p>
+                      <p>1 CAKE = 14.36 BUSD</p>
+                    </div>
+                  </div>
+                  <div class="flex-between-alc"><span>Share of Pool:</span><span>0.000005406%</span></div>
+                </div>
+              </div>
+              <div class="popup__footer">
+                <button class="bt bt-lg bt-block primary">Confirm Supply</button>
               </div>
             </div>
           </div>

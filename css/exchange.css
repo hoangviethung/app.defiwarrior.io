@@ -14,6 +14,9 @@
       padding-right: 16px;
       padding-left: 16px; } }
 
+.trade__navigation {
+  padding: 24px 24px 0 24px; }
+
 .trade__header {
   display: flex;
   align-items: center;
@@ -56,18 +59,7 @@
 .exchange__item + .exchange__item {
   margin-top: 16px; }
 
-.exchange__reverse {
-  display: flex;
-  justify-content: center;
-  margin: 16px 0; }
-  @media (max-width: 767.98px) {
-    .exchange__reverse {
-      margin: 8px 0; } }
-
 .exchange__total {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 16px;
   background-color: rgba(126, 47, 255, 0.1);
   border-radius: 16px; }
@@ -78,6 +70,13 @@
         margin-top: 8px; }
         .exchange__total .flex-between-alc .fs-1rem {
           font-size: 0.875rem; } }
+
+.exchange__total__item + .exchange__total__item {
+  margin-top: 24px; }
+
+@media (max-width: 767.98px) {
+  .exchange__total__item > .flex-between-alc {
+    flex-direction: column; } }
 
 .exchange__final {
   padding: 24px;
@@ -95,3 +94,7 @@
 
 .exchange_final__item + .exchange_final__item {
   margin-top: 8px; }
+
+@media (max-width: 767.98px) {
+  .exchange_final__item > .flex-between-alc {
+    flex-direction: column; } }

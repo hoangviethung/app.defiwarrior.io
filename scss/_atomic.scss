@@ -140,6 +140,12 @@
 	width: 100%;
 	height: 100%;
 }
+.mt-1rem {
+	margin-top: 1rem;
+}
+.mb-1rem {
+	margin-bottom: 1rem;
+}
 .ml-0x5rem {
 	margin-left: 0.5rem;
 }
@@ -202,6 +208,15 @@
 	@extend.d-f;
 	@extend .al-c;
 }
+.flex-jcc {
+	@extend.d-f;
+	@extend .jc-c;
+}
+.flex-alc-jcc {
+	@extend.d-f;
+	@extend.jc-c;
+	@extend .al-c;
+}
 .flex-between-alc {
 	@extend.d-f;
 	@extend .al-c;
@@ -219,4 +234,7 @@
 }
 .w-50 {
 	width: 50%;
+}
+.w-at {
+	width: auto;
 }
