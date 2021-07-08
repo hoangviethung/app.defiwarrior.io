@@ -105,7 +105,7 @@ block main
 									span.token__name Select a currency
 									i.fad.fa-chevron-down
 				.tabs__content__footer.trade__footer
-					button.bt.bt-lg.bt-block.primary(disable popup-to="wallet_connect_popup" href="javascript:;") Enter an amount
+					button.bt.bt-lg.bt-block.primary(disable) Enter an amount
 	section.trade.exchange
 		.tabs.neutral-background-lighter
 			.tabs__nav
@@ -137,8 +137,8 @@ block main
 							.input-group-append
 								a.token__item.secondary-highlight(popup-to="select_token_popup" href="javascript:;")
 									.token__information
-										img.token__icon(src="./images/BTCB.png", alt="BTCB")
-										span.token__name BTCB
+										img.token__icon(src="./images/FIWA.png", alt="FIWA")
+										span.token__name FIWA
 									i.fad.fa-chevron-down
 					.exchange__reverse
 						button.bt.cl-secondary
@@ -160,7 +160,7 @@ block main
 							b.txt-primary Price
 							.flex-between-alc
 								b.fs-1rem 329.109 BUSD per BNB
-								button.bt-circle.secondary.ml-05rem
+								button.bt-circle.secondary.ml-0x5rem
 									i.fal.fa-repeat
 					.exchange__item
 						.exchange__total
@@ -168,7 +168,7 @@ block main
 							.flex-between-alc
 								b.fs-1rem 0.8%
 				.tabs__content__footer.trade__footer
-					button.bt.bt-lg.bt-block.primary(popup-to="wallet_connect_popup" href="javascript:;") Swap
+					button.bt.bt-lg.bt-block.primary(popup-to="confirm_swap_popup" href="javascript:;") Swap
 		.exchange__final
 			.exchange_final__item.flex-between-alc
 				span Minimum received

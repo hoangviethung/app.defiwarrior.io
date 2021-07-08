@@ -242,19 +242,47 @@
 			);
 		}
 	}
+	&:active {
+		&:not([disabled]) {
+			opacity: 0.85;
+			transform: translateY(2px);
+			box-shadow: none;
+		}
+	}
 	@media (max-width: 767.98px) {
 		padding: 0 8px;
 	}
 }
+
+.token__information {
+	display: flex;
+	align-items: center;
+}
+
 .token__icon {
 	width: 24px;
 	height: 24px;
 	margin-right: 8px;
+	&--md {
+		width: 32px;
+		height: 32px;
+	}
+	&--lg {
+		width: 44px;
+		height: 44px;
+	}
 }
 
 .token__name {
 	margin-right: 8px;
 	@media (max-width: 767.98px) {
 		display: none;
+	}
+	&--lg {
+		font-size: 1.4rem;
+		font-weight: 600;
+	}
+	&--mr-0 {
+		margin-right: 0;
 	}
 }

@@ -51,6 +51,7 @@
 
 #wallet_connect_popup {
 	max-width: 400px;
+	width: 100%;
 	background-image: url(../images/background_wallet_connect_popup.png);
 	background-size: cover;
 	.list_option_wallet_connect {
@@ -121,7 +122,8 @@
 }
 
 #stake_lp_tokens_popup {
-	min-width: 465px;
+	max-width: 465px;
+	width: 100%;
 	.stake_lp_tokens__name {
 		display: inline-block;
 		margin-left: 8px;
@@ -155,7 +157,8 @@
 }
 
 #select_token_popup {
-	min-width: 350px;
+	max-width: 350px;
+	width: 100%;
 	.select_token__list {
 		margin-top: 24px;
 		max-height: 400px;
@@ -215,7 +218,8 @@
 }
 
 #select_liquidity_popup {
-	min-width: 350px;
+	max-width: 350px;
+	width: 100%;
 	.select_liquidity__list {
 		margin-top: 24px;
 		max-height: 400px;
@@ -270,6 +274,45 @@
 				$color: map-get($map: $theme-colors, $key: secondary),
 				$alpha: 1
 			);
+		}
+	}
+}
+
+#confirm_swap_popup {
+	max-width: 600px;
+	width: 100%;
+	.confirm_swap__item {
+		+ .confirm_swap__item {
+			margin-top: 16px;
+		}
+		&.confirm_swap__action {
+			margin-top: 24px;
+		}
+	}
+	.confirm_swap__action {
+		padding: 16px;
+		border-radius: 16px;
+		margin-top: 24px;
+		background-color: rgba(
+			$color: map-get($map: $theme-colors, $key: secondary-highlight),
+			$alpha: 0.2
+		);
+	}
+	.confirm_swap__final {
+		padding: 24px;
+		margin-top: 24px;
+		border-radius: 16px;
+		background-color: rgba(
+			$color: map-get($map: $theme-colors, $key: secondary-highlight),
+			$alpha: 0.2
+		);
+		box-shadow: inset 0px -4px 4px rgba($color:
+					map-get($map: $theme-colors, $key: secondary-highlight), $alpha:
+					0.2);
+	}
+	.token__name {
+		@media (max-width: 767.98px) {
+			display: block;
 		}
 	}
 }

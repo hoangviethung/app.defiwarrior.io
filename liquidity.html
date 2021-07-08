@@ -101,6 +101,60 @@
               </div>
             </div>
           </section>
+          <section class="trade liquidity">
+            <div class="tabs neutral-background-lighter">
+              <div class="tabs__nav"><a class="tabs__link" href="exchange.html">
+                  <div class="tabs__icon"><i class="fad fa-sync"></i></div>
+                  <div class="tabs__text">Swap</div></a><a class="tabs__link active" href="liquidity.html">
+                  <div class="tabs__icon"><i class="fad fa-dollar-sign"></i></div>
+                  <div class="tabs__text">Liquidity Pool</div></a></div>
+              <div class="tabs__content">
+                <div class="tabs__content__header trade__header">
+                  <div class="box-left">
+                    <h2 class="trade__title">Add Liquidity</h2>
+                    <p class="trade__desc">Add liquidity to receive LP tokens</p>
+                  </div>
+                  <div class="box-right"><a class="bt-circle secondary" href="#"><i class="fad fa-sliders-h"></i></a><a class="bt-circle secondary" href="#"><i class="fad fa-history"></i></a></div>
+                </div>
+                <div class="tabs__content__body trade__body">
+                  <div class="exchange__item">
+                    <label class="flex-between-alc"><span>From</span><span>Balance: 0.093436</span></label>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00" value="0.083436025518163143"/>
+                      <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                          <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div><i class="fad fa-chevron-down"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="exchange__reverse">
+                    <button class="bt cl-secondary"><i class="fad fa-sort-alt"></i></button>
+                  </div>
+                  <div class="exchange__item">
+                    <label class="flex-between-alc"><span>To (estimated)</span><span>Balance: 1.0098</span></label>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00" value="27.7179"/>
+                      <div class="input-group-append"><a class="token__item secondary-highlight" popup-to="select_token_popup" href="javascript:;">
+                          <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__name">BTCB</span></div><i class="fad fa-chevron-down"></i></a></div>
+                    </div>
+                  </div>
+                  <div class="exchange__item">
+                    <div class="exchange__total"><b class="txt-primary">Price</b>
+                      <div class="flex-between-alc"><b class="fs-1rem">329.109 BUSD per BNB</b>
+                        <button class="bt-circle secondary ml-0x5rem"><i class="fal fa-repeat"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="exchange__item">
+                    <div class="exchange__total"><b class="txt-primary">Slippage Tolerance</b>
+                      <div class="flex-between-alc"><b class="fs-1rem">0.8%</b></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content__footer trade__footer">
+                  <button class="bt bt-lg bt-block primary" disable="disable">Invalid pair</button>
+                </div>
+              </div>
+            </div>
+          </section>
           <!-- *** PAGE NAME *** //-->
           <div id="page-verify" data-class="liquidity-page"></div>
           <!-- *** POPUP WALLET CONNECT POPOP *** //-->
@@ -325,6 +379,53 @@
               </div>
               <div class="popup__footer">
                 <div class="d-f jc-c"><a class="manage-liquidities" href="liquidity.html" target="_blank" rel="noreferrer noopener"><span>Manage Liquidities</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP CONFIRM SWAP *** //-->
+          <div id="confirm_swap_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">Confirm Swap</h2>
+              </div>
+              <div class="popup__body">
+                <div class="confirm_swap__item">
+                  <div class="flex-between-alc">
+                    <div class="flex-alc"><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><b class="fs-1x4rem">0.083436</b></div>
+                    <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">FIWA</span></div>
+                  </div>
+                </div>
+                <div class="confirm_swap__item confirm_swap__convert">
+                  <button class="bt cl-secondary"><i class="fad fa-long-arrow-down"></i></button>
+                </div>
+                <div class="confirm_swap__item">
+                  <div class="flex-between-alc">
+                    <div class="flex-alc"><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/><b class="fs-1x4rem txt-primary">0.083436</b></div>
+                    <div class="box-right"><span class="token__name token__name--lg token__name--mr-0">BTCB</span></div>
+                  </div>
+                </div>
+                <div class="confirm_swap__item confirm_swap__action">
+                  <div class="flex-between-alc">
+                    <div class="flex-alc"><i class="fs-1rem fal fa-exclamation-circle"></i><b class="fs-1rem ml-0x5rem">Price Updated</b></div>
+                    <div class="box-right">
+                      <button class="bt bt-lg primary">Accept</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="confirm_swap__item">
+                  <p class="fs-0x77rem">Output is estimated. You will receive at least 26.8277 BUSD or the transaction will revert.</p>
+                </div>
+                <div class="confirm_swap__item">
+                  <div class="confirm_swap__final">
+                    <div class="confirm_swap__item flex-between-alc"><span>Price</span><span>322.045 BUSD / BNB</span></div>
+                    <div class="confirm_swap__item flex-between-alc"><span>Minimum received</span><span>26.72 BUSD</span></div>
+                    <div class="confirm_swap__item flex-between-alc"><span>Price Impact</span><span class="txt-secondary"><0.01%</span></div>
+                    <div class="confirm_swap__item flex-between-alc"><span>Liquidity Provider Fee</span><span>0.00020859 BNB</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="popup__footer">
+                <button class="bt bt-lg bt-block primary" disable="disable">Confirm Swap</button>
               </div>
             </div>
           </div>

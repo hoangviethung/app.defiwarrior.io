@@ -68,12 +68,27 @@ const fancyboxTradeSettings = () => {
 		});
 };
 
+const fancyboxConfirmSwap = () => {
+	document
+		.querySelectorAll("[popup-to='confirm_swap_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#confirm_swap_popup",
+					type: "inline",
+					touch: false,
+				});
+			});
+		});
+};
+
 window.addEventListener("load", (e) => {
 	fancyboxWalletConnect();
 	fancyboxStakeLPTokens();
 	fancyboxSelectToken();
 	fancyboxSelectLiquidity();
 	fancyboxTradeSettings();
+	fancyboxConfirmSwap();
 });
 
 window.addEventListener("scroll", (e) => {});

@@ -85,6 +85,10 @@
   border-radius: 16px;
   background-color: rgba(126, 47, 255, 0.2);
   box-shadow: inset 0px -4px 4px rgba(126, 47, 255, 0.2); }
+  @media (max-width: 767.98px) {
+    .exchange__final {
+      margin: 16px 0 0 0;
+      padding: 16px; } }
 
 .exchange_final__item span {
   font-weight: 600; }

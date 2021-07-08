@@ -12,11 +12,6 @@
 	padding-right: 16px;
 	padding-top: 0;
 	padding-bottom: 0;
-	i {
-		~ span {
-			margin-left: 8px;
-		}
-	}
 	span {
 		~ i {
 			margin-left: 8px;
@@ -25,6 +20,9 @@
 	i {
 		font-size: 1rem;
 		line-height: 1;
+		~ span {
+			margin-left: 8px;
+		}
 	}
 	&.cl-primary {
 		color: map-get($map: $theme-colors, $key: primary);
@@ -236,6 +234,13 @@
 						30%);
 		}
 	}
+	&:active {
+		&:not([disabled]) {
+			opacity: 0.85;
+			transform: translateY(2px);
+			box-shadow: none;
+		}
+	}
 }
 
 .bt-group {
@@ -322,6 +327,13 @@
 			box-shadow: inset 0px -4px 4px darken($color:
 						map-get($map: $theme-colors, $key: secondary-highlight), $amount:
 						20%);
+		}
+	}
+	&:active {
+		&:not([disabled]) {
+			opacity: 0.85;
+			transform: translateY(2px);
+			box-shadow: none;
 		}
 	}
 }

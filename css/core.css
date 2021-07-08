@@ -22,8 +22,17 @@
 .txt-disable {
   color: #c9c9d8 !important; }
 
+.fs-0x66rem {
+  font-size: 0.66rem; }
+
+.fs-0x77rem {
+  font-size: 0.77rem; }
+
 .fs-1rem {
   font-size: 1rem; }
+
+.fs-1x4rem {
+  font-size: 1.4rem; }
 
 .clearfix:after {
   display: table;
@@ -37,7 +46,7 @@
 .d-g, .grid-auto-auto-gap-16, .grid-auto-auto-gap-24 {
   display: grid; }
 
-.d-f, .flex-between-alc {
+.d-f, .flex-alc, .flex-between-alc {
   display: flex; }
 
 .grid-gap-16, .grid-auto-auto-gap-16 {
@@ -112,7 +121,7 @@
 .jc-b, .flex-between-alc {
   justify-content: space-between; }
 
-.al-c, .flex-between-alc {
+.al-c, .flex-alc, .flex-between-alc {
   align-items: center; }
 
 .al-e {
@@ -125,7 +134,7 @@
   width: 100%;
   height: 100%; }
 
-.ml-05rem {
+.ml-0x5rem {
   margin-left: 0.5rem; }
 
 .ml-at, .mx-at {
@@ -133,6 +142,12 @@
 
 .mr-at, .mx-at {
   margin-right: auto; }
+
+.mr-0 {
+  margin-right: 0; }
+
+.ml-0 {
+  margin-left: 0; }
 
 .pl-0, .px-0 {
   padding-left: 0; }
@@ -1129,20 +1144,39 @@
     background-color: rgba(126, 47, 255, 0.2); }
     .token__item.secondary-highlight:hover {
       background-color: rgba(126, 47, 255, 0.8); }
+  .token__item:active:not([disabled]) {
+    opacity: 0.85;
+    transform: translateY(2px);
+    box-shadow: none; }
   @media (max-width: 767.98px) {
     .token__item {
       padding: 0 8px; } }
+
+.token__information {
+  display: flex;
+  align-items: center; }
 
 .token__icon {
   width: 24px;
   height: 24px;
   margin-right: 8px; }
+  .token__icon--md {
+    width: 32px;
+    height: 32px; }
+  .token__icon--lg {
+    width: 44px;
+    height: 44px; }
 
 .token__name {
   margin-right: 8px; }
   @media (max-width: 767.98px) {
     .token__name {
       display: none; } }
+  .token__name--lg {
+    font-size: 1.4rem;
+    font-weight: 600; }
+  .token__name--mr-0 {
+    margin-right: 0; }
 
 .form-control {
   color: #ffffff;
@@ -1205,13 +1239,13 @@
   padding-right: 16px;
   padding-top: 0;
   padding-bottom: 0; }
-  .bt i ~ span {
-    margin-left: 8px; }
   .bt span ~ i {
     margin-left: 8px; }
   .bt i {
     font-size: 1rem;
     line-height: 1; }
+    .bt i ~ span {
+      margin-left: 8px; }
   .bt.cl-primary {
     color: #22c8e5; }
     .bt.cl-primary:hover {
@@ -1309,6 +1343,10 @@
       color: #c9c9d8;
       background-color: #7f7fa3;
       box-shadow: inset 0px -4px 4px #707098; }
+  .bt:active:not([disabled]) {
+    opacity: 0.85;
+    transform: translateY(2px);
+    box-shadow: none; }
 
 .bt-group .bt {
   border-radius: 0; }
@@ -1359,6 +1397,10 @@
     .bt-circle.secondary-highlight:hover {
       background-color: #5f00fb;
       box-shadow: inset 0px -4px 4px #4c00c8; }
+  .bt-circle:active:not([disabled]) {
+    opacity: 0.85;
+    transform: translateY(2px);
+    box-shadow: none; }
 
 .table-custom-wrapper {
   border-radius: 24px;
@@ -1428,6 +1470,7 @@
 
 #wallet_connect_popup {
   max-width: 400px;
+  width: 100%;
   background-image: url(../images/background_wallet_connect_popup.png);
   background-size: cover; }
   #wallet_connect_popup .list_option_wallet_connect {
@@ -1473,7 +1516,8 @@
       color: #ffce5f; }
 
 #stake_lp_tokens_popup {
-  min-width: 465px; }
+  max-width: 465px;
+  width: 100%; }
   #stake_lp_tokens_popup .stake_lp_tokens__name {
     display: inline-block;
     margin-left: 8px; }
@@ -1492,7 +1536,8 @@
       color: #ffce5f; }
 
 #select_token_popup {
-  min-width: 350px; }
+  max-width: 350px;
+  width: 100%; }
   #select_token_popup .select_token__list {
     margin-top: 24px;
     max-height: 400px;
@@ -1530,7 +1575,8 @@
       color: #ffce5f; }
 
 #select_liquidity_popup {
-  min-width: 350px; }
+  max-width: 350px;
+  width: 100%; }
   #select_liquidity_popup .select_liquidity__list {
     margin-top: 24px;
     max-height: 400px;
@@ -1566,6 +1612,28 @@
     transition: all 0.3s linear; }
     #select_liquidity_popup .manage-liquidities:hover {
       color: #ffce5f; }
+
+#confirm_swap_popup {
+  max-width: 600px;
+  width: 100%; }
+  #confirm_swap_popup .confirm_swap__item + .confirm_swap__item {
+    margin-top: 16px; }
+  #confirm_swap_popup .confirm_swap__item.confirm_swap__action {
+    margin-top: 24px; }
+  #confirm_swap_popup .confirm_swap__action {
+    padding: 16px;
+    border-radius: 16px;
+    margin-top: 24px;
+    background-color: rgba(126, 47, 255, 0.2); }
+  #confirm_swap_popup .confirm_swap__final {
+    padding: 24px;
+    margin-top: 24px;
+    border-radius: 16px;
+    background-color: rgba(126, 47, 255, 0.2);
+    box-shadow: inset 0px -4px 4px rgba(126, 47, 255, 0.2); }
+  @media (max-width: 767.98px) {
+    #confirm_swap_popup .token__name {
+      display: block; } }
 
 *,
 *::before,

@@ -1,0 +1,47 @@
+#confirm_swap_popup(style="display:none")
+	.popup_wrapper
+		.popup__header
+			h2.popup__title Confirm Swap
+		.popup__body
+			.confirm_swap__item
+				.flex-between-alc
+					.flex-alc
+						img.token__icon.token__icon--lg(src="./images/FIWA.png", alt="FIWA")
+						b.fs-1x4rem 0.083436
+					.box-right
+						span.token__name.token__name--lg.token__name--mr-0 FIWA
+			.confirm_swap__item.confirm_swap__convert
+				button.bt.cl-secondary
+					i.fad.fa-long-arrow-down
+			.confirm_swap__item
+				.flex-between-alc
+					.flex-alc
+						img.token__icon.token__icon--lg(src="./images/BTCB.png", alt="BTCB")
+						b.fs-1x4rem.txt-primary 0.083436
+					.box-right
+						span.token__name.token__name--lg.token__name--mr-0 BTCB
+			.confirm_swap__item.confirm_swap__action
+				.flex-between-alc
+					.flex-alc
+						i.fs-1rem.fal.fa-exclamation-circle
+						b.fs-1rem.ml-0x5rem Price Updated
+					.box-right
+						button.bt.bt-lg.primary Accept
+			.confirm_swap__item
+				p.fs-0x77rem Output is estimated. You will receive at least 26.8277 BUSD or the transaction will revert.
+			.confirm_swap__item
+				.confirm_swap__final
+					.confirm_swap__item.flex-between-alc
+						span Price
+						span 322.045 BUSD / BNB
+					.confirm_swap__item.flex-between-alc
+						span Minimum received
+						span 26.72 BUSD
+					.confirm_swap__item.flex-between-alc
+						span Price Impact
+						span.txt-secondary <0.01%
+					.confirm_swap__item.flex-between-alc
+						span Liquidity Provider Fee
+						span 0.00020859 BNB
+		.popup__footer
+			button.bt.bt-lg.bt-block.primary(disable) Confirm Swap

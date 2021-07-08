@@ -28,8 +28,17 @@
 .txt-disable {
 	color: map-get($map: $theme-colors, $key: disable) !important;
 }
+.fs-0x66rem {
+	font-size: 0.66rem;
+}
+.fs-0x77rem {
+	font-size: 0.77rem;
+}
 .fs-1rem {
 	font-size: 1rem;
+}
+.fs-1x4rem {
+	font-size: 1.4rem;
 }
 .clearfix:after {
 	display: table;
@@ -131,7 +140,7 @@
 	width: 100%;
 	height: 100%;
 }
-.ml-05rem {
+.ml-0x5rem {
 	margin-left: 0.5rem;
 }
 .ml-at {
@@ -143,6 +152,12 @@
 .mx-at {
 	@extend .ml-at;
 	@extend .mr-at;
+}
+.mr-0 {
+	margin-right: 0;
+}
+.ml-0 {
+	margin-left: 0;
 }
 .pl-0 {
 	padding-left: 0;
@@ -182,6 +197,10 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+.flex-alc {
+	@extend.d-f;
+	@extend .al-c;
 }
 .flex-between-alc {
 	@extend.d-f;

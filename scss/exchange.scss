@@ -51,6 +51,10 @@
 	box-shadow: inset 0px -4px 4px rgba($color:
 				map-get($map: $theme-colors, $key: secondary-highlight), $alpha:
 				0.2);
+	@media (max-width: 767.98px) {
+		margin: 16px 0 0 0;
+		padding: 16px;
+	}
 }
 
 .exchange_final__item {
