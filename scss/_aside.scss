@@ -12,6 +12,7 @@
 			$amount: 5%
 		);
 	background-color: map-get($map: $theme-colors, $key: neutral-background);
+	z-index: 500;
 	@media (max-width: 1024.98px) {
 		width: $width-sidebar-mobile;
 		padding: 24px 0 $height-sidebar-bottom;
@@ -43,10 +44,8 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	display: flex;
-	align-items: center;
 	height: $height-sidebar-bottom;
-	padding: 0 24px;
+	padding: 24px;
 	border-top: 1px solid
 		darken(
 			$color: map-get($map: $theme-colors, $key: gray-border),
@@ -55,6 +54,21 @@
 	@media (max-width: 1024.98px) {
 		padding: 0 8px;
 		height: $height-sidebar-bottom-mobile;
+	}
+	.token__icon {
+		transition: map-get($map: $theme-transition, $key: all);
+	}
+	.token__information {
+		&:hover {
+			.token__icon {
+				transform: scale(1.2, 1.2);
+			}
+		}
+	}
+	> .flex-between-alc {
+		+ .flex-between-alc {
+			margin-top: 16px;
+		}
 	}
 }
 
@@ -190,5 +204,16 @@
 .sidebar__text {
 	@media (max-width: 1024.98px) {
 		display: none;
+	}
+}
+
+.sidebar__socicals {
+	color: map-get($map: $theme-colors, $key: primary);
+	font-size: 1.2rem;
+}
+
+.sidebar__socical__item {
+	+ .sidebar__socical__item {
+		margin-left: 16px;
 	}
 }

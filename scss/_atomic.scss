@@ -28,6 +28,9 @@
 .txt-disable {
 	color: map-get($map: $theme-colors, $key: disable) !important;
 }
+.txt-danger {
+	color: map-get($map: $theme-colors, $key: danger);
+}
 .fs-0x66rem {
 	font-size: 0.66rem;
 }
@@ -145,6 +148,9 @@
 }
 .mb-1rem {
 	margin-bottom: 1rem;
+}
+.ml-0x3rem {
+	margin-left: 0.3rem;
 }
 .ml-0x5rem {
 	margin-left: 0.5rem;

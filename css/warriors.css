@@ -27,12 +27,6 @@
   .banner__text {
     font-size: 0.77rem; } }
 
-@keyframes slidein {
-  0% {
-    transform: translateX(100%); }
-  100% {
-    transform: translateX(0%); } }
-
 .banner_preview {
   position: absolute;
   top: 16px;

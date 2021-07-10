@@ -1,20 +1,7 @@
-# Hoàng Việt Hùng
+# INFORMATION
 
--   Birthday: 9 - 9 - 1999
+-   congress valley alone shoulder garden main envelope much mystery fiction rough flock
 
--   Email: hoangviet.hung.009@gmail.com
+-   Hoa200797
 
--   Phone: 0969.912.404
-
--   Website: https://hoangviethung.com/
-
--   Skype: hoangviet.hung.009
-
-## What is this Project ?
-
--   Sử dụng PUG, SCSS, JQ, JS
-
--   stash, cherry-pick
--   git stash save "text"
--   git push origin design --force
--   get reset <commit> -hard
+-   47ef577b13d964f65ab453b323634dbb89893707e47416ebd9553a448ec18f50

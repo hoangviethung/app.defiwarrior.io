@@ -60,12 +60,6 @@
 .buy_warrior__item + .buy_warrior__item {
   margin-top: 16px; }
 
-@keyframes scale {
-  0% {
-    transform: scale(1.1); }
-  100% {
-    transform: scale(1); } }
-
 .buy_warrior__character {
   margin: 24px 0; }
   .buy_warrior__character img {
