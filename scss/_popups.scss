@@ -126,6 +126,17 @@
 	}
 }
 
+.your_wallet_popup {
+	.your_wallet__token {
+		font-size: 1rem;
+	}
+	.your_wallet__item {
+		+ .your_wallet__item {
+			margin-top: 16px;
+		}
+	}
+}
+
 .stake_lp_tokens_popup {
 	max-width: 465px;
 	width: 100%;

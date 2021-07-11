@@ -19,17 +19,16 @@
     <div class="page">
       <!-- *** ASIDE *** //-->
       <aside class="sidebar">
-        <div class="sidebar__top"><a class="sidebar__logo pos-demo" href="index.html"><img src="./images/logo.png" alt="defi-logo"/></a>
-          <div class="sildebar__button"><i class="fad fa-indent"></i></div>
+        <div class="sidebar__top"><a class="sidebar__logo" href="index.html"><img src="./images/logo.png" alt="defi-logo"/></a>
+          <div class="js-collapse-aside-menu"><i class="fad fa-indent"></i></div>
         </div>
         <div class="sidebar__wrapper">
           <div class="sidebar__list">
             <div class="sidebar__group">
-              <div class="sidebar__caption"><span>Dashboard</span><i class="fad fa-chevron-down"></i></div>
+              <div class="sidebar__caption js-collapse-slidebar-group"><span class="fw-600">Dashboard</span><i class="fad fa-chevron-down"></i></div>
               <div class="sidebar__menu"><a class="sidebar__item active" href="index.html">
                   <div class="sidebar__icon"><i class="fad fa-chart-pie-alt"></i></div>
-                  <div class="sidebar__text">Overview</div></a></div>
-              <div class="sidebar__menu"><a class="sidebar__item" href="farms.html">
+                  <div class="sidebar__text">Overview</div></a><a class="sidebar__item" href="farms.html">
                   <div class="sidebar__icon"><i class="far fa-warehouse-alt"></i></div>
                   <div class="sidebar__text">Farms</div></a><a class="sidebar__item" href="warriors.html">
                   <div class="sidebar__icon"><i class="fas fa-sword"></i></div>
@@ -42,7 +41,7 @@
                   <div class="sidebar__text">Help</div></a></div>
             </div>
             <div class="sidebar__group">
-              <div class="sidebar__caption"><span>Trade</span><i class="fad fa-chevron-down"></i></div>
+              <div class="sidebar__caption js-collapse-slidebar-group"><span class="fw-600">Trade</span><i class="fad fa-chevron-down"></i></div>
               <div class="sidebar__menu"><a class="sidebar__item" href="wallet_asset.html">
                   <div class="sidebar__icon"><i class="fad fa-wallet"></i></div>
                   <div class="sidebar__text">Wallet & Asset</div></a><a class="sidebar__item" href="exchange.html">
@@ -60,6 +59,7 @@
           </div>
         </div>
         <div class="sidebar__bottom">
+          <div class="js-collapse-aside-menu"><i class="fad fa-cog"></i></div>
           <div class="flex-between-alc"><a class="token__information" href="exchange.html" target="_blank"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__price txt-light">$14.560</span></a>
             <div class="sidebar__socicals"><a class="sidebar__socical__item" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a><a class="sidebar__socical__item" href="https://telegram.org/"><i class="fab fa-telegram-plane"></i></a></div>
           </div>
@@ -165,7 +165,8 @@
         <nav class="navigation">
           <div class="container h-100">
             <div class="row no-gutters al-c h-100">
-              <div class="navigation__user"><a class="bt secondary" popup-to="wallet_connect_popup" href="javascript:;"><span class="front">Connect Wallet</span></a><a class="your_wallet" href="javascript:;" style="display:none"><span>0xb3a3c602d1654393ab22ef598868f3bf</span></a>
+              <div class="js-collapse-aside-menu-mobile"><i class="fad fa-indent"></i></div><a class="navigation__logo" href="index.html"><img src="./images/logo.png" alt="defi-logo"/></a>
+              <div class="navigation__user"><a class="bt secondary" popup-to="wallet_connect_popup" href="javascript:;"><span class="front">Connect Wallet</span></a><a class="your_wallet" popup-to="your_wallet_popup" href="javascript:;" style="display:none"><span>0xb3a3c602d1654393ab22ef598868f3bf</span></a>
                 <div class="navigation__avatar">
                   <!-- Radio Image: 48x48--><img src="./images/avatar_default.png" alt="USER"/>
                 </div>
@@ -511,6 +512,29 @@
               </div>
               <div class="popup__footer">
                 <div class="d-f jc-c"><a class="support-document" href="https://bap-software.net/vi/" target="_blank" rel="noreferrer noopener"><i class="fad fa-question-circle"></i><span>Learn how to connect</span></a></div>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP YOUR WALLET POPOP *** //-->
+          <div class="your_wallet_popup" id="your_wallet_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">Your Wallet</h2>
+              </div>
+              <div class="popup__body">
+                <div class="your_wallet__item">
+                  <h4 class="your_wallet__token">0x515f1B949306843B286f40239e04B760E3c65434</h4>
+                </div>
+                <div class="your_wallet__item">
+                  <div class="flex-between-alc"><a class="bt cl-primary" href="https://bscscan.com/address/0x515f1B949306843B286f40239e04B760E3c65434" target="_blank" rel="noreferrer noopener"><span>View on BscScan</span><i class="fad fa-external-link-alt"></i></a>
+                    <button class="bt cl-primary"><span>Copy Address</span><i class="fad fa-copy"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="popup__footer">
+                <div class="d-f jc-c">
+                  <button class="bt bt-lg bt-outline primary">Logouts</button>
+                </div>
               </div>
             </div>
           </div>
@@ -1095,7 +1119,7 @@
       </div>
     </div>
     <!-- *** OVERLAY *** //-->
-    <div id="overlay"></div>
+    <div class="overlay"></div>
     <!-- *** FOOTER *** //-->
     <footer></footer>
     <!-- *** VENDORS JS *** //-->

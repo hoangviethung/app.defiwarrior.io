@@ -281,8 +281,6 @@
 	}
 }
 
-
-
 .pool_token__item {
 	cursor: pointer;
 	padding: 16px;
@@ -458,5 +456,25 @@
 			color: map-get($map: $theme-colors, $key: neutral-white);
 			font-weight: 600;
 		}
+	}
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(
+		$color: map-get($map: $theme-colors, $key: neutral-black),
+		$alpha: 0.8
+	);
+	opacity: 0;
+	visibility: hidden;
+	z-index: 300;
+	transition: map-get($map: $theme-transition, $key: all);
+	&.active {
+		opacity: 1;
+		visibility: visible;
 	}
 }

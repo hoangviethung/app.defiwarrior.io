@@ -1,21 +1,20 @@
 aside.sidebar
 	.sidebar__top
-		a(href="index.html").sidebar__logo.pos-demo
+		a(href="index.html").sidebar__logo
 			img(src="./images/logo.png", alt="defi-logo")
-		.sildebar__button
+		.js-collapse-aside-menu
 			i.fad.fa-indent
 	.sidebar__wrapper
 		.sidebar__list
 			.sidebar__group
-				.sidebar__caption
-					span Dashboard
+				.sidebar__caption.js-collapse-slidebar-group
+					span.fw-600 Dashboard
 					i.fad.fa-chevron-down
 				.sidebar__menu
 					a(href="index.html").sidebar__item.active
 						.sidebar__icon
 							i.fad.fa-chart-pie-alt
 						.sidebar__text Overview
-				.sidebar__menu
 					a(href="farms.html").sidebar__item
 						.sidebar__icon
 							i.far.fa-warehouse-alt
@@ -37,8 +36,8 @@ aside.sidebar
 							i.far.fa-question-circle
 						.sidebar__text Help
 			.sidebar__group
-				.sidebar__caption
-					span Trade
+				.sidebar__caption.js-collapse-slidebar-group
+					span.fw-600 Trade
 					i.fad.fa-chevron-down
 				.sidebar__menu
 					a(href="wallet_asset.html").sidebar__item
@@ -66,6 +65,8 @@ aside.sidebar
 							i.far.fa-question-circle
 						.sidebar__text Help
 	.sidebar__bottom
+		.js-collapse-aside-menu
+			i.fad.fa-cog
 		.flex-between-alc
 			a(href="exchange.html" target="_blank").token__information
 				img.token__icon(src="./images/FIWA.png", alt="FIWA")

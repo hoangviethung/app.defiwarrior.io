@@ -1,3 +1,46 @@
+const collapseAsideMenu = () => {
+	document.querySelectorAll(".js-collapse-aside-menu").forEach((button) => {
+		button.addEventListener("click", (e) => {
+			document.querySelectorAll(".sidebar__group").forEach((item) => {
+				item.classList.remove("active");
+			});
+			document.querySelector(".page").classList.toggle("sidebar--sm");
+		});
+	});
+};
+
+const collapseAsideMenuMobile = () => {
+	document
+		.querySelectorAll(".js-collapse-aside-menu-mobile")
+		.forEach((button) => {
+			button.addEventListener("click", (e) => {
+				document.querySelectorAll(".sidebar__group").forEach((item) => {
+					item.classList.remove("active");
+				});
+				document
+					.querySelector(".page")
+					.classList.toggle("sidebar-mobile--open");
+				document.querySelector(".overlay").classList.toggle("active");
+			});
+		});
+	document.querySelector(".overlay").addEventListener("click", (e) => {
+		document
+			.querySelector(".page")
+			.classList.remove("sidebar-mobile--open");
+		document.querySelector(".overlay").classList.remove("active");
+	});
+};
+
+const collapseSlidebarGroup = () => {
+	document
+		.querySelectorAll(".js-collapse-slidebar-group")
+		.forEach((button) => {
+			button.addEventListener("click", (e) => {
+				button.parentElement.classList.toggle("active");
+			});
+		});
+};
+
 const fancyboxWalletConnect = () => {
 	document
 		.querySelectorAll("[popup-to='wallet_connect_popup']")
@@ -5,6 +48,22 @@ const fancyboxWalletConnect = () => {
 			item.addEventListener("click", (e) => {
 				$.fancybox.open({
 					src: "#wallet_connect_popup",
+					type: "inline",
+					touch: false,
+					hash: false,
+					closeExisting: true,
+				});
+			});
+		});
+};
+
+const fancyboxYourWallet = () => {
+	document
+		.querySelectorAll("[popup-to='your_wallet_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#your_wallet_popup",
 					type: "inline",
 					touch: false,
 					hash: false,
@@ -285,7 +344,11 @@ const fancyboxRecentTransactions = () => {
 };
 
 window.addEventListener("load", (e) => {
+	collapseAsideMenu();
+	collapseAsideMenuMobile();
+	collapseSlidebarGroup();
 	fancyboxWalletConnect();
+	fancyboxYourWallet();
 	fancyboxSelectToken();
 	fancyboxStakeLPTokens();
 	fancyboxUnstakeLPTokens();
