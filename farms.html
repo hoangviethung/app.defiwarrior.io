@@ -464,8 +464,6 @@
               </div>
             </div>
           </section>
-          <!-- *** PAGE NAME *** //-->
-          <div id="page-verify" data-class="farms-page"></div>
           <!-- *** POPUP WALLET CONNECT POPOP *** //-->
           <div class="wallet_connect_popup" id="wallet_connect_popup" style="display:none">
             <div class="popup_wrapper">
@@ -516,7 +514,7 @@
               </div>
             </div>
           </div>
-          <!-- *** POPUP STAKE LP TOKENS POPOP *** //-->
+          <!-- *** POPUP STAKE LP TOKENS *** //-->
           <div class="stake_lp_tokens_popup" id="stake_lp_tokens_popup" style="display:none">
             <div class="popup_wrapper">
               <div class="popup__header">
@@ -545,7 +543,7 @@
               </div>
             </div>
           </div>
-          <!-- *** POPUP UNSTAKE LP TOKENS POPOP *** //-->
+          <!-- *** POPUP UNSTAKE LP TOKENS *** //-->
           <div class="stake_lp_tokens_popup" id="unstake_lp_tokens_popup" style="display:none">
             <div class="popup_wrapper">
               <div class="popup__header">
@@ -720,6 +718,76 @@
               </div>
             </div>
           </div>
+          <!-- *** POPUP CONFIRM LIQUIDITY *** //-->
+          <div class="confirm_liquidity_popup" id="confirm_liquidity_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">You will receive</h2>
+              </div>
+              <div class="popup__body">
+                <div class="confirm_liquidity__item">
+                  <div class="pool_token__information"><b class="pool_token__price pool_token__price--2xl txt-primary">0.20511</b><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/></div>
+                </div>
+                <div class="confirm_liquidity__item">
+                  <div class="pool_token__information"><span class="pool_token__name pool_token__name--lg">CAKE/BUSD Pool Tokens</span></div>
+                </div>
+                <div class="confirm_liquidity__item">
+                  <p class="fs-0x77rem">Output is estimated. If the price changes by more than 0.5% your transaction will revert.</p>
+                </div>
+                <div class="confirm_liquidity__item">
+                  <div class="flex-between-alc"><span>CAKE Deposited</span>
+                    <div class="token__information"><img class="token__icon" src="./images/FIWA.png" alt="FIWA"/><span class="token__price">0.0696463</span></div>
+                  </div>
+                  <div class="flex-between-alc"><span>BUSD Deposited</span>
+                    <div class="token__information"><img class="token__icon" src="./images/BTCB.png" alt="BTCB"/><span class="token__price">1.0098</span></div>
+                  </div>
+                  <div class="flex-between-alc"><span>Rates</span>
+                    <div>
+                      <p>1 REM = 14.36 BUSD</p>
+                      <p>1 CAKE = 14.36 BUSD</p>
+                    </div>
+                  </div>
+                  <div class="flex-between-alc"><span>Share of Pool:</span><span>0.000005406%</span></div>
+                </div>
+              </div>
+              <div class="popup__footer">
+                <button class="bt bt-lg bt-block primary" popup-to="confirm_liquidity_loading_popup" href="javascript:;">Confirm Supply (Loading)</button>
+                <button class="bt bt-lg bt-block primary" popup-to="confirm_liquidity_reject_popup" href="javascript:;">Confirm Supply (Reject)</button>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP SELECT A LIQUIDITY LOADING *** //-->
+          <div class="loading_popup" id="confirm_liquidity_loading_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">You Will Receive</h2>
+              </div>
+              <div class="popup__body">
+                <div class="loading__image"><img src="./images/loading_popup.png" alt="LOADING"/></div>
+                <div class="loading__content ta-c">
+                  <h2 class="txt-primary">Waiting For Confirmation</h2>
+                  <h4>Supplying 0.0981461 and 27.3899 BUSD</h4>
+                  <p>Confirm this transaciion in your wallet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP SELECT A LIQUIDITY REJECT *** //-->
+          <div class="reject_popup" id="confirm_liquidity_reject_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">Confirm Supply</h2>
+              </div>
+              <div class="popup__body">
+                <div class="reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
+                  <h4>Transaction rejected</h4>
+                </div>
+              </div>
+              <div class="popup__footer">
+                <button class="bt bt-lg bt-block primary" data-fancybox-close="data-fancybox-close">Dismiss</button>
+              </div>
+            </div>
+          </div>
           <!-- *** POPUP CONFIRM SWAP *** //-->
           <div class="confirm_swap_popup" id="confirm_swap_popup" style="display:none">
             <div class="popup_wrapper">
@@ -774,19 +842,21 @@
                 </div>
               </div>
               <div class="popup__footer">
-                <button class="bt bt-lg bt-block primary" disable="disable">Confirm Swap</button>
+                <button class="bt bt-lg bt-block primary" disable="disable">Confirm Swap (Disable)</button>
+                <button class="bt bt-lg bt-block primary" popup-to="confirm_swap_loading_popup" href="javascript:;">Confirm Swap (Loading)</button>
+                <button class="bt bt-lg bt-block primary" popup-to="confirm_swap_reject_popup" href="javascript:;">Confirm Swap (Reject)</button>
               </div>
             </div>
           </div>
           <!-- *** POPUP CONFIRM SWAP LOADING *** //-->
-          <div class="confirm_swap_loading_popup" id="confirm_swap_loading_popup" style="display:none">
+          <div class="loading_popup" id="confirm_swap_loading_popup" style="display:none">
             <div class="popup_wrapper">
               <div class="popup__header">
                 <h2 class="popup__title">Confirm Swap</h2>
               </div>
               <div class="popup__body">
-                <div class="confirm_swap_loading__image"><img src="./images/confirm_swap_popup_loading.png" alt="LOADING"/></div>
-                <div class="confirm_swap_loading__content ta-c">
+                <div class="loading__image"><img src="./images/loading_popup.png" alt="LOADING"/></div>
+                <div class="loading__content ta-c">
                   <h2 class="txt-primary">Waiting For Confirmation</h2>
                   <h4>Swapping 0.0981461 for 27.3899 BUSD</h4>
                   <p>Confirm this transaciion in your wallet</p>
@@ -795,13 +865,13 @@
             </div>
           </div>
           <!-- *** POPUP CONFIRM SWAP REJECT *** //-->
-          <div class="confirm_swap_reject_popup" id="confirm_swap_reject_popup" style="display:none">
+          <div class="reject_popup" id="confirm_swap_reject_popup" style="display:none">
             <div class="popup_wrapper">
               <div class="popup__header">
                 <h2 class="popup__title">Confirm Swap</h2>
               </div>
               <div class="popup__body">
-                <div class="confirm_swap_reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
+                <div class="reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
                   <h4>Transaction rejected</h4>
                 </div>
               </div>
@@ -868,21 +938,17 @@
               </div>
             </div>
           </div>
-          <!-- *** POPUP CONFIRM LIQUIDITY *** //-->
-          <div class="confirm_liquidity_popup" id="confirm_liquidity_popup" style="display:none">
+          <!-- *** POPUP CONFIRM BUY WARRIOR *** //-->
+          <div class="confirm_liquidity_popup" id="confirm_buy_warrior_popup" style="display:none">
             <div class="popup_wrapper">
               <div class="popup__header">
                 <h2 class="popup__title">You will receive</h2>
               </div>
               <div class="popup__body">
                 <div class="confirm_liquidity__item">
-                  <div class="pool_token__information"><b class="pool_token__price pool_token__price--2xl txt-primary">0.20511</b><img class="token__icon token__icon--lg" src="./images/FIWA.png" alt="FIWA"/><img class="token__icon token__icon--lg" src="./images/BTCB.png" alt="BTCB"/></div>
-                </div>
-                <div class="confirm_liquidity__item">
-                  <div class="pool_token__information"><span class="pool_token__name pool_token__name--lg">CAKE/BUSD Pool Tokens</span></div>
-                </div>
-                <div class="confirm_liquidity__item">
-                  <p class="fs-0x77rem">Output is estimated. If the price changes by more than 0.5% your transaction will revert.</p>
+                  <div class="confirm_warrior__character"><img src="./images/character_buy.png" alt="CHARACTER"/></div>
+                  <h4 class="fs-1x4rem ta-c mb-1rem"> BTC #20210623</h4>
+                  <p class="ta-c">Warriors will be minted after adding liquidityFIWA will be burned. Player cannot clear liquidity to get token back</p>
                 </div>
                 <div class="confirm_liquidity__item">
                   <div class="flex-between-alc"><span>CAKE Deposited</span>
@@ -901,7 +967,127 @@
                 </div>
               </div>
               <div class="popup__footer">
-                <button class="bt bt-lg bt-block primary">Confirm Supply</button>
+                <button class="bt bt-lg bt-block primary" popup-to="confirm_buy_warrior_loading_popup" href="javascript:;">Confirm Supply (Loading)</button>
+                <button class="bt bt-lg bt-block primary" popup-to="confirm_buy_warrior_accept_popup" href="javascript:;">Confirm Supply (Accept)</button>
+                <button class="bt bt-lg bt-block primary" popup-to="confirm_buy_warrior_reject_popup" href="javascript:;">Confirm Supply (Reject)</button>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP CONFIRM BUY WARRIOR LOADING *** //-->
+          <div class="loading_popup" id="confirm_buy_warrior_loading_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">Confirm Buy Warrior</h2>
+              </div>
+              <div class="popup__body">
+                <div class="loading__image"><img src="./images/loading_popup.png" alt="LOADING"/></div>
+                <div class="loading__content ta-c">
+                  <h2 class="txt-primary">Waiting For Confirmation</h2>
+                  <p>Confirm this transaciion in your wallet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP CONFIRM BUY WARRIOR ACCEPT *** //-->
+          <div class="accept_popup" id="confirm_buy_warrior_accept_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">Your warrior has bees created successfully</h2>
+              </div>
+              <div class="popup__body">
+                <div class="accept__content">
+                  <div class="warrior__character"><img src="./images/character_buy.png" alt="CHARACTER"/></div>
+                  <h4 class="fs-1x4rem ta-c mb-1rem"> BTC #20210623</h4>
+                </div>
+              </div>
+              <div class="popup__footer">
+                <div class="grid-auto-auto-gap-24 mb-1rem"><a class="bt bt-lg bt-block primary" href="buy_warrior.html">Continute buying</a><a class="bt bt-lg bt-block primary" href="index.html">Go to playing</a></div>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP CONFIRM BUY WARRIOR REJECT *** //-->
+          <div class="reject_popup" id="confirm_buy_warrior_reject_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">You will receive</h2>
+              </div>
+              <div class="popup__body">
+                <div class="reject__content txt-danger ta-c"><i class="fal fa-exclamation-circle"></i>
+                  <h4>Transaction rejected</h4>
+                </div>
+              </div>
+              <div class="popup__footer">
+                <button class="bt bt-lg bt-block primary" data-fancybox-close="data-fancybox-close">Dismiss</button>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP CONFIRM SETTINGS *** //-->
+          <div class="settings_popup" id="settings_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">Settings</h2>
+              </div>
+              <div class="popup__body">
+                <div class="setting__item">
+                  <h4 class="setting__title">Transaction Settings</h4>
+                  <div class="setting__content"><span class="fw-600">Slippage Tolerance</span>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="0.00" value="0.10"/>
+                      <div class="input-group-append">
+                        <button class="bt bt-lg primary">0.1%</button>
+                        <button class="bt bt-lg primary" disable="disable">0.5%</button>
+                        <button class="bt bt-lg primary" disable="disable">1%</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="setting__content"><span class="fw-600">Transaction deadline</span>
+                    <div class="input-group">
+                      <input class="form-control" type="number" placeholder="5" value="20"/>
+                      <div class="input-group-append"><span>minutes</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="setting__item">
+                  <h4 class="setting__title">Interface Settings</h4>
+                  <div class="setting__content">
+                    <div class="flex-between-alc"><span class="fw-600">Toggle Expert Mode</span>
+                      <label class="checkbox-switch">
+                        <input type="checkbox"/>
+                        <div class="slider round"></div>
+                      </label>
+                    </div>
+                    <div class="flex-between-alc"><span class="fw-600">Disable Multihops</span>
+                      <label class="checkbox-switch">
+                        <input type="checkbox"/>
+                        <div class="slider round"></div>
+                      </label>
+                    </div>
+                    <div class="flex-between-alc"><span class="fw-600">Audio</span>
+                      <label class="checkbox-switch">
+                        <input type="checkbox"/>
+                        <div class="slider round"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *** POPUP RECENT TRANSACTION *** //-->
+          <div class="recent_transactions_popup" id="recent_transactions_popup" style="display:none">
+            <div class="popup_wrapper">
+              <div class="popup__header">
+                <h2 class="popup__title">Recent Transactions</h2>
+              </div>
+              <div class="popup__body">
+                <div class="recent_transaction__item">
+                  <div class="flex-between-alc"><span class="fw-600">Recent Transactions</span>
+                    <button class="bt secondary">Claer All</button>
+                  </div>
+                </div>
+                <div class="recent_transaction__item"><a class="txt-primary fw-600" href="https://bscscan.com/tx/0xd005f30733a8f3b473a1d6629b03e84ce2c76fc88a562d2318be3ed71dc8bc24" target="_blank"><span class="mr-0x5rem">Swap 0.0001 CAKE for 0.00147 BUSD</span><i class="fad fa-external-link-alt"></i></a></div>
+                <div class="recent_transaction__item"><a class="txt-primary fw-600" href="https://bscscan.com/tx/0xd005f30733a8f3b473a1d6629b03e84ce2c76fc88a562d2318be3ed71dc8bc24" target="_blank"><span class="mr-0x5rem">Swap 0.0001 CAKE for 0.00147 BUSD</span><i class="fad fa-external-link-alt"></i></a></div>
+                <div class="recent_transaction__item"><a class="txt-primary fw-600" href="https://bscscan.com/tx/0xd005f30733a8f3b473a1d6629b03e84ce2c76fc88a562d2318be3ed71dc8bc24" target="_blank"><span class="mr-0x5rem">Swap 0.0001 CAKE for 0.00147 BUSD</span><i class="fad fa-external-link-alt"></i></a></div>
               </div>
             </div>
           </div>

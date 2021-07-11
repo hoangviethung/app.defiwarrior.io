@@ -1,7 +1,6 @@
 extends ../layouts/layout
 
 block var
-	- bodyClass = "exchange-page"
 	- pageTitle = "Exchange | Defi x NFT"
 block library-css
 block css
@@ -26,9 +25,9 @@ block main
 						h2.trade__title Exchange
 						p.trade__desc Trade tokens in an instant
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.exchange__item
@@ -58,7 +57,7 @@ block main
 										span.token__name BTCB
 									i.fad.fa-chevron-down
 				.tabs__content__footer.trade__footer
-					button.bt.bt-lg.bt-block.primary(popup-to="wallet_connect_popup" href="javascript:;") Unlock Wallet
+					button.bt.bt-lg.bt-block.primary(popup-to="wallet_connect_popup" href="javascript:;") Connect Wallet
 	section.trade.exchange
 		.tabs.neutral-background-lighter
 			.tabs__nav
@@ -76,9 +75,9 @@ block main
 						h2.trade__title Exchange
 						p.trade__desc Trade tokens in an instant
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.exchange__item
@@ -127,9 +126,9 @@ block main
 						h2.trade__title Exchange
 						p.trade__desc Trade tokens in an instant
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.exchange__item
@@ -206,9 +205,9 @@ block main
 						h2.trade__title Exchange
 						p.trade__desc Trade tokens in an instant
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.exchange__item
@@ -285,9 +284,9 @@ block main
 						h2.trade__title Exchange
 						p.trade__desc Trade tokens in an instant
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.exchange__item

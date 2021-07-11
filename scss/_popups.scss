@@ -47,6 +47,11 @@
 
 .popup__footer {
 	padding: 24px;
+	> .bt {
+		+ .bt {
+			margin-top: 16px;
+		}
+	}
 }
 
 .wallet_connect_popup {
@@ -267,37 +272,6 @@
 	}
 }
 
-.confirm_swap_loading_popup {
-	max-width: 450px;
-	width: 100%;
-	.confirm_swap_loading__image {
-		max-width: 300px;
-		width: 100%;
-		margin: 0 auto;
-	}
-	.confirm_swap_loading__content {
-		> * {
-			margin-bottom: 16px;
-		}
-	}
-}
-
-.confirm_swap_reject_popup {
-	max-width: 350px;
-	width: 100%;
-	.confirm_swap_reject__content {
-		> i {
-			font-size: 3rem;
-		}
-		> h4 {
-			font-size: 1.2rem;
-		}
-		> * {
-			margin-bottom: 16px;
-		}
-	}
-}
-
 .confirm_liquidity_popup {
 	max-width: 600px;
 	width: 100%;
@@ -327,5 +301,98 @@
 	.pool_token__price--2xl {
 		margin-right: 16px;
 		margin-left: 0;
+	}
+	.confirm_warrior__character {
+		margin: 24px 0;
+		img {
+			display: block;
+			margin: 0 auto;
+			animation: scale 1s infinite;
+			animation-direction: alternate;
+		}
+	}
+	.confirm_warrior__id {
+		text-align: center;
+		font-size: 1.4rem;
+	}
+}
+
+.settings_popup {
+	.setting__item,
+	.setting__content {
+		display: grid;
+		grid-auto-rows: auto;
+	}
+	.setting__item {
+		row-gap: 24px;
+		+ .setting__item {
+			margin-top: 32px;
+		}
+	}
+	.setting__content {
+		row-gap: 16px;
+	}
+	.setting__title {
+		font-size: 1.2rem;
+	}
+}
+
+.recent_transactions_popup {
+	.recent_transaction__item {
+		+ .recent_transaction__item {
+			margin-top: 16px;
+		}
+	}
+}
+
+.loading_popup {
+	max-width: 450px;
+	width: 100%;
+	.loading__image {
+		max-width: 300px;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.loading__content {
+		> * {
+			margin-bottom: 16px;
+		}
+	}
+}
+
+.reject_popup {
+	max-width: 350px;
+	width: 100%;
+	.reject__content {
+		> i {
+			font-size: 3rem;
+		}
+		> h4 {
+			font-size: 1.2rem;
+		}
+		> * {
+			margin-bottom: 16px;
+		}
+	}
+}
+
+.accept_popup {
+	.warrior__character {
+		text-align: center;
+		max-width: 300px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.accept__content {
+		> i {
+			font-size: 3rem;
+		}
+		> h4 {
+			font-size: 1.2rem;
+		}
+		> * {
+			margin-bottom: 16px;
+		}
 	}
 }

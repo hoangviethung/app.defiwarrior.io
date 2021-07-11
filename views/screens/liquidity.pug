@@ -1,7 +1,6 @@
 extends ../layouts/layout
 
 block var
-	- bodyClass = "liquidity-page"
 	- pageTitle = "Liquidity | Defi x NFT"
 block library-css
 block css
@@ -27,9 +26,9 @@ block main
 						h2.trade__title Your Liquidity
 						p.trade__desc Remove liquidity to receive tokens back
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.liquidity__item
@@ -57,9 +56,9 @@ block main
 						h2.trade__title Your Liquidity
 						p.trade__desc Remove liquidity to receive tokens back
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.liquidity__item
@@ -84,9 +83,9 @@ block main
 						h2.trade__title Your Liquidity
 						p.trade__desc Remove liquidity to receive tokens back
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					-for(i=0;i<2;i++)
@@ -149,9 +148,9 @@ block main
 						h2.trade__title Add Liquidity
 						p.trade__desc Add liquidity to receive LP tokens
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.liquidity__item
@@ -200,9 +199,9 @@ block main
 						h2.trade__title Add Liquidity
 						p.trade__desc Add liquidity to receive LP tokens
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.liquidity__item
@@ -255,9 +254,9 @@ block main
 						h2.trade__title Add Liquidity
 						p.trade__desc Add liquidity to receive LP tokens
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.liquidity__item
@@ -309,7 +308,7 @@ block main
 					.grid-auto-auto-gap-24.mb-1rem
 						button.bt.bt-lg.bt-block.primary Approve FIWA
 						button.bt.bt-lg.bt-block.primary Approve BTCB
-					button.bt.bt-lg.bt-block.primary(popup-to="confirm_liquidity_popup" href="javascript:;" disable) Supply
+					button.bt.bt-lg.bt-block.primary(href="javascript:;" disable) Supply
 	section.trade.liquidity
 		.tabs.neutral-background-lighter
 			.tabs__nav
@@ -330,9 +329,9 @@ block main
 						h2.trade__title Add Liquidity
 						p.trade__desc Add liquidity to receive LP tokens
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.liquidity__item
@@ -704,9 +703,9 @@ block main
 						h2.trade__title Import Pool
 						p.trade__desc Import an existing pool
 					.box-right
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="settings_popup" href="javascript:;")
 							i.fad.fa-sliders-h
-						a.bt-circle.secondary(href="#")
+						a.bt-circle.secondary(popup-to="recent_transactions_popup" href="javascript:;")
 							i.fad.fa-history
 				.tabs__content__body.trade__body
 					.liquidity__item

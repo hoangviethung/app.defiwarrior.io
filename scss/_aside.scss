@@ -51,10 +51,6 @@
 			$color: map-get($map: $theme-colors, $key: gray-border),
 			$amount: 5%
 		);
-	@media (max-width: 1024.98px) {
-		padding: 0 8px;
-		height: $height-sidebar-bottom-mobile;
-	}
 	.token__icon {
 		transition: map-get($map: $theme-transition, $key: all);
 	}
@@ -69,6 +65,11 @@
 		+ .flex-between-alc {
 			margin-top: 16px;
 		}
+	}
+	@media (max-width: 1024.98px) {
+		display: none;
+		padding: 0 8px;
+		height: $height-sidebar-bottom-mobile;
 	}
 }
 

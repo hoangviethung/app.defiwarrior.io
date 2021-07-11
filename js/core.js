@@ -7,34 +7,8 @@ const fancyboxWalletConnect = () => {
 					src: "#wallet_connect_popup",
 					type: "inline",
 					touch: false,
-				});
-			});
-		});
-};
-
-const fancyboxStakeLPTokens = () => {
-	document
-		.querySelectorAll("[popup-to='stake_lp_tokens_popup']")
-		.forEach((item) => {
-			item.addEventListener("click", (e) => {
-				$.fancybox.open({
-					src: "#stake_lp_tokens_popup",
-					type: "inline",
-					touch: false,
-				});
-			});
-		});
-};
-
-const fancyboxUnstakeLPTokens = () => {
-	document
-		.querySelectorAll("[popup-to='unstake_lp_tokens_popup']")
-		.forEach((item) => {
-			item.addEventListener("click", (e) => {
-				$.fancybox.open({
-					src: "#unstake_lp_tokens_popup",
-					type: "inline",
-					touch: false,
+					hash: false,
+					closeExisting: true,
 				});
 			});
 		});
@@ -49,6 +23,40 @@ const fancyboxSelectToken = () => {
 					src: "#select_token_popup",
 					type: "inline",
 					touch: false,
+					hash: false,
+					closeExisting: true,
+				});
+			});
+		});
+};
+
+const fancyboxStakeLPTokens = () => {
+	document
+		.querySelectorAll("[popup-to='stake_lp_tokens_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#stake_lp_tokens_popup",
+					type: "inline",
+					touch: false,
+					hash: false,
+					closeExisting: true,
+				});
+			});
+		});
+};
+
+const fancyboxUnstakeLPTokens = () => {
+	document
+		.querySelectorAll("[popup-to='unstake_lp_tokens_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#unstake_lp_tokens_popup",
+					type: "inline",
+					touch: false,
+					hash: false,
+					closeExisting: true,
 				});
 			});
 		});
@@ -63,20 +71,40 @@ const fancyboxSelectLiquidity = () => {
 					src: "#select_liquidity_popup",
 					type: "inline",
 					touch: false,
+					hash: false,
+					closeExisting: true,
 				});
 			});
 		});
 };
 
-const fancyboxTradeSettings = () => {
+const fancyboxConfirmLiquidityLoading = () => {
 	document
-		.querySelectorAll("[popup-to='trade_settings_popup']")
+		.querySelectorAll("[popup-to='confirm_liquidity_loading_popup']")
 		.forEach((item) => {
 			item.addEventListener("click", (e) => {
 				$.fancybox.open({
-					src: "#trade_settings_popup",
+					src: "#confirm_liquidity_loading_popup",
 					type: "inline",
 					touch: false,
+					hash: false,
+					closeExisting: true,
+				});
+			});
+		});
+};
+
+const fancyboxConfirmLiquidityReject = () => {
+	document
+		.querySelectorAll("[popup-to='confirm_liquidity_reject_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#confirm_liquidity_reject_popup",
+					type: "inline",
+					touch: false,
+					hash: false,
+					closeExisting: true,
 				});
 			});
 		});
@@ -91,6 +119,8 @@ const fancyboxConfirmSwap = () => {
 					src: "#confirm_swap_popup",
 					type: "inline",
 					touch: false,
+					hash: false,
+					closeExisting: true,
 				});
 			});
 		});
@@ -105,6 +135,8 @@ const fancyboxConfirmSwapLoading = () => {
 					src: "#confirm_swap_loading_popup",
 					type: "inline",
 					touch: false,
+					hash: false,
+					closeExisting: true,
 				});
 			});
 		});
@@ -119,6 +151,8 @@ const fancyboxConfirmSwapReject = () => {
 					src: "#confirm_swap_reject_popup",
 					type: "inline",
 					touch: false,
+					hash: false,
+					closeExisting: true,
 				});
 			});
 		});
@@ -133,6 +167,72 @@ const fancyboxConfirmBuyGem = () => {
 					src: "#confirm_buy_gem_popup",
 					type: "inline",
 					touch: false,
+					hash: false,
+					closeExisting: true,
+				});
+			});
+		});
+};
+
+const fancyboxConfirmBuyWarrior = () => {
+	document
+		.querySelectorAll("[popup-to='confirm_buy_warrior_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#confirm_buy_warrior_popup",
+					type: "inline",
+					touch: false,
+					hash: false,
+					closeExisting: true,
+				});
+			});
+		});
+};
+
+const fancyboxConfirmBuyWarriorLoading = () => {
+	document
+		.querySelectorAll("[popup-to='confirm_buy_warrior_loading_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#confirm_buy_warrior_loading_popup",
+					type: "inline",
+					touch: false,
+					hash: false,
+					closeExisting: true,
+				});
+			});
+		});
+};
+
+const fancyboxConfirmBuyWarriorAccept = () => {
+	document
+		.querySelectorAll("[popup-to='confirm_buy_warrior_accept_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#confirm_buy_warrior_accept_popup",
+					type: "inline",
+					touch: false,
+					hash: false,
+					closeExisting: true,
+				});
+			});
+		});
+};
+
+const fancyboxConfirmBuyWarriorReject = () => {
+	document
+		.querySelectorAll("[popup-to='confirm_buy_warrior_reject_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#confirm_buy_warrior_reject_popup",
+					type: "inline",
+					touch: false,
+					hash: false,
+					closeExisting: true,
 				});
 			});
 		});
@@ -147,6 +247,38 @@ const fancyboxConfirmLiquidity = () => {
 					src: "#confirm_liquidity_popup",
 					type: "inline",
 					touch: false,
+					hash: false,
+					closeExisting: true,
+				});
+			});
+		});
+};
+
+const fancyboxSettings = () => {
+	document.querySelectorAll("[popup-to='settings_popup']").forEach((item) => {
+		item.addEventListener("click", (e) => {
+			$.fancybox.open({
+				src: "#settings_popup",
+				type: "inline",
+				touch: false,
+				hash: false,
+				closeExisting: true,
+			});
+		});
+	});
+};
+
+const fancyboxRecentTransactions = () => {
+	document
+		.querySelectorAll("[popup-to='recent_transactions_popup']")
+		.forEach((item) => {
+			item.addEventListener("click", (e) => {
+				$.fancybox.open({
+					src: "#recent_transactions_popup",
+					type: "inline",
+					touch: false,
+					hash: false,
+					closeExisting: true,
 				});
 			});
 		});
@@ -154,14 +286,21 @@ const fancyboxConfirmLiquidity = () => {
 
 window.addEventListener("load", (e) => {
 	fancyboxWalletConnect();
+	fancyboxSelectToken();
 	fancyboxStakeLPTokens();
 	fancyboxUnstakeLPTokens();
-	fancyboxSelectToken();
 	fancyboxSelectLiquidity();
-	fancyboxTradeSettings();
+	fancyboxConfirmLiquidity();
+	fancyboxConfirmLiquidityLoading();
+	fancyboxConfirmLiquidityReject();
 	fancyboxConfirmSwap();
 	fancyboxConfirmSwapLoading();
 	fancyboxConfirmSwapReject();
 	fancyboxConfirmBuyGem();
-	fancyboxConfirmLiquidity();
+	fancyboxConfirmBuyWarrior();
+	fancyboxConfirmBuyWarriorLoading();
+	fancyboxConfirmBuyWarriorAccept();
+	fancyboxConfirmBuyWarriorReject();
+	fancyboxSettings();
+	fancyboxRecentTransactions();
 });
