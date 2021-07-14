@@ -132,8 +132,6 @@
 
 .warrior__actions {
 	padding: 16px 24px;
-	display: flex;
-	justify-content: center;
 	border-top: 1px solid
 		rgba($color: map-get($map: $theme-colors, $key: primary), $alpha: 0.2);
 	@media (max-width: 767.98px) {

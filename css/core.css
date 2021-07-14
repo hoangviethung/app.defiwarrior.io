@@ -14452,8 +14452,7 @@ progress {
 
 .sidebar__menu {
   display: block;
-  opacity: 1;
-  animation: slide-down 0.5s ease-out; }
+  opacity: 1; }
 
 .sidebar__caption {
   cursor: pointer;

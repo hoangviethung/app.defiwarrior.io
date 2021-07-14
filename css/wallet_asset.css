@@ -45,7 +45,7 @@
 .item__wallet {
   padding: 24px;
   background-color: #200040;
-  box-shadow: inset 0px -4px 4px #3a0073;
+  box-shadow: inset 0px -4px 4px rgba(126, 47, 255, 0.2);
   border-radius: 24px; }
   .item__wallet .input-group {
     margin-top: 24px; }

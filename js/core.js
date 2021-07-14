@@ -37,6 +37,10 @@ const collapseSlidebarGroup = () => {
 		.forEach((button) => {
 			button.addEventListener("click", (e) => {
 				button.parentElement.classList.toggle("active");
+				button.nextElementSibling.setAttribute(
+					"style",
+					"animation: slide-down 0.5s ease-out",
+				);
 			});
 		});
 };
