@@ -1,13 +1,6 @@
 @import "_varivable";
 @import "_trade";
 
-.buy_warrior {
-	.tabs__content {
-		background-image: url(../images/background_buy_warrior.png);
-		background-size: cover;
-	}
-}
-
 .buy_warrior__item {
 	+ .buy_warrior__item {
 		margin-top: 16px;

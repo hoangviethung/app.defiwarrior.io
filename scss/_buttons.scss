@@ -330,6 +330,9 @@
 						20%);
 		}
 	}
+	&--lg {
+		font-size: 1.4rem;
+	}
 	&:active {
 		&:not([disabled]) {
 			opacity: 0.85;

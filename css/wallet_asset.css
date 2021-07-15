@@ -40,11 +40,14 @@
     width: auto; }
 
 .table-wallet-asset {
-  background-image: url(../images/background_table.png); }
+  background-image: url(../images/background_table.png);
+  background-size: cover; }
 
 .item__wallet {
   padding: 24px;
   background-color: #200040;
+  background-size: cover;
+  background-image: url(../images/background_item_wallet.png);
   box-shadow: inset 0px -4px 4px rgba(126, 47, 255, 0.2);
   border-radius: 24px; }
   .item__wallet .input-group {

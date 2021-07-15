@@ -87,6 +87,8 @@
 				$map: $theme-colors,
 				$key: neutral-background-lighter
 			);
+			background-image: url(../images/background_tabs_content_neutral_background_lighter.png);
+			background-size: cover;
 			box-shadow: inset 0px -4px 4px rgba($color:
 						lighten(
 							$color:
