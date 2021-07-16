@@ -185,17 +185,6 @@
 	margin-right: 16px;
 }
 
-.sidebar__socicals {
-	color: map-get($map: $theme-colors, $key: primary);
-	font-size: 1.2rem;
-}
-
-.sidebar__socical__item {
-	+ .sidebar__socical__item {
-		margin-left: 16px;
-	}
-}
-
 .js-collapse-aside-menu {
 	text-align: center;
 	cursor: pointer;

@@ -14503,13 +14503,6 @@ progress {
   height: 24px;
   margin-right: 16px; }
 
-.sidebar__socicals {
-  color: #22c8e5;
-  font-size: 1.2rem; }
-
-.sidebar__socical__item + .sidebar__socical__item {
-  margin-left: 16px; }
-
 .js-collapse-aside-menu {
   text-align: center;
   cursor: pointer;

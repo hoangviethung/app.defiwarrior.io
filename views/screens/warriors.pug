@@ -18,12 +18,37 @@ block main
 					span Check your assets
 					i.fad.fa-external-link
 			.row
-				-for(i=0;i<9;i++)
+				-for(i=0;i<4;i++)
 					.col-xl-4.col-sm-6
 						.warrior__item
 							.warrior__character
 								// Radio Images: 250x300
-								img(src="./images/warrior_item_01.png", alt="CHARACTER")
+								img(src="./images/bch_character.png", alt="CHARACTER")
+							.warrior__information
+								.box-row
+									.box-left
+										h4.warrior__name Bitcoin
+										span.warrior__id #B12000
+									.box-right
+										.flex-between-alc
+											.block
+												span Single battle:
+											.block
+												span 15
+										.flex-between-alc
+											.block
+												span Championship:
+											.block
+												span 15
+							.warrior__actions.grid-auto-auto-gap-24
+								button.bt.bt-lg.bt-block.primary PvP
+								button.bt.bt-lg.bt-block.primary(disable) CPS
+				-for(i=0;i<4;i++)
+					.col-xl-4.col-sm-6
+						.warrior__item
+							.warrior__character
+								// Radio Images: 250x300
+								img(src="./images/btc_character.png", alt="CHARACTER")
 							.warrior__information
 								.box-row
 									.box-left
