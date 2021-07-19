@@ -54,7 +54,7 @@
   background-color: #200040;
   background-size: cover;
   transition: all 0.3s linear;
-  min-height: 435px; }
+  min-height: 510px; }
   @media (max-width: 767.98px) {
     .farm__item {
       padding: 16px;
