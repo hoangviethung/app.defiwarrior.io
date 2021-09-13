@@ -24,7 +24,7 @@ Crypto Kitty can be named here as the very first one in the evolution of blockch
 
 Network problems, transfer fees, data loss, user interface & experience or even money laundering using NFT are still remaining doubts among gamers about its potential but the statistics speak louder than any prognosis. Gamers want diversity, new experiences, and are eager to start making money in their favorite games. When blockchain itself is still nascent and is only just starting to develop its potential. The coming years are sure to see an explosion when blockchain networks scale and solve all the problems met to allow user access to a new level of blockchain-based gaming.
 
-Getting started with Greenbeli
+Getting started with Defiwarrior
 -------------------------
 For a standard installation please follow the <a href="https://app.defiwarrior.io/">Setup Template</a>
 from the documentation.
